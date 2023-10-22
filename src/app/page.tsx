@@ -18,6 +18,7 @@ export default function Home() {
         alt=""
         src="/title@2x.png"
       /> */}
+
       <div className={styles.instagram}>
         <Image
           width={15}
@@ -26,10 +27,16 @@ export default function Home() {
           alt=""
           src="/instagram.svg"
         />
-        <div className={styles.ireceurope}>IREC.EUROPE</div>
+        <a
+          href="https://www.instagram.com/irec.europe/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className={styles.ireceurope}>IREC.EUROPE</div>
+        </a>
       </div>
+
       <div className={styles.youtube}>
-        <div className={styles.irecInEurope}>IREC in Europe</div>
         <Image
           width={15}
           height={15}
@@ -37,7 +44,15 @@ export default function Home() {
           alt=""
           src="/youtube.svg"
         />
+        <a
+          href="https://www.youtube.com/@irecineurope"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className={styles.irecInEurope}>IREC in Europe</div>
+        </a>
       </div>
+
       <div className={styles.info}>
         <div className={styles.dateText}>Date</div>
         <div className={styles.march29Text}>March 29 – April 1</div>
