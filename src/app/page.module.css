@@ -33,7 +33,7 @@
 
 .instagram {
   position: absolute;
-  bottom: 40px;
+  bottom: 0px;
   left: 40px;
   width: 107px;
   height: 24px;
@@ -52,7 +52,7 @@
 
 .youtube {
   position: absolute;
-  bottom: 40px;
+  bottom: 0px;
   left: 171px;
   width: 119px;
   height: 24px;
