@@ -14,13 +14,22 @@ export default function Home() {
             alt="European Reformed Evangelical Convention 2024"
             src="/logo.svg"
           />
-          <Image
-            width={120}
-            height={125}
-            className={styles.stampIcon}
-            alt="Open Registration Nov 1"
-            src="/stamp.svg"
-          />
+          <div className={styles.stamp}>
+            <Image
+              width={180}
+              height={180}
+              className={styles.stampFrame}
+              alt="Open Registration"
+              src="/stamp-frame.svg"
+            />
+            <Image
+              width={180}
+              height={180}
+              className={styles.stampContent}
+              alt="Nov 1"
+              src="/stamp-content.svg"
+            />
+          </div>
         </div>
 
         {/* Main Content */}
@@ -29,7 +38,7 @@ export default function Home() {
             width={640}
             height={444}
             alt="Assurance of Grace"
-            src="/title&dandelion.svg"
+            src="/title.png"
             className={styles.titleImage}
           />
           <div className={styles.info}>
