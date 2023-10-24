@@ -18,14 +18,14 @@
   height: 40px;
 }
 
-/* @keyframes rotateInfinite {
+@keyframes rotateInfinite {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-} */
+}
 
 .stampIcon {
   margin-top: 10px;
@@ -34,7 +34,7 @@
   transform: rotate(15deg);
   width: 200px;
   height: 200px;
-  /* animation: rotateInfinite 25s linear infinite; */
+  animation: rotateInfinite 25s linear infinite;
 }
 
 /* Main Content */
@@ -180,7 +180,7 @@
     transform: rotate(15deg);
     width: 84px;
     height: 87px;
-    /* animation: rotateInfinite 25s linear infinite; */
+    animation: rotateInfinite 25s linear infinite;
   }
 
   /* Main Content */
