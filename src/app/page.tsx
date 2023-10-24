@@ -11,7 +11,7 @@ export default function Home() {
             width={204.5}
             height={40}
             className={styles.headerIcon}
-            alt="European Reformation Conference 2024"
+            alt="European Reformed Evangelical Convention 2024"
             src="/logo.svg"
           />
           <Image
@@ -61,7 +61,7 @@ export default function Home() {
             </div>
             <div className={styles.contact}>
               <p className={styles.textHeader} style={{ marginTop: "20px" }}>
-                Contact
+                CONTACT
               </p>
               <p className={styles.contactText}>
                 {`Tiffany `}
