@@ -57,23 +57,22 @@
 .mainContent {
   display: flex;
   flex-direction: row; /* Stack children horizontally */
-  align-items: center;
-  justify-content: space-between;
   flex: 1;
   margin-top: 10px;
 }
 
 .titleImage {
-  margin-left: 120px;
+  margin: 0 auto; /* This will center the image within its flex space */
   max-width: 640px;
   max-height: 444px;
-  flex: 2;
+  flex: 1; /* It will occupy the remaining width after accounting for .info */
+  align-self: center;
 }
 
 .info {
   width: 320px;
   margin-right: 40px;
-  flex: 0 1 auto;
+  align-self: flex-end;
 }
 
 .date,
