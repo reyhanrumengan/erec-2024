@@ -12,7 +12,7 @@ function Header() {
           alt="European Reformed Evangelical Convention 2024"
           src="/logo.svg"
         />
-        <div className={styles.stamp}>
+        {/* <div className={styles.stamp}>
           <Image
             width={180}
             height={180}
@@ -27,7 +27,7 @@ function Header() {
             alt="Nov 1"
             src="/stamp-content.svg"
           />
-        </div>
+        </div> */}
       </div>
     </>
   );

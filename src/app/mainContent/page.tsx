@@ -5,14 +5,27 @@ function MainContent() {
   return (
     <>
       <div className={styles.mainContent}>
-        <Image
-          width={640}
-          height={444}
-          alt="Assurance of Grace"
-          src="/title.png"
-          className={styles.titleImage}
-        />
-        <div className={styles.info}>
+        <div className={styles.titleContainer}>
+          <Image
+            width={640}
+            height={444}
+            alt="Assurance of Grace"
+            src="/title.png"
+            className={styles.titleImage}
+          />
+          <div className={styles.registerButtonContainer}>
+            <a
+              href="https://www.jugendherberge.de/en/youth-hostels/halle/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.registerButton}
+            >
+              REGISTER
+            </a>
+          </div>
+        </div>
+
+        {/* <div className={styles.info}>
           <div className={styles.date}>
             <p className={styles.textHeader}>DATE</p>
             <p className={styles.text}>March 29 - April 1</p>
@@ -52,6 +65,15 @@ function MainContent() {
               <span className={styles.span}>+49 176 32626673</span>
             </p>
           </div>
+        </div> */}
+        <div className={styles.menuSidebar}>
+          <p className={styles.menuText}>THEME</p>
+          <p className={styles.menuText}>SPEAKERS</p>
+          <p className={styles.menuText}>EREC</p>
+          <p className={styles.menuText}>VENUE</p>
+          <p className={styles.menuText}>FEE</p>
+          <p className={styles.menuText}>FAQS</p>
+          <p className={styles.menuText}>CONTACT</p>
         </div>
       </div>
     </>
