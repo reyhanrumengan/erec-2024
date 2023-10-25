@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dynalight:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@700&display=swap");
+
+body {
+  margin: 0;
+  line-height: normal;
+  background: #d0ddff;
+}
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+
+  /* font sizes */
+  --font-size-13xl: 32px;
+  --font-size-5xl: 24px;
+  --font-size-xs: 12px;
+
+  /* Colors */
+  --color-mediumblue: #0047ff;
+  --color-darkslateblue: #2a4385;
+}
