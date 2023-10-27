@@ -4,7 +4,8 @@ import styles from "../page.module.css";
 function MainContent() {
   return (
     <>
-      <div className={styles.mainContent}>
+      {/* Title & Dandelion Image */}
+      <div className={styles.homeContent}>
         <div className={styles.titleContainer}>
           <Image
             width={720}
@@ -24,47 +25,136 @@ function MainContent() {
             </a>
           </div>
         </div>
-        {/* <div className={styles.info}>
-          <div className={styles.date}>
-            <p className={styles.textHeader}>DATE</p>
-            <p className={styles.text}>March 29 - April 1</p>
+      </div>
+
+      {/* Location & Info */}
+      <div className={styles.info}>
+        <div className={styles.date}>
+          <p className={styles.textHeader}>DATE</p>
+          <p className={styles.text}>March 29</p>
+          <p className={styles.text}>to April 1 2024</p>
+          <p className={styles.text}>2024</p>
+        </div>
+        <div className={styles.venue}>
+          <p className={styles.textHeader}>VENUE</p>
+          <p className={styles.text}>DJH Jugendherberge Halle</p>
+          <p className={styles.text}>Große Steinstraße 60,</p>
+          <div className={styles.germanyTextWithIconContainer}>
+            <p className={styles.text}>06108 Halle (Saale), Germany</p>
+            <a
+              href="https://www.jugendherberge.de/en/youth-hostels/halle/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ height: "28px" }}
+            >
+              <Image
+                width={28}
+                height={28}
+                className={styles.arrowCircleRightIcon}
+                alt="Arrow Circle Right"
+                src="/arrowCircleRight.svg"
+              />
+            </a>
           </div>
-          <div className={styles.venue}>
-            <p className={styles.textHeader}>VENUE</p>
-            <p className={styles.text}>DJH Jugendherberge Halle</p>
-            <p className={styles.text}>Große Steinstraße 60,</p>
-            <p className={styles.text}>06108 Halle (Saale),</p>
-            <div className={styles.germanyTextWithIconContainer}>
-              <p className={styles.text}>Germany</p>
-              <a
-                href="https://www.jugendherberge.de/en/youth-hostels/halle/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  width={32}
-                  height={32}
-                  className={styles.arrowCircleRightIcon}
-                  alt="Arrow Circle Right"
-                  src="/arrowCircleRight.svg"
-                />
-              </a>
+        </div>
+        <div className={styles.contact}>
+          <p className={styles.textHeader}>CONTACT</p>
+          <p className={styles.contactText}>
+            {`Tiffany `}
+            <span className={styles.span}>+49 176 56841250</span>
+          </p>
+          <p className={styles.contactText}>
+            {`Kenwyn `}
+            <span className={styles.span}>+49 176 32626673</span>
+          </p>
+        </div>
+      </div>
+
+      {/* Fee Info */}
+      <div className={styles.feeInfo}>
+        <div className={styles.normalFee}>
+          {/*  */}
+          <div className={styles.ageContainer}>
+            <div className={styles.ageFeeDetails}>
+              <p className={styles.ageText}>ADULT</p>
+            </div>
+            <div className={styles.priceContainer}>
+              <p className={styles.eurText}>EUR</p>
+              <p className={styles.priceText}>205</p>
             </div>
           </div>
-          <div className={styles.contact}>
-            <p className={styles.textHeader} style={{ marginTop: "20px" }}>
-              CONTACT
-            </p>
-            <p className={styles.contactText}>
-              {`Tiffany `}
-              <span className={styles.span}>+49 176 56841250</span>
-            </p>
-            <p className={styles.contactText}>
-              {`Kenwyn `}
-              <span className={styles.span}>+49 176 32626673</span>
-            </p>
+
+          <div className={styles.ageContainer}>
+            <div className={styles.ageFeeDetails}>
+              <p className={styles.ageText}>11-17</p>
+              <p className={styles.ageSmallText}>YEARS OLD</p>
+            </div>
+            <div className={styles.priceContainer}>
+              <p className={styles.eurText}>EUR</p>
+              <p className={styles.priceText}>125</p>
+            </div>
           </div>
-        </div> */}
+
+          <div className={styles.ageContainer}>
+            <div className={styles.ageFeeDetails}>
+              <p className={styles.ageText}>3-10</p>
+              <p className={styles.ageSmallText}>YEARS OLD</p>
+            </div>
+            <div className={styles.priceContainer}>
+              <p className={styles.eurText}>EUR</p>
+              <p className={styles.priceText}>100</p>
+            </div>
+          </div>
+
+          <div className={styles.ageContainer}>
+            <div className={styles.ageFeeDetails}>
+              <p className={styles.ageText}>0-2</p>
+              <p className={styles.ageSmallText}>YEARS OLD</p>
+            </div>
+            <div className={styles.priceContainer}>
+              <p className={styles.eurText}>EUR</p>
+              <p className={styles.priceText}>60</p>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.earlyBirdFee}>
+          <div className={styles.earlyBirdFeeDetails}>
+            <p className={styles.earlyBirdText}>ADULT</p>
+            <p className={styles.earlyBirdSmallText}>Early Bird</p>
+          </div>
+          <div className={styles.priceContainer} style={{ color: "#fff" }}>
+            <p className={styles.eurText}>EUR</p>
+            <p className={styles.priceText}>185</p>
+          </div>
+        </div>
+
+        <div className={styles.feeDescription}>
+          <p className={styles.feeDescriptionText}>
+            The prices above include accommodation and meals. Towels are
+            available for an additional EUR 1.50.
+          </p>
+          <p className={styles.feeDescriptionText}>
+            Financial assistance is available. Please contact the people in
+            charge of registration at your local IREC Europe branch or the
+            contacts provided in this website if you are not attending any of
+            the branches.
+          </p>
+        </div>
+      </div>
+
+      <div className={styles.comeAndJoinUs}>
+        <p className={styles.comeAndJoinUsText}>Come and join us!</p>
+        <div>
+          <a
+            href="https://www.jugendherberge.de/en/youth-hostels/halle/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.registerButton}
+          >
+            REGISTER
+          </a>
+        </div>
       </div>
     </>
   );
