@@ -8,15 +8,8 @@ body {
   background: #d0ddff;
 }
 :root {
-  /* fonts */
-  --font-poppins: Poppins;
-
-  /* font sizes */
-  --font-size-13xl: 32px;
-  --font-size-5xl: 24px;
-  --font-size-xs: 12px;
-
   /* Colors */
+  --color-lightblue: #d0ddff;
   --color-mediumblue: #0047ff;
-  --color-darkslateblue: #2a4385;
+  --color-darkblue: #2a4385;
 }
