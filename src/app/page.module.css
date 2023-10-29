@@ -260,20 +260,33 @@
   text-align: left;
 }
 
-.comeAndJoinUs {
+.upcoming {
   font-size: 40px;
   letter-spacing: 0.02em;
-  line-height: 64px;
+  line-height: 54px;
   font-weight: 500;
   font-family: Poppins;
   color: var(--color-darkblue);
   text-align: center;
   margin-top: 100px;
   margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.comeAndJoinUsText {
+.upcomingText {
   margin: 0;
+  width: 600px;
+}
+
+.upcomingSmallText {
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 /* Footer */

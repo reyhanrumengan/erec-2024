@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../page.module.css";
+import Link from "next/link";
 
 function MainContent() {
   return (
@@ -145,18 +146,21 @@ function MainContent() {
         </div>
       </div>
 
-      <div className={styles.comeAndJoinUs}>
-        <p className={styles.comeAndJoinUsText}>Come and join us!</p>
-        <div>
-          <a
-            href="https://www.jugendherberge.de/en/youth-hostels/halle/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.registerButton}
-          >
-            REGISTER
-          </a>
-        </div>
+      <div className={styles.upcoming}>
+        <p className={styles.upcomingText}>
+          Watch out this space for upcoming updates.
+        </p>
+        <p className={styles.upcomingSmallText}>
+          Meanwhile, here is a compiled FAQs.
+        </p>
+        <Link
+          href="/FAQs_20231029.pdf"
+          download="FAQs_20231029.pdf"
+          target="_blank"
+          className={styles.registerButton}
+        >
+          Download PDF
+        </Link>
       </div>
 
       {/* Doubled with contact above bcs mobile version have different layout :) This will be shown only in mobile  */}
