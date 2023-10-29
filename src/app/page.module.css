@@ -1,4 +1,4 @@
-.mainContainer {
+*.mainContainer {
   margin: auto;
   display: flex;
   flex-direction: column; /* Stack children vertically */
@@ -417,6 +417,9 @@
     text-decoration: none;
   }
 
+  /* needs to be fix */
+  /* we want hover only on desktop even if the screen is small */
+  /* then need to add another adjustment for mobile */
   .button:hover {
     background-color: unset;
     color: unset;
@@ -479,6 +482,7 @@
     display: unset;
     margin-bottom: 40px;
     border-top: 1px solid var(--color-darkblue);
+    margin: 0 20px;
   }
 
   .contactText {
@@ -489,6 +493,35 @@
     color: var(--color-darkblue);
     text-align: left;
     margin: 0;
+  }
+
+  .upcoming {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .upcomingText {
+    margin: 0;
+    width: 240px;
+  }
+
+  .upcomingSmallText {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 
   /* Footer */
