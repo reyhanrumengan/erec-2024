@@ -31,16 +31,16 @@ function MainContent() {
       <div className={styles.info}>
         <div className={styles.date}>
           <p className={styles.textHeader}>DATE</p>
-          <p className={styles.text}>March 29</p>
-          <p className={styles.text}>to April 1 2024</p>
-          <p className={styles.text}>2024</p>
+          <p className={styles.dateText}>March 29</p>
+          <p className={styles.dateText}>to April 1</p>
+          <p className={styles.dateText}>2024</p>
         </div>
         <div className={styles.venue}>
           <p className={styles.textHeader}>VENUE</p>
-          <p className={styles.text}>DJH Jugendherberge Halle</p>
-          <p className={styles.text}>Große Steinstraße 60,</p>
+          <p className={styles.venueText}>DJH Jugendherberge Halle</p>
+          <p className={styles.venueText}>Große Steinstraße 60,</p>
           <div className={styles.germanyTextWithIconContainer}>
-            <p className={styles.text}>06108 Halle (Saale), Germany</p>
+            <p className={styles.venueText}>06108 Halle (Saale), Germany</p>
             <a
               href="https://www.jugendherberge.de/en/youth-hostels/halle/"
               target="_blank"
@@ -57,7 +57,9 @@ function MainContent() {
             </a>
           </div>
         </div>
-        <div className={styles.contact}>
+
+        {/* Doubled with contact below (very last section of the page) bcs mobile version have different layout :) This will be hidden in mobile  */}
+        <div className={styles.contactForDesktop}>
           <p className={styles.textHeader}>CONTACT</p>
           <p className={styles.contactText}>
             {`Tiffany `}
@@ -155,6 +157,21 @@ function MainContent() {
             REGISTER
           </a>
         </div>
+      </div>
+
+      {/* Doubled with contact above bcs mobile version have different layout :) This will be shown only in mobile  */}
+      <div className={styles.contactForMobile}>
+        <p className={styles.textHeader} style={{ marginTop: "20px" }}>
+          CONTACT
+        </p>
+        <p className={styles.contactText}>
+          {`Tiffany `}
+          <span className={styles.span}>+49 176 56841250</span>
+        </p>
+        <p className={styles.contactText}>
+          {`Kenwyn `}
+          <span className={styles.span}>+49 176 32626673</span>
+        </p>
       </div>
     </>
   );
