@@ -46,7 +46,7 @@
   display: block; /* Remove bottom space inherent to inline images */
 }
 
-.registerButtonContainer {
+.buttonContainer {
   position: absolute; /* Absolute positioning relative to the container */
   top: 73%; /* 73% from the top will position the button's top edge at the center */
   left: 53%; /* 53% from the left will position the button's left edge at the center */
@@ -56,7 +56,7 @@
   ); /* Shifts the button back by half its width and height */
 }
 
-.registerButton {
+.button {
   border: 3px solid var(--color-mediumblue);
   box-sizing: border-box;
   font-size: 16px;
@@ -69,7 +69,7 @@
   text-decoration: none;
 }
 
-.registerButton:hover {
+.button:hover {
   background-color: var(--color-mediumblue);
   color: var(--color-lightblue);
 }
@@ -394,7 +394,7 @@
     display: block;
   }
 
-  .registerButtonContainer {
+  .buttonContainer {
     position: absolute; /* Absolute positioning relative to the container */
     top: 73%; /* 73% from the top will position the button's top edge at the center */
     left: unset;
@@ -404,7 +404,7 @@
     justify-content: center;
   }
 
-  .registerButton {
+  .button {
     border: 2px solid var(--color-mediumblue);
     box-sizing: border-box;
     font-size: 16px;
@@ -417,7 +417,7 @@
     text-decoration: none;
   }
 
-  .registerButton:hover {
+  .button:hover {
     background-color: unset;
     color: unset;
   }

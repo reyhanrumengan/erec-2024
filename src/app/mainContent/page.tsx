@@ -15,12 +15,12 @@ function MainContent() {
             src="/title.png"
             className={styles.titleImage}
           />
-          <div className={styles.registerButtonContainer}>
+          <div className={styles.buttonContainer}>
             <a
               href="https://www.jugendherberge.de/en/youth-hostels/halle/"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.registerButton}
+              className={styles.button}
             >
               REGISTER
             </a>
@@ -157,7 +157,7 @@ function MainContent() {
           href="/FAQs_20231029.pdf"
           download="FAQs_20231029.pdf"
           target="_blank"
-          className={styles.registerButton}
+          className={styles.button}
         >
           Download PDF
         </Link>
