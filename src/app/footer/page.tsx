@@ -8,8 +8,8 @@ function Footer() {
         <div className={styles.socialMedia}>
           <div className={styles.instagram}>
             <Image
-              width={24}
-              height={24}
+              width={32}
+              height={32}
               className={styles.instagramIcon}
               alt="Instagram"
               src="/instagram.svg"
@@ -26,8 +26,8 @@ function Footer() {
 
           <div className={styles.youtube}>
             <Image
-              width={24}
-              height={16}
+              width={32}
+              height={22.5}
               className={styles.youtubeIcon}
               alt="Youtube"
               src="/youtube.svg"

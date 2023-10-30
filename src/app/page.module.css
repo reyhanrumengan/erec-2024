@@ -301,12 +301,13 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
 }
 
 .socialMedia {
   display: flex;
-  margin-left: 40px;
-  margin-bottom: 40px;
   gap: 24px;
 }
 
@@ -336,8 +337,6 @@
   font-weight: 500;
   text-decoration: underline;
   color: var(--color-darkblue);
-  margin-right: 40px;
-  margin-bottom: 40px;
   font-family: Poppins;
 }
 
@@ -428,6 +427,7 @@
   /* needs to be fix */
   /* we want hover only on desktop even if the screen is small */
   /* then need to add another adjustment for mobile */
+  /* now: mobile/smaller screen, there is no hover */
   .button:hover {
     background-color: unset;
     color: unset;
@@ -671,35 +671,54 @@
   /* Footer */
   .footer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .socialMedia {
+    display: flex;
+    gap: 16px;
   }
 
   .instagram {
-    width: 139px;
-    height: 32px;
-    margin-left: 20px;
-    margin-bottom: unset;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: unset;
   }
 
   .youtube {
-    width: 151px;
-    height: 32px;
-    margin-left: 20px;
-    margin-bottom: 25px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: unset;
   }
 
   .instagramLink,
   .youtubeLink {
-    font-size: 16px;
+    font-size: unset;
+    font-weight: unset;
+    text-decoration: unset;
+    color: unset;
+    display: none;
+  }
+
+  .learnAboutIRECLink {
+    font-size: 12px;
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--color-darkblue);
+    font-family: Poppins;
+  }
+
+  /* needs to be fix */
+  /* we want hover only on desktop even if the screen is small */
+  /* then need to add another adjustment for mobile */
+  /* now: mobile/smaller screen, there is no hover */
+  .instagramLink:hover,
+  .youtubeLink:hover,
+  .learnAboutIRECLink:hover {
+    color: none;
   }
 }
