@@ -77,6 +77,17 @@ function MainContent() {
       <div className={styles.feeInfo}>
         <div className={styles.normalFee}>
           {/*  */}
+          <div className={styles.earlyBirdFeeForMobile}>
+            <div className={styles.earlyBirdFeeDetails}>
+              <p className={styles.earlyBirdText}>ADULT</p>
+              <p className={styles.earlyBirdSmallText}>Early Bird</p>
+            </div>
+            <div className={styles.priceContainer} style={{ color: "#fff" }}>
+              <p className={styles.eurText}>EUR</p>
+              <p className={styles.priceText}>185</p>
+            </div>
+          </div>
+
           <div className={styles.ageContainer}>
             <div className={styles.ageFeeDetails}>
               <p className={styles.ageText}>ADULT</p>
@@ -121,7 +132,7 @@ function MainContent() {
           </div>
         </div>
 
-        <div className={styles.earlyBirdFee}>
+        <div className={styles.earlyBirdFeeForDesktop}>
           <div className={styles.earlyBirdFeeDetails}>
             <p className={styles.earlyBirdText}>ADULT</p>
             <p className={styles.earlyBirdSmallText}>Early Bird</p>
