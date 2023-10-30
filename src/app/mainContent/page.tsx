@@ -74,6 +74,9 @@ function MainContent() {
       </div>
 
       {/* Fee Info */}
+      <div className={styles.pricing}>
+        <p className={styles.textHeader}>PRICING</p>
+      </div>
       <div className={styles.feeInfo}>
         <div className={styles.normalFee}>
           {/*  */}

@@ -140,6 +140,10 @@
 }
 
 /* Main Content - Fee Info */
+.pricing {
+  margin-left: 40px;
+}
+
 .feeInfo {
   display: flex;
   flex-direction: column;
@@ -499,12 +503,15 @@
   }
 
   /* Main Content - Fee Info */
+  .pricing {
+    margin-left: 20px;
+  }
+
   .feeInfo {
     display: flex;
     flex-direction: column;
     margin-left: unset;
     margin-right: unset;
-    /* overflow-x: auto; */
   }
 
   .normalFee {
@@ -611,6 +618,25 @@
     line-height: 24px;
     font-family: Poppins;
     margin: 0;
+  }
+
+  .feeDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    margin: 20px 20px 0 20px;
+    gap: 20px;
+  }
+
+  .feeDescriptionText {
+    margin: 0;
+    width: unset;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
   }
 
   .upcoming {
