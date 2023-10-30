@@ -17,7 +17,7 @@ function MainContent() {
           />
           <div className={styles.buttonContainer}>
             <a
-              href="https://www.jugendherberge.de/en/youth-hostels/halle/"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc-ionffNyShdgT-3PaW2UAMVD7PZiuUzXhXi7sEu2KwkP63Q/viewform"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.button}
