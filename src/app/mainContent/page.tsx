@@ -167,14 +167,14 @@ function MainContent() {
         <p className={styles.upcomingSmallText}>
           Meanwhile, here is a compiled FAQs.
         </p>
-        <Link
+        <a
           href="/FAQs_20231029.pdf"
           download="FAQs_20231029.pdf"
           target="_blank"
           className={styles.button}
         >
           Download PDF
-        </Link>
+        </a>
       </div>
 
       {/* Doubled with contact above bcs mobile version have different layout :) This will be shown only in mobile  */}
