@@ -430,6 +430,10 @@
     color: unset;
   }
 
+  .button:visited {
+    color: var(--color-mediumblue);
+  }
+
   /* Main Content - Location, Date &Contact */
   .info {
     margin: 0 20px 65px 20px;
