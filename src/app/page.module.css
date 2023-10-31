@@ -300,6 +300,7 @@
 /* Footer */
 .footer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-left: 40px;
   margin-right: 40px;
@@ -309,25 +310,21 @@
 .socialMedia {
   display: flex;
   gap: 24px;
-}
-
-.instagram {
-  display: flex;
   align-items: center;
-  gap: 8px;
 }
 
+.instagram,
 .youtube {
   display: flex;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
 }
 
 .instagramLink,
 .youtubeLink {
   font-size: 14px;
   font-weight: 500;
-  text-decoration: none;
   color: var(--color-darkblue);
   font-family: Poppins;
 }
@@ -520,6 +517,7 @@
     justify-content: unset;
     gap: 10px;
     overflow: auto;
+    /* margin: 0 20px; */
   }
 
   .ageContainer {
@@ -533,13 +531,17 @@
     position: relative;
   }
 
+  .ageContainer:last-child {
+    margin-right: 20px;
+  }
+
   .ageFeeDetails {
     line-height: 24px;
     color: var(--color-darkblue);
     text-align: left;
     font-family: "Libre Bodoni";
     margin-top: 20px;
-    margin-left: 15px;
+    margin-left: 20px;
   }
 
   .ageText {
@@ -601,7 +603,7 @@
 
   .earlyBirdFeeDetails {
     margin-top: 20px;
-    margin-left: 15px;
+    margin-left: 20px;
     text-align: left;
   }
 
@@ -671,6 +673,7 @@
   /* Footer */
   .footer {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-top: 40px;
     margin-left: 20px;
@@ -681,26 +684,24 @@
   .socialMedia {
     display: flex;
     gap: 16px;
-  }
-
-  .instagram {
-    display: flex;
     align-items: center;
-    gap: unset;
   }
 
+  .instagram,
   .youtube {
     display: flex;
     align-items: center;
     gap: unset;
+
+    text-decoration: none;
   }
 
   .instagramLink,
   .youtubeLink {
     font-size: unset;
     font-weight: unset;
-    text-decoration: unset;
     color: unset;
+    font-family: unset;
     display: none;
   }
 

@@ -6,39 +6,39 @@ function Footer() {
     <>
       <div className={styles.footer}>
         <div className={styles.socialMedia}>
-          <div className={styles.instagram}>
-            <Image
-              width={32}
-              height={32}
-              className={styles.instagramIcon}
-              alt="Instagram"
-              src="/instagram.svg"
-            />
+          <div>
             <a
               href="https://www.instagram.com/irec.europe/"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.instagramLink}
+              className={styles.instagram}
             >
-              IREC.EUROPE
+              <Image
+                width={32}
+                height={32}
+                className={styles.instagramIcon}
+                alt="Instagram"
+                src="/instagram.svg"
+              />
+              <span className={styles.instagramLink}>IREC.EUROPE</span>
             </a>
           </div>
 
-          <div className={styles.youtube}>
-            <Image
-              width={32}
-              height={22.5}
-              className={styles.youtubeIcon}
-              alt="Youtube"
-              src="/youtube.svg"
-            />
+          <div>
             <a
               href="https://www.youtube.com/@irecineurope"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.youtubeLink}
+              className={styles.youtube}
             >
-              IREC in Europe
+              <Image
+                width={32}
+                height={22.5}
+                className={styles.youtubeIcon}
+                alt="Youtube"
+                src="/youtube.svg"
+              />
+              <span className={styles.youtubeLink}>IREC in Europe</span>
             </a>
           </div>
         </div>
