@@ -427,10 +427,6 @@
   /* now: mobile/smaller screen, there is no hover */
   .button:hover {
     background-color: unset;
-    color: unset;
-  }
-
-  .button:visited {
     color: var(--color-mediumblue);
   }
 
