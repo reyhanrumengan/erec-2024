@@ -1,4 +1,4 @@
-.mainContainer {
+*.mainContainer {
   margin: auto;
   display: flex;
   flex-direction: column; /* Stack children vertically */
@@ -14,112 +14,123 @@
 .headerIcon {
   margin-top: 40px;
   margin-left: 40px;
-  width: 204.5px;
-  height: 40px;
+  width: 280px;
+  height: 55px;
 }
 
-@keyframes rotateInfinite {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.stamp {
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  transform: rotate(15deg);
-  width: 180px;
-  height: 180px;
-  position: relative;
-}
-
-.stampFrame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 180px;
-  height: 180px;
-  animation: rotateInfinite 25s linear infinite;
-}
-
-.stampContent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 180px;
-  height: 180px;
-}
-
-/* Main Content */
-.mainContent {
+/* Main Content - Title Image */
+/* .mainContent {
   display: flex;
-  flex-direction: row; /* Stack children horizontally */
-  flex: 1;
-  margin-top: 10px;
+  flex-direction: column;
+} */
+
+.homeContent {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex: 1; */
+  height: 700px;
+}
+
+.titleContainer {
+  margin: 0 auto; /* Center the container horizontally */
+  align-self: center;
+  position: relative; /* Essential for child absolute positioning */
+  width: 100%; /* Use this to control the width of your container */
+  max-width: 720px;
+  max-height: 500px;
 }
 
 .titleImage {
-  margin: 0 auto; /* This will center the image within its flex space */
-  max-width: 640px;
-  max-height: 444px;
-  flex: 1; /* It will occupy the remaining width after accounting for .info */
-  align-self: center;
+  max-width: 720px;
+  max-height: 500px;
+  display: block; /* Remove bottom space inherent to inline images */
 }
 
+.buttonContainer {
+  position: absolute; /* Absolute positioning relative to the container */
+  top: 73%; /* 73% from the top will position the button's top edge at the center */
+  left: 53%; /* 53% from the left will position the button's left edge at the center */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Shifts the button back by half its width and height */
+}
+
+.button {
+  border: 3px solid var(--color-mediumblue);
+  box-sizing: border-box;
+  font-size: 16px;
+  letter-spacing: 0.18em;
+  line-height: 20px;
+  font-family: Poppins;
+  color: var(--color-mediumblue);
+  padding: 7px 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--color-mediumblue);
+  color: var(--color-lightblue);
+}
+
+/* Main Content - Location & Info */
 .info {
-  width: 320px;
-  margin-right: 40px;
-  align-self: flex-end;
+  margin: 0 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .date,
-.venue {
-  margin-bottom: 35px;
+.venue,
+.contactForDesktop {
+  margin-bottom: 90px;
 }
 
 .textHeader {
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 28px;
+  line-height: 42px;
   font-weight: 500;
   font-family: Poppins;
-  color: #0047ff;
+  color: var(--color-mediumblue);
   text-align: left;
   margin: 0;
 }
 
-.text {
-  font-size: 24px;
-  line-height: 32px;
+.dateText,
+.venueText {
+  font-size: 20px;
+  line-height: 28px;
   font-weight: 500;
   font-family: Poppins;
-  color: #2a4385;
+  color: var(--color-darkblue);
   text-align: left;
   margin: 0;
 }
+
 .germanyTextWithIconContainer {
   display: flex;
   align-items: center;
   gap: 8px;
+  height: 28px;
 }
 
 .arrowCircleRightIcon {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
 
-.contact {
-  border-top: 1px solid var(--color-darkslateblue);
+.contactForMobile {
+  display: none;
 }
 
 .contactText {
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 28px;
   font-weight: 500;
   font-family: Poppins;
-  color: #2a4385;
+  color: var(--color-darkblue);
   text-align: left;
   margin: 0;
 }
@@ -128,42 +139,208 @@
   text-decoration: underline;
 }
 
+/* Main Content - Fee Info */
+.pricing {
+  margin-left: 40px;
+}
+
+.feeInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.normalFee {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ageContainer {
+  border-top: 1px solid var(--color-darkblue);
+  border-left: 1px solid var(--color-darkblue);
+  border-bottom: 1px solid var(--color-darkblue);
+  width: 25%;
+  height: 220px;
+  position: relative;
+}
+
+.ageContainer:last-child {
+  border-right: 1px solid var(--color-darkblue);
+}
+
+.ageFeeDetails {
+  line-height: 28px;
+  color: var(--color-darkblue);
+  text-align: left;
+  font-family: "Libre Bodoni";
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.ageText {
+  font-size: 36px;
+  margin: 0;
+}
+
+.ageSmallText {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.priceContainer {
+  position: absolute;
+  line-height: 68px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 5px;
+  right: 15px;
+  bottom: -10px;
+}
+
+.eurText {
+  font-size: 28px;
+  margin: 0;
+}
+
+.priceText {
+  font-size: 52px;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+.earlyBirdFeeForMobile {
+  display: none;
+}
+
+.earlyBirdFeeForDesktop {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  background-color: var(--color-darkblue);
+  color: #fff;
+}
+
+.earlyBirdFeeDetails {
+  margin-top: 30px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.earlyBirdText {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 500;
+  font-family: "Libre Bodoni";
+  margin: 0;
+}
+
+.earlyBirdSmallText {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: Poppins;
+  margin: 0;
+}
+
+.feeDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 20px 0 20px;
+  gap: 40px;
+}
+
+.feeDescriptionText {
+  margin: 0;
+  width: 50%;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+}
+
+.upcoming {
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  line-height: 54px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upcomingText {
+  margin: 0;
+  width: 600px;
+}
+
+.upcomingSmallText {
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 /* Footer */
 .footer {
   display: flex;
-}
-
-.instagram {
-  width: 107px;
-  height: 24px;
+  align-items: center;
+  justify-content: space-between;
   margin-left: 40px;
+  margin-right: 40px;
   margin-bottom: 40px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
+.socialMedia {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.instagram,
 .youtube {
-  width: 119px;
-  height: 24px;
-  margin-left: 24px;
-  margin-bottom: 40px;
   display: flex;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
 }
 
 .instagramLink,
 .youtubeLink {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
-  text-decoration: none;
-  color: var(--color-darkslateblue);
+  color: var(--color-darkblue);
+  font-family: Poppins;
+}
+
+.learnAboutIRECLink {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--color-darkblue);
+  font-family: Poppins;
 }
 
 .instagramLink:hover,
-.youtubeLink:hover {
-  color: #000;
+.youtubeLink:hover,
+.learnAboutIRECLink:hover {
+  color: var(--color-mediumblue);
 }
 
 /* Mobile & Smaller screen */
@@ -172,7 +349,7 @@
     max-width: 450px;
     margin: auto;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: column;
     min-height: 100vh;
   }
 
@@ -185,65 +362,80 @@
   .headerIcon {
     margin-top: 20px;
     margin-left: 20px;
-    width: 193px;
-    height: 50px;
+    /* width: 193px;
+    height: 50px; */
+    width: 212px;
+    height: 55px;
   }
 
-  .stamp {
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    transform: rotate(15deg);
-    width: 84px;
-    height: 87px;
-    position: relative;
-  }
-
-  .stampFrame {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 84px;
-    height: 87px;
-    animation: rotateInfinite 25s linear infinite;
-  }
-
-  .stampContent {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 84px;
-    height: 87px;
-  }
-
-  /* Main Content */
-  .mainContent {
+  /* Main Content - Title Image */
+  .homeContent {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: unset;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%;
+    height: unset;
+    margin-top: 100px;
+    margin-bottom: 175px;
+  }
+
+  .titleContainer {
+    margin: 0 auto; /* Center the container horizontally */
+    align-self: unset;
+    /* justify-content: center; */
+    position: relative; /* Essential for child absolute positioning */
+    width: 100%;
+    max-width: 720px;
+    max-height: 500px;
   }
 
   .titleImage {
-    margin-left: 0;
     width: 100%;
     height: 100%;
     max-width: unset;
     max-height: unset;
-    flex: unset;
-    align-self: unset;
+    display: block;
   }
 
-  .info {
+  .buttonContainer {
+    position: absolute; /* Absolute positioning relative to the container */
+    top: 73%; /* 73% from the top will position the button's top edge at the center */
+    left: unset;
+    transform: unset;
     width: 100%;
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    align-self: unset;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    border: 2px solid var(--color-mediumblue);
+    box-sizing: border-box;
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    line-height: 20px;
+    font-family: Poppins;
+    color: var(--color-mediumblue);
+    padding: 7px 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  /* needs to be fix */
+  /* we want hover only on desktop even if the screen is small */
+  /* then need to add another adjustment for mobile */
+  /* now: mobile/smaller screen, there is no hover */
+  .button:hover {
+    background-color: unset;
+    color: var(--color-mediumblue);
+  }
+
+  /* Main Content - Location, Date &Contact */
+  .info {
+    margin: 0 20px 65px 20px;
+    display: unset;
+    flex-direction: unset;
+    justify-content: unset;
   }
 
   .date,
@@ -256,19 +448,28 @@
     line-height: 32px;
     font-weight: 500;
     font-family: Poppins;
-    color: #0047ff;
+    color: var(--color-mediumblue);
+    text-align: left;
+    margin: 0 0 10px 0;
+  }
+
+  .dateText,
+  .venueText {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
     text-align: left;
     margin: 0;
   }
 
-  .text {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    font-family: Poppins;
-    color: #2a4385;
-    text-align: left;
-    margin: 0;
+  .dateText {
+    display: inline;
+  }
+
+  .dateText::after {
+    content: " ";
   }
 
   .arrowCircleRightIcon {
@@ -276,48 +477,249 @@
     height: 24px;
   }
 
+  .contactForDesktop {
+    display: none;
+    margin-bottom: unset;
+  }
+
+  .contactForMobile {
+    display: unset;
+    margin-bottom: 40px;
+    border-top: 1px solid var(--color-darkblue);
+    margin: 0 20px;
+  }
+
   .contactText {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     font-weight: 500;
     font-family: Poppins;
-    color: #2a4385;
+    color: var(--color-darkblue);
     text-align: left;
     margin: 0;
+  }
+
+  /* Main Content - Fee Info */
+  .pricing {
+    margin-left: 20px;
+  }
+
+  .feeInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+  .normalFee {
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+    gap: 10px;
+    overflow: auto;
+    /* margin: 0 20px; */
+  }
+
+  .ageContainer {
+    border-top: 1px solid var(--color-darkblue);
+    border-right: 1px solid var(--color-darkblue);
+    border-bottom: 1px solid var(--color-darkblue);
+    border-left: 1px solid var(--color-darkblue);
+    min-width: 200px;
+    width: unset;
+    height: 200px;
+    position: relative;
+  }
+
+  .ageContainer:last-child {
+    margin-right: 20px;
+  }
+
+  .ageFeeDetails {
+    line-height: 24px;
+    color: var(--color-darkblue);
+    text-align: left;
+    font-family: "Libre Bodoni";
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .ageText {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .ageSmallText {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .priceContainer {
+    position: absolute;
+    line-height: 64px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5px;
+    right: 15px;
+    bottom: 0px;
+  }
+
+  .eurText {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .priceText {
+    font-size: 48px;
+    letter-spacing: -0.04em;
+    margin: 0;
+  }
+
+  .earlyBirdFeeForDesktop {
+    position: unset;
+    width: unset;
+    height: unset;
+    background-color: unset;
+    color: unset;
+    display: none;
+  }
+
+  .earlyBirdFeeForMobile {
+    display: unset;
+    margin-left: 20px;
+    min-width: 200px;
+    width: unset;
+    height: 200px;
+    background-color: var(--color-darkblue);
+    color: #fff;
+    position: relative;
+  }
+
+  .earlyBirdFeeDetails {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .earlyBirdText {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "Libre Bodoni";
+    margin: 0;
+  }
+
+  .earlyBirdSmallText {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Poppins;
+    margin: 0;
+  }
+
+  .feeDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    margin: 20px 20px 0 20px;
+    gap: 20px;
+  }
+
+  .feeDescriptionText {
+    margin: 0;
+    width: unset;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+  }
+
+  .upcoming {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .upcomingText {
+    margin: 0;
+    width: 240px;
+  }
+
+  .upcomingSmallText {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 
   /* Footer */
   .footer {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 40px;
-  }
-
-  .instagram {
-    width: 139px;
-    height: 32px;
     margin-left: 20px;
-    margin-bottom: unset;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 
+  .socialMedia {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .instagram,
   .youtube {
-    width: 151px;
-    height: 32px;
-    margin-left: 20px;
-    margin-bottom: 25px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: unset;
+
+    text-decoration: none;
   }
 
   .instagramLink,
   .youtubeLink {
-    font-size: 16px;
+    font-size: unset;
+    font-weight: unset;
+    color: unset;
+    font-family: unset;
+    display: none;
+  }
+
+  .learnAboutIRECLink {
+    font-size: 12px;
     font-weight: 500;
-    text-decoration: none;
-    color: var(--color-darkslateblue);
+    text-decoration: underline;
+    color: var(--color-darkblue);
+    font-family: Poppins;
+  }
+
+  /* needs to be fix */
+  /* we want hover only on desktop even if the screen is small */
+  /* then need to add another adjustment for mobile */
+  /* now: mobile/smaller screen, there is no hover */
+  .instagramLink:hover,
+  .youtubeLink:hover,
+  .learnAboutIRECLink:hover {
+    color: none;
   }
 }
