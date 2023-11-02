@@ -17,7 +17,8 @@ function MainContent() {
           />
           <div className={styles.buttonContainer}>
             <a
-              href="https://link.grii.eu/EREC2024"
+              // href="https://link.grii.eu/EREC2024"
+              href="https://forms.gle/5nBNSFBUs6AUr8bz6"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.button}
