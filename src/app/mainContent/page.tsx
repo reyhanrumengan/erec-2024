@@ -168,8 +168,8 @@ function MainContent() {
           Meanwhile, here is a compiled FAQs.
         </p>
         <a
-          href="/FAQs_20231029.pdf"
-          download="FAQs_20231029.pdf"
+          href="/FAQs_EREC2024.pdf"
+          download="FAQs_EREC2024.pdf"
           target="_blank"
           className={styles.button}
         >
