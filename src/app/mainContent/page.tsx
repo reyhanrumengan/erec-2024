@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styles from "../page.module.css";
-import Link from "next/link";
+import TitleImage from "./titleImage";
 
-function MainContent() {
+export default function MainContent() {
   return (
     <>
       {/* Title & Dandelion Image */}
@@ -190,5 +190,3 @@ function MainContent() {
     </>
   );
 }
-
-export default MainContent;
