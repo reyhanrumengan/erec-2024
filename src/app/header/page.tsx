@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../page.module.css";
 
-function Header() {
+export default function Header() {
   return (
     <>
       <div className={styles.header}>
@@ -16,5 +16,3 @@ function Header() {
     </>
   );
 }
-
-export default Header;

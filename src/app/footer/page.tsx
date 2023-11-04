@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../page.module.css";
 
-function Footer() {
+export default function Footer() {
   return (
     <>
       <div className={styles.footer}>
@@ -56,5 +56,3 @@ function Footer() {
     </>
   );
 }
-
-export default Footer;
