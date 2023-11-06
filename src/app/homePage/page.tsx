@@ -1,14 +1,23 @@
-import Image from "next/image";
-import styles from "../page.module.css";
+import styles from "./homePage.module.css";
 import TitleImage from "./titleImage";
+import Content from "./content";
+import MenuSidebar from "../menuSidebar/page";
 
-export default function MainContent() {
+export default function HomePage() {
   return (
     <>
-      <TitleImage />
+      <div className={styles.homePage}>
+        <div style={{ flex: " 1 0 auto" }}>
+          <TitleImage />
+          <Content />
+        </div>
+        <div style={{ maxWidth: " 200px", flex: " 0 0 auto" }}>
+          <MenuSidebar />
+        </div>
+      </div>
 
       {/* Location & Info */}
-      <div className={styles.info}>
+      {/* <div className={styles.info}>
         <div className={styles.date}>
           <p className={styles.textHeader}>DATE</p>
           <p className={styles.dateText}>March 29</p>
@@ -36,10 +45,10 @@ export default function MainContent() {
               />
             </a>
           </div>
-        </div>
+        </div> */}
 
-        {/* Doubled with contact below (very last section of the page) bcs mobile version have different layout :) This will be hidden in mobile  */}
-        <div className={styles.contactForDesktop}>
+      {/* Doubled with contact below (very last section of the page) bcs mobile version have different layout :) This will be hidden in mobile  */}
+      {/* <div className={styles.contactForDesktop}>
           <p className={styles.textHeader}>CONTACT</p>
           <p className={styles.contactText}>
             {`Tiffany `}
@@ -50,16 +59,16 @@ export default function MainContent() {
             <span className={styles.span}>+49 176 32626673</span>
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* Fee Info */}
-      <div className={styles.pricing}>
+      {/* <div className={styles.pricing}>
         <p className={styles.textHeader}>PRICING</p>
-      </div>
-      <div className={styles.feeInfo}>
-        <div className={styles.normalFee}>
-          {/*  */}
-          <div className={styles.earlyBirdFeeForMobile}>
+      </div> */}
+      {/* <div className={styles.feeInfo}>
+        <div className={styles.normalFee}> */}
+      {/*  */}
+      {/* <div className={styles.earlyBirdFeeForMobile}>
             <div className={styles.earlyBirdFeeDetails}>
               <p className={styles.earlyBirdText}>ADULT</p>
               <p className={styles.earlyBirdSmallText}>Early Bird</p>
@@ -68,9 +77,9 @@ export default function MainContent() {
               <p className={styles.eurText}>EUR</p>
               <p className={styles.priceText}>185</p>
             </div>
-          </div>
+          </div> */}
 
-          <div className={styles.ageContainer}>
+      {/* <div className={styles.ageContainer}>
             <div className={styles.ageFeeDetails}>
               <p className={styles.ageText}>ADULT</p>
             </div>
@@ -112,7 +121,7 @@ export default function MainContent() {
               <p className={styles.priceText}>60</p>
             </div>
           </div>
-        </div>
+        </div> 
 
         <div className={styles.earlyBirdFeeForDesktop}>
           <div className={styles.earlyBirdFeeDetails}>
@@ -149,10 +158,10 @@ export default function MainContent() {
         <a href="/FAQs_EREC2024.pdf" target="_blank" className={styles.button}>
           Download PDF
         </a>
-      </div>
+      </div>*/}
 
       {/* Doubled with contact above bcs mobile version have different layout :) This will be shown only in mobile  */}
-      <div className={styles.contactForMobile}>
+      {/* <div className={styles.contactForMobile}>
         <p className={styles.textHeader} style={{ marginTop: "20px" }}>
           CONTACT
         </p>
@@ -164,7 +173,7 @@ export default function MainContent() {
           {`Kenwyn `}
           <span className={styles.span}>+49 176 32626673</span>
         </p>
-      </div>
+      </div> */}
     </>
   );
 }

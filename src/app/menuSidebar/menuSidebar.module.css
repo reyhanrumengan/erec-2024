@@ -1,0 +1,22 @@
+.menuSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin: 40px;
+}
+
+.menuText {
+  font-size: 16px;
+  letter-spacing: 0.18em;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: right;
+  opacity: 0.8;
+  margin: 0;
+}
