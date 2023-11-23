@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "EREC 2024",
     "IREC retreat",
     "reformed retreat",
+    "erec grii",
   ],
   formatDetection: {
     telephone: false,
