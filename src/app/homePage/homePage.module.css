@@ -61,6 +61,8 @@
   margin-left: 75px;
   margin-bottom: 180px;
   max-width: 800px;
+  margin: 0 auto; /* Center the container horizontally */
+  align-self: center;
 }
 
 .heroContainer1 {
