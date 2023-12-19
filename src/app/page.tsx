@@ -2,6 +2,8 @@ import styles from "./page.module.css";
 // import Header from "./header/page";
 // import Footer from "./footer/page";
 import HomePage from "./homePage/page";
+import PricingPage from "./pricingPage/page";
+import ThemePage from "./themePage/page";
 
 export default function Home() {
   return (
@@ -9,8 +11,9 @@ export default function Home() {
       <main className={styles.mainContainer}>
         {/* <Header /> */}
 
-        <HomePage />
-
+        {/* <HomePage /> */}
+        <PricingPage />
+        {/* <ThemePage /> */}
         {/* <Footer /> */}
       </main>
     </>

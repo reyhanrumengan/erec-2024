@@ -229,7 +229,7 @@
 }
 
 /* Mobile & Smaller screen */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .mainContainer {
     max-width: 450px;
     margin: auto;

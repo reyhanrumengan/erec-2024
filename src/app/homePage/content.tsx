@@ -23,7 +23,7 @@ export default function Content() {
         <div className={styles.heroContainer2}>
           <p className={styles.heroText}>
             EREC is a yearly convention where congregation from IREC Europe
-            churches and beyond gather to learn of God&apos;s word and have a
+            churches and beyond gather to learn of God&rsquo;s word and have a
             fellowship as one body of Christ.
           </p>
 
