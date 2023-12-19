@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./footer.module.css";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
       <div className={styles.footer}>
         <div className={styles.socialMedia}>
           <div>
-            <a
+            <Link
               href="https://www.instagram.com/irec.europe/"
               target="_blank"
               rel="noopener noreferrer"
@@ -21,11 +22,11 @@ export default function Footer() {
                 src="/instagram.svg"
               />
               <span className={styles.instagramLink}>IREC.EUROPE</span>
-            </a>
+            </Link>
           </div>
 
           <div>
-            <a
+            <Link
               href="https://www.youtube.com/@irecineurope"
               target="_blank"
               rel="noopener noreferrer"
@@ -39,18 +40,18 @@ export default function Footer() {
                 src="/youtube.svg"
               />
               <span className={styles.youtubeLink}>IREC in Europe</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div>
-          <a
+          <Link
             href="https://www.irec-europe.org/"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.learnAboutIRECLink}
           >
             Learn about IREC in Europe
-          </a>
+          </Link>
         </div>
       </div>
     </>

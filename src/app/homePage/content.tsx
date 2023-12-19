@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./homePage.module.css";
 import Image from "next/image";
 
@@ -30,10 +31,8 @@ export default function Content() {
           <div className={styles.linkToThemeContainer}>
             <p className={styles.linkToTheme}>LEARN OUR THEME THIS YEAR</p>
 
-            {/* change link later to redirect to Theme Page */}
-            <a
-              href="https://www.jugendherberge.de/en/youth-hostels/halle/"
-              target="_blank"
+            <Link
+              href="/themePage"
               rel="noopener noreferrer"
               style={{ height: "28px" }}
             >
@@ -44,7 +43,7 @@ export default function Content() {
                 alt="Arrow Circle Right"
                 src="/arrowCircleRight.svg"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

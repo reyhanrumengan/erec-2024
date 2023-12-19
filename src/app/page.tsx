@@ -11,9 +11,9 @@ export default function Home() {
       <main className={styles.mainContainer}>
         {/* <Header /> */}
 
-        {/* <HomePage /> */}
-        <PricingPage />
+        <HomePage />
         {/* <ThemePage /> */}
+        {/* <PricingPage /> */}
         {/* <Footer /> */}
       </main>
     </>
