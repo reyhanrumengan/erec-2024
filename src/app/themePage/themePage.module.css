@@ -1,0 +1,87 @@
+.page {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+}
+
+/* Content */
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 170px;
+}
+.container1 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 75px;
+  gap: 140px;
+}
+
+.textHeader {
+  font-size: 38px; /* 48 normal size */
+  font-family: "Libre Bodoni";
+  color: #0047ff;
+  color: var(--color-mediumblue);
+  width: 250px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.smallText {
+  font-size: 16px; /* 20 normal size */
+  letter-spacing: 0.02em;
+  line-height: 38px;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+  width: 270px;
+  margin: 0;
+}
+
+.text {
+  font-size: 26px; /* 32 normal size */
+  letter-spacing: 0.02em;
+  line-height: 44px;
+  font-weight: 300;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+  margin: 0;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.linkToSpeakerContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+  margin-top: 20px;
+}
+
+.linkToSpeaker {
+  font-size: 15px;
+  letter-spacing: 0.18em;
+  line-height: 15px;
+  font-family: Poppins;
+  color: var(--color-mediumblue);
+  font-weight: 600;
+  margin: 0;
+}
+
+.arrowCircleRightIcon {
+  width: 28px;
+  height: 28px;
+}

@@ -1,6 +1,14 @@
-.homePage {
+.page {
   display: flex;
   flex-direction: row;
+  /* max-width: 1440px; */
+  /* align-self: center; */
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
 }
 
 /* Title Image */
@@ -61,12 +69,10 @@
   margin-left: 75px;
   margin-bottom: 180px;
   max-width: 800px;
-  margin: 0 auto; /* Center the container horizontally */
-  align-self: center;
+  margin: 0 auto;
 }
 
 .heroContainer1 {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
   gap: 70px;
@@ -104,7 +110,6 @@ display: inline-block; */
 }
 
 .heroContainer2 {
-  /* border: 1px solid red; */
   width: 750px;
 }
 
@@ -119,6 +124,7 @@ display: inline-block; */
 display: inline-block; */
   /* width: 800px; */
   margin: 0;
+  width: 600px;
 }
 
 .linkToThemeContainer {
@@ -126,13 +132,13 @@ display: inline-block; */
   align-items: center;
   gap: 8px;
   height: 28px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .linkToTheme {
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 0.18em;
-  line-height: 20px;
+  line-height: 15px;
   font-family: Poppins;
   color: var(--color-mediumblue);
   font-weight: 600;

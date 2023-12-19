@@ -6,14 +6,13 @@ import MenuSidebar from "../menuSidebar/page";
 export default function HomePage() {
   return (
     <>
-      <div className={styles.homePage}>
-        <div style={{ flex: " 1 0 auto" }}>
+      <div className={styles.page}>
+        <div className={styles.mainContainer}>
           <TitleImage />
           <Content />
         </div>
-        <div style={{ maxWidth: " 200px", flex: " 0 0 auto" }}>
-          <MenuSidebar />
-        </div>
+
+        <MenuSidebar />
       </div>
 
       {/* Location & Info */}
