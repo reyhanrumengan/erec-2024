@@ -2,10 +2,14 @@ import styles from "./homePage.module.css";
 import TitleImage from "./titleImage";
 import Content from "./content";
 import MenuSidebar from "../menuSidebar/page";
+import Header from "../header/page";
+import Footer from "../footer/page";
 
 export default function HomePage() {
   return (
     <>
+      <Header />
+
       <div className={styles.page}>
         <div className={styles.mainContainer}>
           <TitleImage />
@@ -14,6 +18,8 @@ export default function HomePage() {
 
         <MenuSidebar />
       </div>
+
+      <Footer />
 
       {/* Location & Info */}
       {/* <div className={styles.info}>
