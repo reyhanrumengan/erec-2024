@@ -16,7 +16,7 @@ export default function HomePage() {
           <Content />
         </div>
 
-        <MenuSidebar />
+        {/* <MenuSidebar /> */}
       </div>
 
       <Footer />

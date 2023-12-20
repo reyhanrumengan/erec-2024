@@ -44,7 +44,7 @@
   color: var(--color-mediumblue);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   /* Footer */
   .footer {
     display: flex;
