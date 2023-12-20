@@ -65,6 +65,7 @@
 .linkToSpeakerContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   height: 28px;
   margin-top: 20px;

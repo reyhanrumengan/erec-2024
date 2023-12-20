@@ -14,19 +14,6 @@ export default function Content() {
             </p>
           </div>
           <div>
-            {/* <p
-              style={{
-                fontSize: "300px",
-                fontFamily: "Dynalight",
-                color: "#fff",
-                position: "absolute",
-                left: "-20px", // Adjust the left value as needed
-                top: "-50px", // Adjust the top value as needed
-                margin: "0",
-              }}
-            >
-              “”
-            </p> */}
             <p className={styles.text} style={{ width: "425px" }}>
               In Evangelical theology we are usually taught to bring someone to
               unwavering assurance of salvation once he or she believes. Without
