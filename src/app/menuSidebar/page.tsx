@@ -14,7 +14,9 @@ function MenuSidebar() {
         <Link className={styles.menuText} href="/pricingPage">
           FEE
         </Link>
-        <p className={styles.menuText}>FAQS</p>
+        <Link className={styles.menuText} href="/faqs">
+          FAQS
+        </Link>
         <Link className={styles.menuText} href="/contactPage">
           CONTACT
         </Link>

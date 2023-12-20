@@ -1,0 +1,80 @@
+.page {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+}
+
+/* Content */
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 170px;
+  margin-left: 40px;
+  margin-right: 40px;
+  flex: 1 0;
+}
+
+/* Content - Fee Info*/
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+}
+
+.pageHeader {
+  font-size: 50px; /* 64 normal size */
+  font-family: "Libre Bodoni";
+  color: var(--color-mediumblue);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+/* Link to FAQs*/
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.text {
+  font-size: 26px; /* 32 normal size */
+  letter-spacing: 0.02em;
+  line-height: 44px;
+  font-weight: 300;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+  margin: 0;
+}
+
+.linkToContactUsContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+}
+
+.linkToContactUs {
+  font-size: 18px;
+  letter-spacing: 0.18em;
+  line-height: 20px;
+  font-family: Poppins;
+  color: var(--color-mediumblue);
+  font-weight: 600;
+  margin: 0;
+}
+
+.arrowCircleRightIcon {
+  width: 28px;
+  height: 28px;
+}
