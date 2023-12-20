@@ -72,9 +72,9 @@
 }
 
 .linkToSpeaker {
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 0.18em;
-  line-height: 15px;
+  line-height: 20px;
   font-family: Poppins;
   color: var(--color-mediumblue);
   font-weight: 600;
