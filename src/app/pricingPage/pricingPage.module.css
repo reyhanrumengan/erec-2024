@@ -29,7 +29,7 @@
   max-width: 1100px;
 }
 
-.textHeader {
+.pageHeader {
   font-size: 50px; /* 64 normal size */
   font-family: "Libre Bodoni";
   color: var(--color-mediumblue);

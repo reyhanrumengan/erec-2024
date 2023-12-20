@@ -24,13 +24,13 @@ export default function HomePage() {
       {/* Location & Info */}
       {/* <div className={styles.info}>
         <div className={styles.date}>
-          <p className={styles.textHeader}>DATE</p>
+          <p className={styles.pageHeader}>DATE</p>
           <p className={styles.dateText}>March 29</p>
           <p className={styles.dateText}>to April 1</p>
           <p className={styles.dateText}>2024</p>
         </div>
         <div className={styles.venue}>
-          <p className={styles.textHeader}>VENUE</p>
+          <p className={styles.pageHeader}>VENUE</p>
           <p className={styles.venueText}>DJH Jugendherberge Halle</p>
           <p className={styles.venueText}>Große Steinstraße 60,</p>
           <div className={styles.germanyTextWithIconContainer}>
@@ -54,7 +54,7 @@ export default function HomePage() {
 
       {/* Doubled with contact below (very last section of the page) bcs mobile version have different layout :) This will be hidden in mobile  */}
       {/* <div className={styles.contactForDesktop}>
-          <p className={styles.textHeader}>CONTACT</p>
+          <p className={styles.pageHeader}>CONTACT</p>
           <p className={styles.contactText}>
             {`Tiffany `}
             <span className={styles.span}>+49 176 56841250</span>
@@ -68,7 +68,7 @@ export default function HomePage() {
 
       {/* Fee Info */}
       {/* <div className={styles.pricing}>
-        <p className={styles.textHeader}>PRICING</p>
+        <p className={styles.pageHeader}>PRICING</p>
       </div> */}
       {/* <div className={styles.feeInfo}>
         <div className={styles.normalFee}> */}
@@ -167,7 +167,7 @@ export default function HomePage() {
 
       {/* Doubled with contact above bcs mobile version have different layout :) This will be shown only in mobile  */}
       {/* <div className={styles.contactForMobile}>
-        <p className={styles.textHeader} style={{ marginTop: "20px" }}>
+        <p className={styles.pageHeader} style={{ marginTop: "20px" }}>
           CONTACT
         </p>
         <p className={styles.contactText}>

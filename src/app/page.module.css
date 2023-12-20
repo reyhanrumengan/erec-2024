@@ -19,7 +19,7 @@
   margin-bottom: 90px;
 }
 
-.textHeader {
+.pageHeader {
   font-size: 28px;
   line-height: 42px;
   font-weight: 500;
@@ -184,7 +184,7 @@
     margin-bottom: 24px;
   }
 
-  .textHeader {
+  .pageHeader {
     font-size: 24px;
     line-height: 32px;
     font-weight: 500;

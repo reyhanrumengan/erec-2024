@@ -7,7 +7,7 @@ export default function Content() {
       <div className={styles.heroContainer}>
         <div className={styles.container1}>
           <div>
-            <p className={styles.textHeader}>ASSURANCE OF GRACE</p>
+            <p className={styles.pageHeader}>ASSURANCE OF GRACE</p>
             <p className={styles.smallText}>
               Read an explanation directly from IREC Europe&rsquo;s lead pastor
               as well as one of our speakers on why this theme.

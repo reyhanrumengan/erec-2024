@@ -9,7 +9,7 @@ export default function Content() {
         <div className={styles.content}>
           <div style={{ marginBottom: "125px" }}>
             <div>
-              <p className={styles.textHeader}>PRICING</p>
+              <p className={styles.pageHeader}>PRICING</p>
             </div>
             <div className={styles.feeInfo}>
               <div className={styles.normalFee}>
