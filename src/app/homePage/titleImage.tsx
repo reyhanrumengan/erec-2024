@@ -11,7 +11,7 @@ export default function TitleImage() {
             width={720}
             height={500}
             alt="Assurance of Grace"
-            src="/title.png"
+            src="/titleImage.png"
             className={styles.titleImage}
           />
           <div className={styles.buttonContainer}>

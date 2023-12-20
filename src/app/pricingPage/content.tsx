@@ -119,7 +119,7 @@ export default function Content() {
                 <p className={styles.paymentStepsHeader}>
                   Fill in registration form
                 </p>
-                <p className={styles.paymentStepsDetail}>
+                <p className={styles.paymentStepsText}>
                   Provide your details as required in the online form. If you
                   are bringing your family, you can register all together.
                 </p>
@@ -133,7 +133,7 @@ export default function Content() {
                   src="/make-your-payment-icon.svg"
                 />
                 <p className={styles.paymentStepsHeader}>Make your payment</p>
-                <p className={styles.paymentStepsDetail}>
+                <p className={styles.paymentStepsText}>
                   Bank transfer detail is provided in the registration form as
                   well as the copy of your registration sent via email.
                 </p>
@@ -149,7 +149,7 @@ export default function Content() {
                 <p className={styles.paymentStepsHeader}>
                   Wait for confirmation
                 </p>
-                <p className={styles.paymentStepsDetail}>
+                <p className={styles.paymentStepsText}>
                   Once we receive the payment, we will send you a confirmation.
                   And that&rsquo;s it! You&rsquo;ve secured your place.
                 </p>
