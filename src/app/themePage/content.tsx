@@ -14,7 +14,7 @@ export default function Content() {
             </p>
           </div>
           <div>
-            <p className={styles.text} style={{ width: "425px" }}>
+            <p className={styles.text1}>
               In Evangelical theology we are usually taught to bring someone to
               unwavering assurance of salvation once he or she believes. Without
               this assurance, the authenticity of one&rsquo;s faith should be
@@ -23,10 +23,7 @@ export default function Content() {
           </div>
         </div>
         <div className={styles.container2}>
-          <p
-            className={styles.text}
-            style={{ textAlign: "center", width: "650px" }}
-          >
+          <p className={styles.text2}>
             Is this kind of concept right? <br />
             How do the Reformed tradition and the witness of the Scripture
             actually teach about this assurance of salvation?

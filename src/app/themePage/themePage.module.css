@@ -1,12 +1,24 @@
 .page {
-  display: flex;
-  flex-direction: row;
-}
-
-.mainContainer {
+  margin: auto;
   display: flex;
   flex-direction: column;
   flex: 1 0;
+  min-height: 100vh;
+}
+
+.heroPage {
+  display: flex;
+  flex-direction: row;
+  /* max-width: 1440px; */
+  /* align-self: center; */
+}
+
+.mainContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  min-height: 100vh;
 }
 
 /* Content */
@@ -27,11 +39,10 @@
 .pageHeader {
   font-size: 38px; /* 48 normal size */
   font-family: "Libre Bodoni";
-  color: #0047ff;
   color: var(--color-mediumblue);
   width: 250px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .smallText {
@@ -45,7 +56,7 @@
   margin: 0;
 }
 
-.text {
+.text1 {
   font-size: 26px; /* 32 normal size */
   letter-spacing: 0.02em;
   line-height: 44px;
@@ -54,6 +65,7 @@
   color: var(--color-darkblue);
   text-align: left;
   margin: 0;
+  width: 425px;
 }
 
 .container2 {
@@ -62,13 +74,26 @@
   gap: 25px;
 }
 
+.text2 {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  font-weight: 300;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: center;
+  margin: 0;
+  width: 650px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .linkToSpeakerContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   height: 28px;
-  margin-top: 20px;
 }
 
 .linkToSpeaker {
@@ -84,4 +109,123 @@
 .arrowCircleRightIcon {
   width: 28px;
   height: 28px;
+}
+
+/* Mobile & Smaller screen */
+@media screen and (max-width: 1080px) {
+  .page {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* .heroPage {
+  } */
+
+  .mainContainer {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  /* Content */
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    max-width: 100%;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 100%;
+  }
+
+  .pageHeader {
+    font-size: 24px;
+    font-family: "Libre Bodoni";
+    color: var(--color-mediumblue);
+    width: 150px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .smallText {
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    width: 280px;
+    margin: 0;
+  }
+
+  .text1 {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-weight: 300;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    margin: 0;
+    width: 240px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text2 {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-weight: 300;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    margin: 0;
+    width: 280px;
+  }
+
+  .linkToSpeakerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+    height: 40px;
+  }
+
+  .linkToSpeaker {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    line-height: 20px;
+    font-family: Poppins;
+    color: var(--color-mediumblue);
+    font-weight: 600;
+    margin: 0;
+    width: 140px;
+  }
+
+  .arrowCircleRightIcon {
+    width: 24px;
+    height: 24px;
+  }
 }

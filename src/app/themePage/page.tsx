@@ -7,17 +7,19 @@ import styles from "./themePage.module.css";
 export default function ThemePage() {
   return (
     <>
-      <Header />
-
       <div className={styles.page}>
-        <div className={styles.mainContainer}>
-          <Content />
+        <Header />
+
+        <div className={styles.heroPage}>
+          <div className={styles.mainContainer}>
+            <Content />
+          </div>
+
+          {/* <MenuSidebar /> */}
         </div>
 
-        <MenuSidebar />
+        <Footer />
       </div>
-
-      <Footer />
     </>
   );
 }

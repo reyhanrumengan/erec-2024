@@ -8,18 +8,20 @@ import Footer from "../footer/page";
 export default function HomePage() {
   return (
     <>
-      <Header />
-
       <div className={styles.page}>
-        <div className={styles.mainContainer}>
-          <TitleImage />
-          <Content />
+        <Header />
+
+        <div className={styles.heroPage}>
+          <div className={styles.mainContainer}>
+            <TitleImage />
+            <Content />
+          </div>
+
+          {/* <MenuSidebar /> */}
         </div>
 
-        {/* <MenuSidebar /> */}
+        <Footer />
       </div>
-
-      <Footer />
 
       {/* Location & Info */}
       {/* <div className={styles.info}>

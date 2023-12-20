@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import Header from "./header/page";
+import Footer from "./footer/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +35,9 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
+        {/* <Header /> */}
         <MantineProvider>{children}</MantineProvider>
+        {/* <Footer /> */}
       </body>
     </html>
   );
