@@ -6,11 +6,11 @@ export default function Content() {
   return (
     <>
       <div className={styles.heroContainer}>
-        {/* Fee Info */}
         <div className={styles.content}>
-          <div style={{ marginBottom: "125px" }}>
+          {/* Fee Info */}
+          <div className={styles.pricing}>
             <div>
-              <p className={styles.pageHeader}>PRICING</p>
+              <p className={styles.pricingHeader}>PRICING</p>
             </div>
             <div className={styles.feeInfo}>
               <div className={styles.normalFee}>
@@ -103,7 +103,7 @@ export default function Content() {
 
           {/* Payment Instruction */}
           <div className={styles.paymentInstruction}>
-            <div>
+            <div className={styles.paymentInstructionHeaderContainer}>
               <p className={styles.paymentInstructionHeader}>This is how</p>
               <p className={styles.paymentInstructionHeader}>
                 the registration process is like
@@ -112,6 +112,7 @@ export default function Content() {
             <div className={styles.paymentStepsContainer}>
               <div className={styles.paymentSteps}>
                 <Image
+                  className={styles.paymentStepsIcon}
                   width={64}
                   height={64}
                   alt=""
@@ -128,6 +129,7 @@ export default function Content() {
 
               <div className={styles.paymentSteps}>
                 <Image
+                  className={styles.paymentStepsIcon}
                   width={64}
                   height={64}
                   alt=""
@@ -142,6 +144,7 @@ export default function Content() {
 
               <div className={styles.paymentSteps}>
                 <Image
+                  className={styles.paymentStepsIcon}
                   width={64}
                   height={64}
                   alt=""
@@ -158,7 +161,7 @@ export default function Content() {
             </div>
           </div>
 
-          {/* Link to Speaker Page */}
+          {/* Link to FAQs Page */}
           <div className={styles.linkContainer}>
             <div>
               <p className={styles.text}>Any questions in mind?</p>

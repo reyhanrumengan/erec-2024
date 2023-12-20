@@ -1,12 +1,24 @@
 .page {
-  display: flex;
-  flex-direction: row;
-}
-
-.mainContainer {
+  margin: auto;
   display: flex;
   flex-direction: column;
   flex: 1 0;
+  min-height: 100vh;
+}
+
+.heroPage {
+  display: flex;
+  flex-direction: row;
+  /* max-width: 1440px; */
+  /* align-self: center; */
+}
+
+.mainContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  min-height: 100vh;
 }
 
 /* Content */
@@ -28,7 +40,11 @@
   max-width: 1100px;
 }
 
-.pageHeader {
+.pricing {
+  margin-bottom: 125px;
+}
+
+.pricingHeader {
   font-size: 50px; /* 64 normal size */
   font-family: "Libre Bodoni";
   color: var(--color-mediumblue);
@@ -164,20 +180,24 @@
 .paymentInstruction {
   display: flex;
   flex-direction: column;
-  gap: 75px;
   width: 100%;
   margin-bottom: 140px;
+}
+
+.paymentInstructionHeaderContainer {
+  margin-bottom: 75px;
 }
 
 .paymentInstructionHeader {
   font-size: 32px; /* 40 normal size */
   letter-spacing: 0.02em;
   line-height: 42px; /* 64 normal size */
-  font-weight: 400;
+  font-weight: 500;
   font-family: Poppins;
   color: var(--color-darkblue);
   margin: 0;
   max-width: 600px;
+  text-align: left;
 }
 
 .paymentStepsContainer {
@@ -190,6 +210,11 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.paymentStepsIcon {
+  width: 64px;
+  height: 64px;
 }
 
 .paymentStepsHeader {
@@ -254,4 +279,307 @@
 .arrowCircleRightIcon {
   width: 28px;
   height: 28px;
+}
+
+/* Mobile & Smaller screen */
+@media screen and (max-width: 1080px) {
+  .page {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* .heroPage {
+  } */
+
+  .mainContainer {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  /* Content */
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+  }
+
+  /* Content - Fee Info*/
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 75px;
+  }
+
+  .pricing {
+    margin-bottom: unset;
+  }
+
+  .pricingHeader {
+    font-size: 24px;
+    font-family: "Libre Bodoni";
+    color: var(--color-mediumblue);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .feeInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+  .normalFee {
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+    gap: 10px;
+    overflow: auto;
+    /* margin: 0 20px; */
+  }
+
+  .ageContainer {
+    border-top: 1px solid var(--color-darkblue);
+    border-right: 1px solid var(--color-darkblue);
+    border-bottom: 1px solid var(--color-darkblue);
+    border-left: 1px solid var(--color-darkblue);
+    min-width: 200px;
+    width: unset;
+    height: 200px;
+    position: relative;
+  }
+
+  .ageContainer:last-child {
+    margin-right: 20px;
+  }
+
+  .ageFeeDetails {
+    line-height: 24px;
+    color: var(--color-darkblue);
+    text-align: left;
+    font-family: "Libre Bodoni";
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .ageText {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .ageSmallText {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .priceContainer {
+    position: absolute;
+    line-height: 64px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5px;
+    right: 15px;
+    bottom: 0px;
+  }
+
+  .eurText {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .priceText {
+    font-size: 48px;
+    letter-spacing: -0.04em;
+    margin: 0;
+  }
+
+  .earlyBirdFeeForMobile {
+    display: unset;
+    margin-left: 20px;
+    min-width: 200px;
+    width: unset;
+    height: 200px;
+    background-color: var(--color-darkblue);
+    color: #fff;
+    position: relative;
+  }
+
+  .earlyBirdFeeForDesktop {
+    position: unset;
+    width: unset;
+    height: unset;
+    background-color: unset;
+    color: unset;
+    display: none;
+  }
+
+  .earlyBirdFeeDetails {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .earlyBirdText {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "Libre Bodoni";
+    margin: 0;
+  }
+
+  .earlyBirdSmallText {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Poppins;
+    margin: 0;
+  }
+
+  .feeDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    margin: 20px 20px 0 20px;
+    gap: 20px;
+  }
+
+  .feeDescriptionText {
+    margin: 0;
+    width: unset;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+  }
+
+  /* Payment Instruction*/
+
+  .paymentInstruction {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: unset;
+    align-items: center;
+  }
+
+  .paymentInstructionHeaderContainer {
+    margin-bottom: 20px;
+  }
+
+  .paymentInstructionHeader {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    margin: 0;
+    max-width: 240px;
+    text-align: center;
+  }
+
+  .paymentStepsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .paymentSteps {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .paymentStepsIcon {
+    width: 48px;
+    height: 48px;
+    align-self: center;
+  }
+
+  .paymentStepsHeader {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: center;
+    width: 250px;
+    margin: 0;
+  }
+
+  .paymentStepsText {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: center;
+    width: 280px;
+  }
+
+  /* Link to FAQs*/
+  .linkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-weight: 300;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: center;
+    margin: 0;
+  }
+
+  .linkToFAQsContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+  }
+
+  .linkToFAQs {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    line-height: 20px;
+    font-family: Poppins;
+    color: var(--color-mediumblue);
+    font-weight: 600;
+    margin: 0;
+    width: 82px;
+  }
+
+  .arrowCircleRightIcon {
+    width: 24px;
+    height: 24px;
+  }
 }
