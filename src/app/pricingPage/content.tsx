@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./pricingPage.module.css";
 import Image from "next/image";
 
@@ -166,13 +167,7 @@ export default function Content() {
             <div className={styles.linkToFAQsContainer}>
               <p className={styles.linkToFAQs}>Check out our FAQs</p>
 
-              {/* change link later to redirect to FAQs Page */}
-              <a
-                href="https://www.jugendherberge.de/en/youth-hostels/halle/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ height: "28px" }}
-              >
+              <Link href="/faqs" style={{ height: "28px" }}>
                 <Image
                   width={28}
                   height={28}
@@ -180,7 +175,7 @@ export default function Content() {
                   alt="Arrow Circle Right"
                   src="/arrowCircleRight.svg"
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

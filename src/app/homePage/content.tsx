@@ -31,11 +31,7 @@ export default function Content() {
           <div className={styles.linkToThemeContainer}>
             <p className={styles.linkToTheme}>LEARN OUR THEME THIS YEAR</p>
 
-            <Link
-              href="/themePage"
-              rel="noopener noreferrer"
-              style={{ height: "28px" }}
-            >
+            <Link href="/themePage" style={{ height: "28px" }}>
               <Image
                 width={28}
                 height={28}
