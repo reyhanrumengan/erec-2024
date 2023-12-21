@@ -30,15 +30,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <body className={inter.className}>{children}</body> */}
-      <head>
+      <body className={inter.className}>{children}</body>
+      {/* <head>
         <ColorSchemeScript />
       </head>
       <body>
-        {/* <Header /> */}
         <MantineProvider>{children}</MantineProvider>
-        {/* <Footer /> */}
-      </body>
+      </body> */}
     </html>
   );
 }
