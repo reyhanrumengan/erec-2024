@@ -1,10 +1,10 @@
 import Link from "next/link";
-import styles from "./menuSidebar.module.css";
+import styles from "./menuBurger.module.css";
 
-export default function MenuSidebar() {
+export default function MenuBurger() {
   return (
     <>
-      <div className={styles.menuSidebar}>
+      {/* <div className={styles.menuBurger}>
         <Link className={styles.menuText} href="/themePage">
           THEME
         </Link>
@@ -20,7 +20,7 @@ export default function MenuSidebar() {
         <Link className={styles.menuText} href="/contactPage">
           CONTACT
         </Link>
-      </div>
+      </div> */}
     </>
   );
 }

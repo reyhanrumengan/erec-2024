@@ -21,3 +21,10 @@
   margin: 0;
   text-decoration: none; /* tanya daniel mau hovernya gmn */
 }
+
+/* Mobile & Smaller screen */
+@media screen and (max-width: 1080px) {
+  .menuSidebar {
+    display: none;
+  }
+}
