@@ -1,19 +1,29 @@
 .page {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  min-height: 100vh;
+}
+
+.heroPage {
   display: flex;
   flex-direction: row;
+  /* max-width: 1440px; */
+  /* align-self: center; */
 }
 
 .mainContainer {
   display: flex;
   flex-direction: column;
   flex: 1 0;
+  min-height: 100vh;
 }
 
 /* Content */
 .heroContainer {
   display: flex;
   flex-direction: column;
-  gap: 40px;
   align-items: center;
   margin-top: 100px;
   margin-bottom: 170px;
@@ -27,6 +37,12 @@
   display: flex;
   flex-direction: column;
   max-width: 1100px;
+  gap: 135px;
+}
+
+.pageHeaderContainer {
+  margin-bottom: 40px;
+  width: 400px;
 }
 
 .pageHeader {
@@ -35,6 +51,11 @@
   color: var(--color-mediumblue);
   text-align: left;
   margin: 0;
+}
+
+.textContainer {
+  margin-bottom: 24px;
+  width: 700px;
 }
 
 .text {
@@ -46,7 +67,6 @@
   color: var(--color-darkblue);
   text-align: left;
   margin: 0;
-  width: 700px;
 }
 
 .contactText {
@@ -64,11 +84,15 @@
 }
 
 /* Bottom Content */
-
 .bottomContent {
   display: flex;
   flex-direction: row;
   gap: 55px;
+}
+
+.text2Container {
+  margin-bottom: 30px;
+  width: 500px;
 }
 
 .text2 {
@@ -79,6 +103,10 @@
   color: var(--color-darkblue);
   text-align: left;
   margin: 0;
+}
+
+.text3Container {
+  margin-bottom: 50px;
   width: 500px;
 }
 
@@ -90,7 +118,6 @@
   color: var(--color-darkblue);
   text-align: left;
   margin: 0;
-  width: 500px;
 }
 
 .irecBranch {
@@ -108,14 +135,19 @@
 }
 
 .irecBranchName {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.18em;
-  line-height: 18px;
+  line-height: 20px;
   font-weight: 500;
   font-family: Poppins;
   color: var(--color-darkblue);
   text-align: left;
   margin: 0;
+}
+
+.arrowCircleRightIcon {
+  width: 28px;
+  height: 28px;
 }
 
 .contactPersonDetails {
@@ -126,4 +158,176 @@
   font-family: Poppins;
   color: var(--color-darkblue);
   text-align: left;
+}
+
+/* Mobile & Smaller screen */
+@media screen and (max-width: 1080px) {
+  .page {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* .heroPage {
+  } */
+
+  .mainContainer {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  /* Content */
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 72px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1 0;
+  }
+
+  /* Top Content */
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 75px;
+  }
+
+  .pageHeaderContainer {
+    margin-bottom: 20px;
+  }
+
+  .pageHeader {
+    font-size: 24px;
+    font-family: "Libre Bodoni";
+    color: var(--color-mediumblue);
+    text-align: left;
+    margin: 0;
+  }
+
+  .textContainer {
+    margin-bottom: 20px;
+    width: 280px;
+  }
+
+  .text {
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-weight: 300;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    margin: 0;
+  }
+
+  .contactText {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    margin: 0;
+  }
+
+  .span {
+    text-decoration: underline;
+  }
+
+  /* Bottom Content */
+  .bottomContent {
+    display: flex;
+    flex-direction: column;
+    gap: unset;
+    max-width: 100%;
+  }
+
+  .dandelionImage {
+    display: none;
+  }
+
+  .text2Container {
+    margin-bottom: 12px;
+    width: 280px;
+  }
+
+  .text2 {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    margin: 0;
+  }
+
+  .text3Container {
+    margin-bottom: 40px;
+    width: 280px;
+  }
+
+  .text3 {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    margin: 0;
+  }
+
+  /* This is the point of problem why there is increse in margin 20  */
+  .irecBranch {
+    display: flex;
+    grid: unset;
+    grid-gap: unset;
+    flex-direction: column;
+    gap: 32px;
+    width: 280px;
+  }
+  /*  */
+
+  .linkContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 28px;
+    margin-bottom: 8px;
+  }
+
+  .irecBranchName {
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    margin: 0;
+  }
+
+  .arrowCircleRightIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contactPersonDetails {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+  }
 }

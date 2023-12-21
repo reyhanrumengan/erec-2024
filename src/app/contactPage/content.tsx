@@ -8,25 +8,26 @@ export default function Content() {
       <div className={styles.heroContainer}>
         <div className={styles.content}>
           {/* Top Content */}
-          <div style={{ marginBottom: "40px" }}>
-            <p className={styles.pageHeader}>ANY</p>
-            <p className={styles.pageHeader}>QUESTION?</p>
-          </div>
-          <div style={{ marginBottom: "24px" }}>
-            <p className={styles.text}>
-              Any specific need or question regarding the convention? Ask away.
-              WhatsApp or call works.
-            </p>
-          </div>
-          <div style={{ marginBottom: "135px" }}>
-            <p className={styles.contactText}>
-              {`Tiffany `}
-              <span className={styles.span}>+49 176 56841250</span>
-            </p>
-            <p className={styles.contactText}>
-              {`Kenwyn `}
-              <span className={styles.span}>+49 176 32626673</span>
-            </p>
+          <div>
+            <div className={styles.pageHeaderContainer}>
+              <p className={styles.pageHeader}>ANY QUESTION?</p>
+            </div>
+            <div className={styles.textContainer}>
+              <p className={styles.text}>
+                Any specific need or question regarding the convention? Ask
+                away. WhatsApp or call works.
+              </p>
+            </div>
+            <div>
+              <p className={styles.contactText}>
+                {`Tiffany `}
+                <span className={styles.span}>+49 176 56841250</span>
+              </p>
+              <p className={styles.contactText}>
+                {`Kenwyn `}
+                <span className={styles.span}>+49 176 32626673</span>
+              </p>
+            </div>
           </div>
 
           {/* Bottom Content */}
@@ -37,17 +38,17 @@ export default function Content() {
                 height={480}
                 alt=""
                 src="/dandelion.png"
-                className={styles.titleImage}
+                className={styles.dandelionImage}
               />
             </div>
             <div>
-              <div style={{ marginBottom: "30px" }}>
+              <div className={styles.text2Container}>
                 <p className={styles.text2}>
                   Are you in any of our IREC Europe church or looking for a
                   local church to attend?
                 </p>
               </div>
-              <div style={{ marginBottom: "50px" }}>
+              <div className={styles.text3Container}>
                 <p className={styles.text3}>
                   Here are persons you can get in touch with in our local
                   branches for questions about the convention or the church.
