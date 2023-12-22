@@ -4,13 +4,15 @@ import styles from "./menuSidebar.module.css";
 export default function MenuSidebar() {
   return (
     <>
-      <div className={styles.menuSidebar}>
+      <nav className={styles.menuSidebar}>
         <Link className={styles.menuText} href="/theme">
           THEME
         </Link>
         <p className={styles.menuText}>SPEAKERS</p>
         <p className={styles.menuText}>EREC</p>
-        <p className={styles.menuText}>VENUE</p>
+        <Link className={styles.menuText} href="/venue">
+          VENUE
+        </Link>
         <Link className={styles.menuText} href="/fee">
           FEE
         </Link>
@@ -20,7 +22,7 @@ export default function MenuSidebar() {
         <Link className={styles.menuText} href="/contact">
           CONTACT
         </Link>
-      </div>
+      </nav>
     </>
   );
 }
