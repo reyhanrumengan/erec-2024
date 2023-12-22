@@ -8,11 +8,22 @@ export default function Content() {
       <div className={styles.heroContainer}>
         {/*  */}
         <div className={styles.content}>
-          {/* Questions Content */}
+          {/* Header */}
           <div>
-            <div>
+            <div className={styles.topContainer}>
               <p className={styles.pageHeader}>FAQs</p>
             </div>
+          </div>
+
+          {/* Questions Content*/}
+          <div className={styles.buttonContainer}>
+            <a
+              href="/FAQs_EREC2024.pdf"
+              target="_blank"
+              className={styles.button}
+            >
+              Download PDF
+            </a>
           </div>
 
           {/* Link to Contact Page */}

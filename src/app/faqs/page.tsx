@@ -7,17 +7,19 @@ import styles from "./faqs.module.css";
 export default function FAQs() {
   return (
     <>
-      <Header />
-
       <div className={styles.page}>
-        <div className={styles.mainContainer}>
-          <Content />
+        <Header />
+
+        <div className={styles.heroPage}>
+          <div className={styles.mainContainer}>
+            <Content />
+          </div>
+
+          <MenuSidebar />
         </div>
 
-        <MenuSidebar />
+        <Footer />
       </div>
-
-      <Footer />
     </>
   );
 }
