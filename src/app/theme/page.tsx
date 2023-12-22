@@ -2,9 +2,9 @@ import Footer from "../footer/page";
 import Header from "../header/page";
 import MenuSidebar from "../menuSidebar/page";
 import Content from "./content";
-import styles from "./contactPage.module.css";
+import styles from "./theme.module.css";
 
-export default function ContactPage() {
+export default function Theme() {
   return (
     <>
       <div className={styles.page}>

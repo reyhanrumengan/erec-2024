@@ -26,7 +26,7 @@ export default function Content() {
             <div className={styles.linkToContactUsContainer}>
               <p className={styles.linkToContactUs}>Contact us</p>
 
-              <Link href="/contactPage" style={{ height: "28px" }}>
+              <Link href="/contact" style={{ height: "28px" }}>
                 <Image
                   width={28}
                   height={28}

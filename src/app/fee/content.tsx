@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./pricingPage.module.css";
+import styles from "./fee.module.css";
 import Image from "next/image";
 
 export default function Content() {

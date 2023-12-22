@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./contactPage.module.css";
+import styles from "./contact.module.css";
 import Image from "next/image";
 
 export default function Content() {

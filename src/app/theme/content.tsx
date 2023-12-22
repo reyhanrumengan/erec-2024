@@ -1,4 +1,4 @@
-import styles from "./themePage.module.css";
+import styles from "./theme.module.css";
 import Image from "next/image";
 
 export default function Content() {
