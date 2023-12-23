@@ -1,8 +1,5 @@
-*.mainContainer {
-  margin: auto;
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-  min-height: 100vh;
+.page {
+  background-color: var(--color-lightblue);
 }
 
 /* Main Content - Location & Info */

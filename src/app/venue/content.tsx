@@ -1,8 +1,20 @@
+"use client";
 import Link from "next/link";
 import styles from "./venue.module.css";
 import Image from "next/image";
+import { Tabs } from "@mantine/core";
+import { useState } from "react";
 
 export default function Content() {
+  const [activeTab, setActiveTab] = useState<string | null>("");
+
+  const tab = (city: string) => {
+    // const label = activeTab === city ? `${city} Airport` : city;
+    // console.log(label);
+
+    return <Tabs.Tab value={city}>{city}</Tabs.Tab>;
+  };
+
   return (
     <>
       <div className={styles.heroContainer}>
@@ -130,8 +142,150 @@ export default function Content() {
             </div>
 
             {/* Detail 2 */}
-            {/* this will be a bar that can be clicked exchangibly */}
-            <div></div>
+            {/* this will be a tab that can be clicked interchangeably */}
+
+            <Tabs
+              defaultValue="leipzig"
+              value={activeTab}
+              onChange={setActiveTab}
+              classNames={{
+                root: styles.tabsRoot,
+                list: styles.tabList,
+                tab: styles.tab,
+                tabLabel: styles.tabLabel,
+              }}
+            >
+              <Tabs.List>
+                {tab("leipzig airport")}
+                {tab("berlin")}
+                {tab("hamburg")}
+                {tab("munich")}
+                {tab("bern")}
+                {tab("stockholm")}
+              </Tabs.List>
+
+              <Tabs.Panel value="leipzig airport">
+                <ul className={styles.transportationDirectionContainer}>
+                  <li className={styles.transportationDirectionText}>
+                    By train: ~10 mins (€5-26)
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    By bus: ~30 mins (€5-8)
+                  </li>
+                </ul>
+              </Tabs.Panel>
+
+              <Tabs.Panel value="berlin">
+                <ul className={styles.transportationDirectionContainer}>
+                  <li className={styles.transportationDirectionText}>
+                    By car: 168 km ~2 hours
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    By train: ~1 hour 12 mins (€19-45)
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    By bus: ~2 hours (€14-21)
+                  </li>
+                </ul>
+              </Tabs.Panel>
+
+              <Tabs.Panel value="hamburg">
+                <ul className={styles.transportationDirectionContainer}>
+                  <li className={styles.transportationDirectionText}>
+                    By car: 365 km ~3 hours
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    By train: ~3 hours (€55-80)
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    Bybus: ~6 hours (€30-65)
+                  </li>
+                </ul>
+              </Tabs.Panel>
+
+              <Tabs.Panel value="munich">
+                <ul className={styles.transportationDirectionContainer}>
+                  <li className={styles.transportationDirectionText}>
+                    By car: 435 km ~4 hours
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    By train: ~3 hours (€55-80)
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    Bybus: ~7 hours (€35-56)
+                  </li>
+                </ul>
+              </Tabs.Panel>
+
+              <Tabs.Panel value="bern">
+                <ul className={styles.transportationDirectionContainer}>
+                  <li className={styles.transportationDirectionText}>
+                    By car: 790 km ~7 hours
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    By train: ~7 hours (€85-120)
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    By bus (2 connecting buses): ~12 hours (€65-93)
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    By train to Zurich, fly to Leipzig, train to Halle ~6 hours
+                    (€161-367)
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    Cheapest and most convenient routes (checked on October
+                    28th) total round trip flight price €242:
+                    <ul>
+                      <li>
+                        Depart March 28th, 9:25 AM - 12:20 PM (2 hours 55 mins):
+                        <br /> Zurich (ZRH) - Munich (MUC) - Leipzig (LEJ) by
+                        flight Leipzig to Halle by train
+                      </li>
+                      <li>
+                        Return April 2nd, 9:45 AM - 12:40 PM (2 hours 55 mins):
+                        <br /> Halle to Leipzig by train Leipzig (LEJ) - Munich
+                        (MUC) - Zurich (ZRH) by flight
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </Tabs.Panel>
+
+              <Tabs.Panel value="stockholm">
+                <ul className={styles.transportationDirectionContainer}>
+                  <li className={styles.transportationDirectionText}>
+                    Fly to Leipzig, train to Halle, fastest routes ~7 hours
+                    (€117-533)
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    Fly to Berlin, train to Halle, fastest routes ~8 hours
+                    (€83-369)
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    Fly to Hamburg, train to Halle, fastest routes ~9 hours
+                    (€125-381)
+                  </li>
+                  <li className={styles.transportationDirectionText}>
+                    Cheapest and most convenient routes (checked on October
+                    28th) total round trip flight price €153:
+                    <ul>
+                      <li>
+                        Depart March 28th, 3:10 PM - 9:35 PM (6 hours 25 mins):
+                        <br />
+                        Stockholm (ARN) - Munich (MUC) - Leipzig (LEJ) by flight
+                        Leipzig to Halle by train
+                      </li>
+                      <li>
+                        Return April 2nd, 12:50 AM - 4:45 PM (3 hours 55 mins):
+                        <br />
+                        Halle to Leipzig by train Leipzig (LEJ) - Munich (MUC) -
+                        Stockholm (ARN) by flight
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </Tabs.Panel>
+            </Tabs>
 
             {/* Detail 3 */}
             <div className={styles.otherInformationContainer}>
@@ -141,22 +295,54 @@ export default function Content() {
                 </p>
               </div>
               <div>
-                <p className={styles.otherInformationText}>
-                  1. The closest airport is Leipzig/Halle airport (LEJ)
-                </p>
-                <p className={styles.otherInformationText}>
-                  2. The closest destination is at Halle (Saale) Hbf (Main train
-                  station)
-                </p>
-                <p className={styles.otherInformationText}>
-                  3. You can use following platforms to check the route: Omio,
-                  Rome2Rio, Deutsche Bahn AG, or Google Flights
-                </p>
+                <ol>
+                  <li className={styles.otherInformationText}>
+                    The closest airport is Leipzig/Halle airport (LEJ)
+                  </li>
+                  <li className={styles.otherInformationText}>
+                    The closest destination is at Halle (Saale) Hbf (Main train
+                    station)
+                  </li>
+                  <li className={styles.otherInformationText}>
+                    You can use following platforms to check the route:{` `}
+                    <a
+                      href="https://www.omio.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Omio
+                    </a>
+                    {`, `}
+                    <a
+                      href="https://www.rome2rio.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Rome2Rio
+                    </a>
+                    {`, `}
+                    <a
+                      href="https://int.bahn.de/en"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Deutsche Bahn AG
+                    </a>
+                    {`, or `}
+                    <a
+                      href="https://www.google.com/travel/flights"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Google Flights
+                    </a>
+                  </li>
+                </ol>
               </div>
             </div>
           </div>
 
-          {/* Link to Schedule Page - Not yet worked on*/}
+          {/* Link to Schedule Page */}
           <div className={styles.linkContainer}>
             <div>
               <p className={styles.text}>
