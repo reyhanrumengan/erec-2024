@@ -67,7 +67,7 @@ export default function Content() {
 
             <div className={styles.venueDescription3}>
               <p className={styles.roomHeader}>Rooms & placement</p>
-              <p className={styles.roomDescription}>
+              <p className={styles.roomDescriptionText}>
                 Most rooms fit 2 or 5 people. Rooms are with ensuit bathrooms.
                 Families are prioritized to be placed in the same room.
               </p>
@@ -82,8 +82,8 @@ export default function Content() {
               Halle (Saale) Hbf (Main train station) to DJH Jugendherberge Halle
             </div>
 
-            {/* Detail 1 */}
-            <div className={styles.transportationDetails}>
+            {/* Detail 1 - Desktop */}
+            <div className={styles.transportationDetailsDesktop}>
               <div className={styles.transportationDetailsOptionsContainer}>
                 <Image
                   width={40}
@@ -115,8 +115,8 @@ export default function Content() {
                     By tram
                   </p>
                   <p className={styles.transportationDetailsOptionsText}>
-                    12 (Trotha), 5 (Berliner Bruckë), 2 (Kröllwitz). Get off at
-                    Am Steintor stop. Walk around 6 mins.
+                    Tram 12 (Trotha), 5 (Berliner Bruckë), 2 (Kröllwitz). Get
+                    off at Am Steintor stop. Walk around 6 mins.
                   </p>
                 </div>
               </div>
@@ -134,16 +134,44 @@ export default function Content() {
                     By bus
                   </p>
                   <p className={styles.transportationDetailsOptionsText}>
-                    By bus: 350 (Markt), 301 (Wettin), 345 (Halle-Center). Get
-                    off at Am Steintor stop. Walk around 6 mins.
+                    Bus 350 (Markt), 301 (Wettin), 345 (Halle-Center). Get off
+                    at Am Steintor stop. Walk around 6 mins.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Detail 1 - Mobile */}
+            <div className={styles.transportationDetailsMobile}>
+              <div className={styles.transportationDetailsOptionsContainer}>
+                <div className={styles.transportationDetailsOptions}>
+                  <p className={styles.transportationDetailsOptionsText}>
+                    On foot: The distance is around 1.5 km (Around 20 mins).
+                  </p>
+                </div>
+              </div>
+
+              <div className={styles.transportationDetailsOptionsContainer}>
+                <div className={styles.transportationDetailsOptions}>
+                  <p className={styles.transportationDetailsOptionsText}>
+                    By tram: Tram 12 (Trotha), 5 (Berliner Bruckë), 2
+                    (Kröllwitz). Get off at Am Steintor stop. Walk around 6
+                    mins.
+                  </p>
+                </div>
+              </div>
+
+              <div className={styles.transportationDetailsOptionsContainer}>
+                <div className={styles.transportationDetailsOptions}>
+                  <p className={styles.transportationDetailsOptionsText}>
+                    By bus: Bus 350 (Markt), 301 (Wettin), 345 (Halle-Center).
+                    Get off at Am Steintor stop. Walk around 6 mins.
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Detail 2 */}
-            {/* this will be a tab that can be clicked interchangeably */}
-
             <Tabs
               defaultValue="leipzig"
               value={activeTab}
@@ -294,51 +322,49 @@ export default function Content() {
                   Other useful information
                 </p>
               </div>
-              <div>
-                <ol>
-                  <li className={styles.otherInformationText}>
-                    The closest airport is Leipzig/Halle airport (LEJ)
-                  </li>
-                  <li className={styles.otherInformationText}>
-                    The closest destination is at Halle (Saale) Hbf (Main train
-                    station)
-                  </li>
-                  <li className={styles.otherInformationText}>
-                    You can use following platforms to check the route:{` `}
-                    <a
-                      href="https://www.omio.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Omio
-                    </a>
-                    {`, `}
-                    <a
-                      href="https://www.rome2rio.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Rome2Rio
-                    </a>
-                    {`, `}
-                    <a
-                      href="https://int.bahn.de/en"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Deutsche Bahn AG
-                    </a>
-                    {`, or `}
-                    <a
-                      href="https://www.google.com/travel/flights"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Google Flights
-                    </a>
-                  </li>
-                </ol>
-              </div>
+              <ol className={styles.otherInformationTextContainer}>
+                <li className={styles.otherInformationText}>
+                  The closest airport is Leipzig/Halle airport (LEJ)
+                </li>
+                <li className={styles.otherInformationText}>
+                  The closest destination is at Halle (Saale) Hbf (Main train
+                  station)
+                </li>
+                <li className={styles.otherInformationText}>
+                  You can use following platforms to check the route:{` `}
+                  <a
+                    href="https://www.omio.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Omio
+                  </a>
+                  {`, `}
+                  <a
+                    href="https://www.rome2rio.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Rome2Rio
+                  </a>
+                  {`, `}
+                  <a
+                    href="https://int.bahn.de/en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Deutsche Bahn AG
+                  </a>
+                  {`, or `}
+                  <a
+                    href="https://www.google.com/travel/flights"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Google Flights
+                  </a>
+                </li>
+              </ol>
             </div>
           </div>
 
@@ -352,7 +378,7 @@ export default function Content() {
 
             {/* Change link to schedule Page later */}
             <div className={styles.linkToScheduleContainer}>
-              <p className={styles.linkToSchedule}>View schedule</p>
+              <p className={styles.linkToSchedule}>VIEW SCHEDULE</p>
 
               <Link href="/faqs" style={{ height: "28px" }}>
                 <Image
