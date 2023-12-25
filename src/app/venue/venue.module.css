@@ -226,14 +226,19 @@
 }
 
 .tabList {
-  width: 692.05px; /* msh hrs cari tau gimana cara lebih baik  utk ilangin line lebihnya */
+  max-width: 716.05px;
+}
+
+.tabContainer {
+  display: flex;
+  flex-direction: row;
 }
 
 .tab {
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .tab:hover {
@@ -256,13 +261,12 @@
 }
 
 .transportationDirectionText {
-  font-size: 16px;
+  font-size: 16px; /* 20 normal size */
   letter-spacing: 0.02em;
-  line-height: 36px;
+  line-height: 36px; /* 40 normal size */
   font-family: Poppins;
   color: var(--color-darkblue);
   text-align: left;
-  /* width: 640px; */
 }
 
 /* Detail 3 - Other Information */
@@ -559,14 +563,55 @@
   }
 
   /* Detail 2 */
-  /* .tabsRoot {
+  .tabsRoot {
     margin-bottom: 48px;
   }
 
   .tabList {
-    width: unset;
+    max-width: unset;
+  }
+
+  .tabContainer {
+    display: flex;
+    flex-direction: row;
     overflow: auto;
-  } */
+  }
+
+  .tab {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* blm tau hover atau clicknya mau apa di tab */
+  .tab:hover {
+    background-color: none;
+  }
+
+  .tabLabel {
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+  }
+
+  .transportationDirectionContainer {
+    margin-top: 16px;
+    padding-left: 27px;
+  }
+
+  .transportationDirectionText {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+  }
 
   /* Detail 3 - Other Information */
   .otherInformationContainer {

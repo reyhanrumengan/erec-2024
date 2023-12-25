@@ -184,12 +184,14 @@ export default function Content() {
               }}
             >
               <Tabs.List>
-                {tab("leipzig airport")}
-                {tab("berlin")}
-                {tab("hamburg")}
-                {tab("munich")}
-                {tab("bern")}
-                {tab("stockholm")}
+                <div className={styles.tabContainer}>
+                  {tab("leipzig airport")}
+                  {tab("berlin")}
+                  {tab("hamburg")}
+                  {tab("munich")}
+                  {tab("bern")}
+                  {tab("stockholm")}
+                </div>
               </Tabs.List>
 
               <Tabs.Panel value="leipzig airport">
