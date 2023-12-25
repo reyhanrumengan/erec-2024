@@ -256,6 +256,7 @@
 }
 
 .transportationDirectionContainer {
+  margin: 0;
   margin-top: 20px;
   padding-left: 27px;
 }
@@ -584,9 +585,9 @@
     padding-right: 10px;
   }
 
-  /* blm tau hover atau clicknya mau apa di tab */
+  /* check again for hover in mobile*/
   .tab:hover {
-    background-color: none;
+    background-color: unset;
   }
 
   .tabLabel {
@@ -600,6 +601,7 @@
   }
 
   .transportationDirectionContainer {
+    margin: 0;
     margin-top: 16px;
     padding-left: 27px;
   }

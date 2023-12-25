@@ -12,7 +12,21 @@ export default function Content() {
     // const label = activeTab === city ? `${city} Airport` : city;
     // console.log(label);
 
-    return <Tabs.Tab value={city}>{city}</Tabs.Tab>;
+    // const tabStyle = {
+    //   backgroundColor:
+    //     activeTab === city
+    //       ? "rgba(255, 255, 255, 0.5)"
+    //       : "var(--color-lightblue)",
+    // };
+
+    return (
+      <Tabs.Tab
+        value={city}
+        // style={tabStyle}
+      >
+        {city}
+      </Tabs.Tab>
+    );
   };
 
   return (
