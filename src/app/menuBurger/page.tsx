@@ -1,13 +1,15 @@
 "use client";
 import Link from "next/link";
 import styles from "./menuBurger.module.css";
-import { useDisclosure } from "@mantine/hooks";
-import { Menu, Burger, Button } from "@mantine/core";
+import { useDisclosure, useClickOutside } from "@mantine/hooks";
+import { Menu, Burger } from "@mantine/core";
 import { useState } from "react";
 
 export default function MenuBurger() {
   const [burgerOpened, { toggle }] = useDisclosure();
   const [menuOpened, setMenuOpened] = useState(false);
+
+  const menuRef = useClickOutside(() => handleMenuClick());
 
   const handleMenuClick = () => {
     setMenuOpened(!menuOpened);
@@ -16,15 +18,6 @@ export default function MenuBurger() {
 
   return (
     <>
-      {/* {menuOpened && (
-        <div
-          className={styles.overlay}
-          onClick={() => {
-            setMenuOpened(false);
-            toggle();
-          }}
-        ></div>
-      )} */}
       <Menu
         opened={menuOpened}
         onChange={setMenuOpened}
@@ -36,6 +29,7 @@ export default function MenuBurger() {
         <Menu.Target>
           {/* <Button> */}
           <Burger
+            ref={menuRef}
             opened={burgerOpened}
             onClick={handleMenuClick}
             aria-label="Toggle navigation"
