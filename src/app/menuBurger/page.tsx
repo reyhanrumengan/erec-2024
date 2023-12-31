@@ -6,21 +6,26 @@ import { Menu, Burger } from "@mantine/core";
 import { useState } from "react";
 
 export default function MenuBurger() {
-  const [burgerOpened, { toggle }] = useDisclosure();
-  const [menuOpened, setMenuOpened] = useState(false);
+  const [burgerOpened, handlers] = useDisclosure();
 
-  const menuRef = useClickOutside(() => handleMenuClick());
+  const menuRef = useClickOutside(() => {
+    // Your condition here
+    if (burgerOpened) {
+      handleMenuClick();
+    }
+  });
 
+  console.log(useClickOutside(() => handleMenuClick()));
   const handleMenuClick = () => {
-    setMenuOpened(!menuOpened);
-    toggle();
+    // setMenuOpened(!menuOpened);
+
+    handlers.toggle();
   };
 
   return (
     <>
       <Menu
-        opened={menuOpened}
-        onChange={setMenuOpened}
+        opened={burgerOpened}
         classNames={{
           dropdown: styles.dropdown,
           item: styles.item,
@@ -31,7 +36,7 @@ export default function MenuBurger() {
           <Burger
             ref={menuRef}
             opened={burgerOpened}
-            onClick={handleMenuClick}
+            onClick={() => handlers.toggle()}
             aria-label="Toggle navigation"
           />
           {/* </Button> */}
