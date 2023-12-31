@@ -4,26 +4,45 @@
   justify-content: space-between;
 }
 
-.headerIcon {
+.headerContainer {
   margin-top: 40px;
   margin-left: 40px;
+}
+
+.headerIcon {
   width: 280px;
   height: 55px;
+}
+
+.burgerContainer {
+  display: none;
 }
 
 @media screen and (max-width: 1080px) {
   /* Header */
   .header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .headerContainer {
+    margin-top: 20px;
+    margin-left: 20px;
   }
 
   .headerIcon {
-    margin-top: 20px;
-    margin-left: 20px;
     /* width: 193px;
     height: 50px; */
     width: 212px;
     height: 55px;
+  }
+
+  .burgerContainer {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
   }
 }
