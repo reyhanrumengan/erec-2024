@@ -33,7 +33,7 @@
   flex: 1 0;
 }
 
-/* Content - Fee Info*/
+/* Content - Pricing Info*/
 .content {
   display: flex;
   flex-direction: column;
@@ -316,7 +316,7 @@
     max-width: 100%;
   }
 
-  /* Content - Fee Info*/
+  /* Content - Pricing Info*/
   .content {
     display: flex;
     flex-direction: column;

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./fee.module.css";
+import styles from "./pricing.module.css";
 import Image from "next/image";
 
 export default function Content() {
@@ -7,7 +7,7 @@ export default function Content() {
     <>
       <div className={styles.heroContainer}>
         <div className={styles.content}>
-          {/* Fee Info */}
+          {/* Pricing Info */}
           <div className={styles.pricing}>
             <div>
               <p className={styles.pricingHeader}>PRICING</p>
