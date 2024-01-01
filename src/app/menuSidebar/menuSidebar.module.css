@@ -10,6 +10,8 @@
 }
 
 .menuText {
+  display: flex;
+  flex-direction: row;
   font-size: 16px;
   letter-spacing: 0.18em;
   line-height: 24px;
@@ -20,11 +22,25 @@
   opacity: 0.8;
   margin: 0;
   text-decoration: none;
-  width: max-content;
+  justify-content: right;
 }
 
 .menuText:hover {
   color: #1b03a3;
+}
+
+/* .activeMenu {
+  font-weight: bold;
+} */
+
+.activeMenu::after {
+  /* position: absolute; */
+  content: "\2022"; /* Unicode character for a bullet point */
+  color: #fff; /* Set the color of the dot */
+  right: 0; /* Position the dot to the right */
+  top: 50%; /* Center the dot vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  font-size: 2em;
 }
 
 /* Mobile & Smaller screen */

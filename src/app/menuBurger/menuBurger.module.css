@@ -98,4 +98,8 @@
   /* .menuText:hover {
     color: #1b03a3;
   } */
+
+  .activeMenu {
+    font-weight: bold;
+  }
 }
