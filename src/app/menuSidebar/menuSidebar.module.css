@@ -35,11 +35,11 @@
 
 .activeMenu::after {
   /* position: absolute; */
+  /* right: 0; 
+  top: 50%; 
+  transform: translateY(-50%);  */
   content: "\2022"; /* Unicode character for a bullet point */
-  color: #fff; /* Set the color of the dot */
-  right: 0; /* Position the dot to the right */
-  top: 50%; /* Center the dot vertically */
-  transform: translateY(-50%); /* Adjust for vertical centering */
+  color: #fff;
   font-size: 2em;
 }
 
