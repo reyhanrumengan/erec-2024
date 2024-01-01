@@ -9,7 +9,7 @@ export default function Content() {
         <div className={styles.heroContainer1}>
           <div>
             <p className={styles.dateHeroHeader}>MAR 29</p>
-            <p className={styles.dateHeroHeader}>- Apr 1</p>
+            <p className={styles.dateHeroHeader}>- APR 1</p>
           </div>
 
           <div>
@@ -28,19 +28,16 @@ export default function Content() {
             fellowship as one body of Christ.
           </p>
 
-          <div className={styles.linkToThemeContainer}>
+          <Link href="/theme" className={styles.linkToThemeContainer}>
             <p className={styles.linkToTheme}>LEARN OUR THEME THIS YEAR</p>
-
-            <Link href="/theme" style={{ height: "28px" }}>
-              <Image
-                width={28}
-                height={28}
-                className={styles.arrowCircleRightIcon}
-                alt="Arrow Circle Right"
-                src="/arrowCircleRight.svg"
-              />
-            </Link>
-          </div>
+            <Image
+              width={28}
+              height={28}
+              className={styles.arrowCircleRightIcon}
+              alt="Arrow Circle Right"
+              src="/arrowCircleRight.svg"
+            />
+          </Link>
         </div>
       </div>
     </>

@@ -98,9 +98,6 @@
   font-weight: 300;
   font-family: Poppins;
   color: var(--color-darkblue);
-  /* text-align: left;
-  display: inline-block; */
-  /* width: 640px; */
   margin: 0;
 }
 
@@ -110,9 +107,6 @@
   line-height: 42px;
   font-family: Poppins;
   color: var(--color-darkblue);
-  /* text-align: left;
-display: inline-block; */
-  /* width: 640px; */
   margin: 0;
 }
 
@@ -141,6 +135,7 @@ display: inline-block; */
   gap: 8px;
   height: 28px;
   margin-top: 20px;
+  text-decoration: none;
 }
 
 .linkToTheme {
@@ -265,27 +260,21 @@ display: inline-block; */
   }
 
   .venueText {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 32px;
     letter-spacing: 0.02em;
     font-weight: 300;
     font-family: Poppins;
     color: var(--color-darkblue);
-    /* text-align: left;
-  display: inline-block; */
-    /* width: 640px; */
     margin: 0;
   }
 
   .venueSmallText {
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 0.02em;
-    line-height: 24px;
+    line-height: 32px;
     font-family: Poppins;
     color: var(--color-darkblue);
-    /* text-align: left;
-display: inline-block; */
-    /* width: 640px; */
     margin: 0;
   }
 
@@ -301,9 +290,6 @@ display: inline-block; */
     font-weight: 300;
     font-family: Poppins;
     color: var(--color-darkblue);
-    /* text-align: left;
-display: inline-block; */
-    /* width: 800px; */
     margin: 0;
     width: unset;
   }
@@ -314,6 +300,7 @@ display: inline-block; */
     gap: 8px;
     height: 28px;
     margin-top: 20px;
+    text-decoration: none;
   }
 
   .linkToTheme {
