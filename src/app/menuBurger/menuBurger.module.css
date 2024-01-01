@@ -23,7 +23,6 @@
     display: flex;
     flex-direction: column;
     max-width: 450px;
-    /* max-height: 100vh; */
     height: fit-content;
     left: 0;
     right: 0;
@@ -39,12 +38,16 @@
     width: 100vw;
     max-width: 450px;
     left: 0;
-    /* height: 100vh; */
   }
 
   .item {
     padding: 0;
     justify-content: center;
+  }
+
+  .burger {
+    background-color: #2a4385;
+    /* --__burger-color: #2a4385; */
   }
 
   .buttonContainer {

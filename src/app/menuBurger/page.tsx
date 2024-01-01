@@ -3,22 +3,17 @@ import Link from "next/link";
 import styles from "./menuBurger.module.css";
 import { useDisclosure, useClickOutside } from "@mantine/hooks";
 import { Menu, Burger } from "@mantine/core";
-import { useState } from "react";
 
 export default function MenuBurger() {
   const [burgerOpened, handlers] = useDisclosure();
 
   const menuRef = useClickOutside(() => {
-    // Your condition here
     if (burgerOpened) {
       handleMenuClick();
     }
   });
 
-  console.log(useClickOutside(() => handleMenuClick()));
   const handleMenuClick = () => {
-    // setMenuOpened(!menuOpened);
-
     handlers.toggle();
   };
 
@@ -32,14 +27,13 @@ export default function MenuBurger() {
         }}
       >
         <Menu.Target>
-          {/* <Button> */}
           <Burger
             ref={menuRef}
             opened={burgerOpened}
             onClick={() => handlers.toggle()}
             aria-label="Toggle navigation"
+            // classNames={{ burger: styles.burger }}
           />
-          {/* </Button> */}
         </Menu.Target>
 
         <Menu.Dropdown>

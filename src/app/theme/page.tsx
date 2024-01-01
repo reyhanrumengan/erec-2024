@@ -15,7 +15,7 @@ export default function Theme() {
             <Content />
           </div>
 
-          {/* <MenuSidebar /> */}
+          <MenuSidebar />
         </div>
 
         <Footer />

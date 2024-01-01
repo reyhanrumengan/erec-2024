@@ -15,7 +15,7 @@ export default function Fee() {
             <Content />
           </div>
 
-          {/* <MenuSidebar /> */}
+          <MenuSidebar />
         </div>
 
         <Footer />

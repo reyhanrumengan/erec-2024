@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./venue.module.css";
 import Image from "next/image";
 import { Tabs } from "@mantine/core";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Content() {
   const [activeTab, setActiveTab] = useState<string | null>("");
@@ -29,6 +29,38 @@ export default function Content() {
     );
   };
 
+  const ImageContainer = () => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const images = [
+      "/venue-images/venue-1.png",
+      "/venue-images/venue-2.png",
+      "/venue-images/venue-3.png",
+      "/venue-images/venue-4.png",
+      "/venue-images/venue-5.png",
+      "/venue-images/venue-6.png",
+      "/venue-images/venue-7.png",
+      "/venue-images/venue-8.png",
+    ];
+
+    useEffect(() => {
+      const intervalId = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 5000); // Change image every 5 seconds
+
+      return () => clearInterval(intervalId); // Cleanup the interval on unmount
+    }, []);
+
+    return (
+      <Image
+        width={770}
+        height={400}
+        className={styles.image}
+        alt={`Image ${currentImageIndex + 1}`}
+        src={images[currentImageIndex]}
+      />
+    );
+  };
+
   return (
     <>
       <div className={styles.heroContainer}>
@@ -45,14 +77,9 @@ export default function Content() {
             </div>
 
             <div className={styles.venueDescription2}>
-              {/* imagenya bakalan rotating image. will be worked on later */}
-              <Image
-                // width={28}
-                // height={28}
-                className={styles.imagesContainer}
-                alt=""
-                src=""
-              />
+              <div className={styles.imagesContainer}>
+                <ImageContainer />
+              </div>
 
               <p className={styles.venueLocationText1}>
                 DJH Jugendherberge Halle

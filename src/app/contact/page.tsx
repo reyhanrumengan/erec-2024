@@ -15,7 +15,7 @@ export default function Contact() {
             <Content />
           </div>
 
-          {/* <MenuSidebar /> */}
+          <MenuSidebar />
         </div>
 
         <Footer />

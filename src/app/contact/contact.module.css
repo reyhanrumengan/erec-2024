@@ -204,6 +204,7 @@
 
   .pageHeaderContainer {
     margin-bottom: 20px;
+    width: unset;
   }
 
   .pageHeader {

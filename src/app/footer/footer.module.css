@@ -66,8 +66,13 @@
     display: flex;
     align-items: center;
     gap: unset;
-
     text-decoration: none;
+  }
+
+  .instagramIcon,
+  .youtubeIcon {
+    width: 24px;
+    height: auto;
   }
 
   .instagramLink,

@@ -8,8 +8,12 @@ export default function MenuSidebar() {
         <Link className={styles.menuText} href="/theme">
           THEME
         </Link>
-        <p className={styles.menuText}>SPEAKERS</p>
-        <p className={styles.menuText}>EREC</p>
+        {/* <Link className={styles.menuText} href="/speakers">
+          SPEAKERS
+        </Link> */}
+        {/* <Link className={styles.menuText} href="/erec">
+          EREC
+        </Link> */}
         <Link className={styles.menuText} href="/venue">
           VENUE
         </Link>
