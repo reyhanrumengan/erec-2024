@@ -20,6 +20,14 @@
 
 @media screen and (max-width: 1080px) {
   /* Header */
+  .headerMobileContainer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: var(--color-lightblue);
+  }
+
   .header {
     display: flex;
     flex-direction: row;
