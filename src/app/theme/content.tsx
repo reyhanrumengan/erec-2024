@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./theme.module.css";
 import Image from "next/image";
 
@@ -29,27 +30,19 @@ export default function Content() {
             actually teach about this assurance of salvation?
           </p>
 
-          <div className={styles.linkToSpeakerContainer}>
+          {/* change link later to redirect to Speaker Page */}
+          <Link href="/speakers" className={styles.linkToSpeakerContainer}>
             <p className={styles.linkToSpeaker}>
               Hear to what our Speakers say
             </p>
-
-            {/* change link later to redirect to Speaker Page */}
-            <a
-              href="https://www.jugendherberge.de/en/youth-hostels/halle/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ height: "28px" }}
-            >
-              <Image
-                width={28}
-                height={28}
-                className={styles.arrowCircleRightIcon}
-                alt="Arrow Circle Right"
-                src="/arrowCircleRight.svg"
-              />
-            </a>
-          </div>
+            <Image
+              width={28}
+              height={28}
+              className={styles.arrowCircleRightIcon}
+              alt="Arrow Circle Right"
+              src="/arrowCircleRight.svg"
+            />
+          </Link>
         </div>
       </div>
     </>
