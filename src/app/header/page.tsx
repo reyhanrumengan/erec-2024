@@ -16,6 +16,7 @@ export default function Header() {
                 className={styles.headerIcon}
                 alt="European Reformed Evangelical Convention 2024"
                 src="/logo.svg"
+                priority={true}
               />
             </Link>
           </div>
