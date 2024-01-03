@@ -35,7 +35,7 @@ export default function Content() {
             </div>
 
             <div className={styles.linkToContactUsContainer}>
-              <p className={styles.linkToContactUs}>Contact us</p>
+              <p className={styles.linkToContactUs}>CONTACT US</p>
 
               <Link href="/contact" style={{ height: "28px" }}>
                 <Image

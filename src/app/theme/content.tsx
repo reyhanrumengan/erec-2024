@@ -33,7 +33,7 @@ export default function Content() {
           {/* change link later to redirect to Speaker Page */}
           <Link href="/speakers" className={styles.linkToSpeakerContainer}>
             <p className={styles.linkToSpeaker}>
-              Hear to what our Speakers say
+              HEAR TO WHAT OUT SPEAKERS SAY
             </p>
             <Image
               width={28}

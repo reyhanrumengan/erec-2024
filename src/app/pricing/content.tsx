@@ -168,7 +168,7 @@ export default function Content() {
             </div>
 
             <div className={styles.linkToFAQsContainer}>
-              <p className={styles.linkToFAQs}>Check out our FAQs</p>
+              <p className={styles.linkToFAQs}>CHECK OUT OUT FAQS</p>
 
               <Link href="/faqs" style={{ height: "28px" }}>
                 <Image
