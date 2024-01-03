@@ -34,19 +34,16 @@ export default function Content() {
               </p>
             </div>
 
-            <div className={styles.linkToContactUsContainer}>
+            <Link href="/contact" className={styles.linkToContactUsContainer}>
               <p className={styles.linkToContactUs}>CONTACT US</p>
-
-              <Link href="/contact" style={{ height: "28px" }}>
-                <Image
-                  width={28}
-                  height={28}
-                  className={styles.arrowCircleRightIcon}
-                  alt="Arrow Circle Right"
-                  src="/arrowCircleRight.svg"
-                />
-              </Link>
-            </div>
+              <Image
+                width={28}
+                height={28}
+                className={styles.arrowCircleRightIcon}
+                alt="Arrow Circle Right"
+                src="/arrowCircleRight.svg"
+              />
+            </Link>
           </div>
         </div>
       </div>

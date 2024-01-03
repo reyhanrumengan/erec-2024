@@ -420,19 +420,16 @@ export default function Content() {
             </div>
 
             {/* Change link to schedule Page later */}
-            <div className={styles.linkToScheduleContainer}>
+            <Link href="/faqs" className={styles.linkToScheduleContainer}>
               <p className={styles.linkToSchedule}>VIEW SCHEDULE</p>
-
-              <Link href="/faqs" style={{ height: "28px" }}>
-                <Image
-                  width={28}
-                  height={28}
-                  className={styles.arrowCircleRightIcon}
-                  alt="Arrow Circle Right"
-                  src="/arrowCircleRight.svg"
-                />
-              </Link>
-            </div>
+              <Image
+                width={28}
+                height={28}
+                className={styles.arrowCircleRightIcon}
+                alt="Arrow Circle Right"
+                src="/arrowCircleRight.svg"
+              />
+            </Link>
           </div>
         </div>
       </div>

@@ -334,6 +334,13 @@
   align-items: center;
   gap: 8px;
   height: 28px;
+  text-decoration: none;
+  color: var(--color-mediumblue);
+  width: fit-content;
+}
+
+.linkToScheduleContainer:hover {
+  text-decoration: underline;
 }
 
 .linkToSchedule {
@@ -668,7 +675,6 @@
   .linkContainer {
     display: flex;
     flex-direction: column;
-    align-items: left;
     gap: 20px;
   }
 
@@ -686,9 +692,14 @@
 
   .linkToScheduleContainer {
     display: flex;
-    align-items: left;
+    align-items: center;
     gap: 8px;
     height: 40px;
+    text-decoration: none;
+  }
+
+  .linkToThemeContainer:hover {
+    text-decoration: none;
   }
 
   .linkToSchedule {

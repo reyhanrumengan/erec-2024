@@ -73,6 +73,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  align-items: center;
 }
 
 .text2 {
@@ -94,6 +95,12 @@
   gap: 8px;
   height: 28px;
   text-decoration: none;
+  color: var(--color-mediumblue);
+  width: fit-content;
+}
+
+.linkToSpeakerContainer:hover {
+  text-decoration: underline;
 }
 
 .linkToSpeaker {
@@ -211,6 +218,10 @@
     justify-content: left;
     gap: 8px;
     height: 40px;
+    text-decoration: none;
+  }
+
+  .linkToSpeakerContainer:hover {
     text-decoration: none;
   }
 

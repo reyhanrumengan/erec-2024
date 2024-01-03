@@ -264,6 +264,13 @@
   align-items: center;
   gap: 8px;
   height: 28px;
+  text-decoration: none;
+  color: var(--color-mediumblue);
+  width: fit-content;
+}
+
+.linkToFAQsContainer:hover {
+  text-decoration: underline;
 }
 
 .linkToFAQs {
@@ -565,6 +572,11 @@
     align-items: center;
     gap: 8px;
     height: 40px;
+    text-decoration: none;
+  }
+
+  .linkToFAQsContainer:hover {
+    text-decoration: none;
   }
 
   .linkToFAQs {
