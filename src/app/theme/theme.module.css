@@ -60,7 +60,7 @@
 .text1 {
   font-size: 26px; /* 32 normal size */
   letter-spacing: 0.02em;
-  line-height: 44px;
+  line-height: 44px; /* 48 normal size */
   font-weight: 300;
   font-family: Poppins;
   color: var(--color-darkblue);
@@ -76,9 +76,9 @@
 }
 
 .text2 {
-  font-size: 16px;
+  font-size: 26px; /* 32 normal size */
   letter-spacing: 0.02em;
-  line-height: 32px;
+  line-height: 44px; /* 48 normal size */
   font-weight: 300;
   font-family: Poppins;
   color: var(--color-darkblue);
