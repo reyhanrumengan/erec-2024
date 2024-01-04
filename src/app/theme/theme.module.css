@@ -145,7 +145,7 @@
     display: flex;
     flex-direction: column;
     gap: 45px;
-    align-items: center;
+    align-items: unset;
     margin-top: 50px;
     margin-bottom: 75px;
     margin-left: 20px;
@@ -177,7 +177,7 @@
     color: var(--color-darkblue);
     font-weight: 300;
     text-align: left;
-    width: 280px;
+    width: 320px;
     margin: 0;
   }
 
@@ -190,7 +190,7 @@
     color: var(--color-darkblue);
     text-align: left;
     margin: 0;
-    width: 240px;
+    width: 295px;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -199,6 +199,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: unset;
   }
 
   .text2 {
@@ -210,7 +211,7 @@
     color: var(--color-darkblue);
     text-align: left;
     margin: 0;
-    width: 280px;
+    width: 300px;
   }
 
   .linkToSpeakerContainer {
