@@ -462,9 +462,9 @@
   }
 
   .venueLocationText2 {
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 0.02em;
-    line-height: 25px;
+    line-height: 24px;
     font-family: Poppins;
     color: var(--color-darkblue);
     text-align: left;

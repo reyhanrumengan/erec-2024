@@ -161,20 +161,21 @@
   }
 
   .pageHeader {
-    font-size: 24px;
+    font-size: 32px;
     font-family: "Libre Bodoni";
     color: var(--color-mediumblue);
-    width: 150px;
+    width: 200px;
     margin: 0;
     margin-bottom: 20px;
   }
 
   .smallText {
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 24px;
     font-family: Poppins;
     color: var(--color-darkblue);
+    font-weight: 300;
     text-align: left;
     width: 280px;
     margin: 0;
