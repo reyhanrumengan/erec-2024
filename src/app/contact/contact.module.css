@@ -186,7 +186,7 @@
   .heroContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: unset;
     margin-top: 50px;
     margin-bottom: 72px;
     margin-left: 20px;
@@ -217,7 +217,7 @@
 
   .textContainer {
     margin-bottom: 20px;
-    width: 280px;
+    width: 100%;
   }
 
   .text {
@@ -259,7 +259,7 @@
 
   .text2Container {
     margin-bottom: 12px;
-    width: 280px;
+    width: 100%;
   }
 
   .text2 {
@@ -274,7 +274,7 @@
 
   .text3Container {
     margin-bottom: 40px;
-    width: 280px;
+    width: 100%;
   }
 
   .text3 {
