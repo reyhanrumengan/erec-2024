@@ -10,9 +10,7 @@ export default function Content() {
         <div className={styles.content}>
           {/* Header */}
           <div>
-            <div className={styles.topContainer}>
-              <p className={styles.pageHeader}>FAQs</p>
-            </div>
+            <p className={styles.pageHeader}>FAQs</p>
           </div>
 
           {/* Questions Content*/}
