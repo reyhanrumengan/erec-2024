@@ -12,18 +12,12 @@ export default function Content() {
     // const label = activeTab === city ? `${city} Airport` : city;
     // console.log(label);
 
-    // const tabStyle = {
-    //   backgroundColor:
-    //     activeTab === city
-    //       ? "rgba(255, 255, 255, 0.5)"
-    //       : "var(--color-lightblue)",
-    // };
+    const tabStyle = {
+      borderColor: activeTab === city ? "#2a4385" : "#d0ddff",
+    };
 
     return (
-      <Tabs.Tab
-        value={city}
-        // style={tabStyle}
-      >
+      <Tabs.Tab value={city} style={tabStyle}>
         {city}
       </Tabs.Tab>
     );
@@ -223,7 +217,7 @@ export default function Content() {
                 tab: styles.tab,
                 tabLabel: styles.tabLabel,
               }}
-              color="#2a4385"
+              // color="#2a4385"
             >
               <Tabs.List>
                 <div className={styles.tabContainer}>
