@@ -42,18 +42,14 @@ export default function Content() {
               />
             </div>
             <div>
-              <div className={styles.text2Container}>
-                <p className={styles.text2}>
-                  Are you in any of our IREC Europe church or looking for a
-                  local church to attend?
-                </p>
-              </div>
-              <div className={styles.text3Container}>
-                <p className={styles.text3}>
-                  Here are persons you can get in touch with in our local
-                  branches for questions about the convention or the church.
-                </p>
-              </div>
+              <p className={styles.text2}>
+                Are you in any of our IREC Europe church or looking for a local
+                church to attend?
+              </p>
+              <p className={styles.text3}>
+                Here are persons you can get in touch with in our local branches
+                for questions about the convention or the church.
+              </p>
               <div className={styles.irecBranch}>
                 <div>
                   <div className={styles.linkContainer}>

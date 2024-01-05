@@ -90,11 +90,6 @@
   gap: 55px;
 }
 
-.text2Container {
-  margin-bottom: 30px;
-  width: 500px;
-}
-
 .text2 {
   font-size: 32px; /* 40 normal size */
   line-height: 48px; /* 58 normal size */
@@ -103,10 +98,7 @@
   color: var(--color-darkblue);
   text-align: left;
   margin: 0;
-}
-
-.text3Container {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   width: 500px;
 }
 
@@ -118,6 +110,8 @@
   color: var(--color-darkblue);
   text-align: left;
   margin: 0;
+  margin-bottom: 50px;
+  width: 500px;
 }
 
 .irecBranch {
@@ -257,11 +251,6 @@
     display: none;
   }
 
-  .text2Container {
-    margin-bottom: 12px;
-    width: 100%;
-  }
-
   .text2 {
     font-size: 20px;
     line-height: 32px;
@@ -270,10 +259,7 @@
     color: var(--color-darkblue);
     text-align: left;
     margin: 0;
-  }
-
-  .text3Container {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
     width: 100%;
   }
 
@@ -285,6 +271,8 @@
     color: var(--color-darkblue);
     text-align: left;
     margin: 0;
+    margin-bottom: 40px;
+    width: 100%;
   }
 
   /* This is the point of problem why there is increse in margin 20  */
