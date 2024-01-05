@@ -223,6 +223,7 @@ export default function Content() {
                 tab: styles.tab,
                 tabLabel: styles.tabLabel,
               }}
+              color="#2a4385"
             >
               <Tabs.List>
                 <div className={styles.tabContainer}>
