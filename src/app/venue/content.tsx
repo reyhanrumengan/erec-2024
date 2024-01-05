@@ -6,7 +6,7 @@ import { Tabs } from "@mantine/core";
 import { useEffect, useState } from "react";
 
 export default function Content() {
-  const [activeTab, setActiveTab] = useState<string | null>("");
+  const [activeTab, setActiveTab] = useState<string | null>("leipzig airport");
 
   const tab = (city: string) => {
     // const label = activeTab === city ? `${city} Airport` : city;
