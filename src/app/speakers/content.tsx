@@ -27,13 +27,14 @@ export default function Content() {
         </div>
 
         <div className={styles.container2}>
-          <div>
+          {/* Container for Image/Tap to open video */}
+          <div className={styles.speakerImageContainer}>
             <Image
               width={400}
               height={533}
               alt=""
               src="/dandelion.png"
-              // className={styles.dandelionImage}
+              className={styles.speakerImage}
             />
           </div>
 

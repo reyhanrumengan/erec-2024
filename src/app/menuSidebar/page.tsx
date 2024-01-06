@@ -15,7 +15,7 @@ export default function MenuSidebar() {
 
   const routes: Route[] = [
     { path: "/theme", label: "THEME" },
-    // { path: "/speakers", label: "SPEAKERS" },
+    { path: "/speakers", label: "SPEAKERS" },
     // { path: "/erec", label: "EREC" },
     { path: "/venue", label: "VENUE" },
     { path: "/pricing", label: "PRICING" },

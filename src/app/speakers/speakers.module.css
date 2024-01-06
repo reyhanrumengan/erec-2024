@@ -37,6 +37,7 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
+  margin-bottom: 40px;
 }
 
 .pageHeader {
@@ -63,6 +64,12 @@
   display: flex;
   flex-direction: row;
   gap: 35px;
+}
+
+/* Will be adjusted later */
+.speakerImage {
+  width: 400px;
+  /* height: auto; */
 }
 
 .arrowIconContainer {
@@ -118,9 +125,9 @@
 }
 
 .readMoreButton {
-  font-size: 16px;
+  font-size: 16px; /* 20 normal size */
   letter-spacing: 0.18em;
-  line-height: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   font-family: Poppins;
   color: var(--color-mediumblue);
@@ -186,7 +193,7 @@
     gap: 45px;
     align-items: unset;
     margin-top: 50px;
-    margin-bottom: 75px;
+    margin-bottom: 55px;
     margin-left: 20px;
     margin-right: 20px;
     max-width: 100%;
@@ -195,7 +202,7 @@
   .container1 {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 20px;
     max-width: 100%;
   }
 
@@ -203,15 +210,14 @@
     font-size: 32px;
     font-family: "Libre Bodoni";
     color: var(--color-mediumblue);
-    width: 200px;
+    width: 250px;
     margin: 0;
-    margin-bottom: 20px;
   }
 
   .smallText {
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 0.02em;
-    line-height: 24px;
+    line-height: 32px;
     font-family: Poppins;
     color: var(--color-darkblue);
     font-weight: 300;
@@ -221,44 +227,90 @@
     margin: 0;
   }
 
-  .text1 {
-    font-size: 16px;
-    letter-spacing: 0.02em;
-    line-height: 32px;
-    font-weight: 300;
-    font-family: Poppins;
-    color: var(--color-darkblue);
-    text-align: left;
-    margin: 0;
-    /* width: 295px;
-    margin-left: 20px;
-    margin-right: 20px; */
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .container2 {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    align-items: unset;
+    gap: unset;
   }
 
-  .text2 {
-    font-size: 20px;
+  .speakerImageContainer {
+    margin-bottom: 24px;
+  }
+
+  /* Will be adjusted later */
+  .speakerImage {
+    width: 240px;
+    /* height: auto; */
+  }
+
+  .arrowIconContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .arrowCircleLeftIcon {
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+  }
+
+  .arrowCircleRightIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .speakerName {
+    font-size: 24px;
     letter-spacing: 0.02em;
     line-height: 32px;
-    font-weight: 300;
+    font-weight: 500;
     font-family: Poppins;
     color: var(--color-darkblue);
     text-align: left;
-    margin: 0;
-    /* width: 300px; */
     width: 100%;
+    margin-bottom: 16px;
   }
 
-  .linkToSpeakerContainer {
+  .speakerDescription {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    display: -webkit-inline-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: max-height 0.5s ease;
+  }
+
+  .speakerDescription.full {
+    -webkit-line-clamp: initial;
+    max-height: none;
+  }
+
+  .readMoreButton {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: Poppins;
+    color: var(--color-mediumblue);
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .readMoreButton:hover {
+    text-decoration: unset;
+  }
+
+  /* .linkToSpeakerContainer {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -280,10 +332,5 @@
     font-weight: 600;
     margin: 0;
     width: 150px;
-  }
-
-  .arrowCircleRightIcon {
-    width: 24px;
-    height: 24px;
-  }
+  } */
 }
