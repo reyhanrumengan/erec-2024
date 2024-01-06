@@ -93,7 +93,6 @@ export default function Content() {
               tab: styles.tab,
               tabLabel: styles.tabLabel,
             }}
-            // orientation="vertical"
             // color="#2a4385"
           >
             <Tabs.List>
