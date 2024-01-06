@@ -9,9 +9,6 @@ export default function Content() {
   const [activeTab, setActiveTab] = useState<string | null>("leipzig airport");
 
   const tab = (city: string) => {
-    // const label = activeTab === city ? `${city} Airport` : city;
-    // console.log(label);
-
     const tabStyle = {
       borderColor: activeTab === city ? "#2a4385" : "#d0ddff",
     };
@@ -208,7 +205,6 @@ export default function Content() {
 
             {/* Detail 2 */}
             <Tabs
-              defaultValue="leipzig"
               value={activeTab}
               onChange={setActiveTab}
               classNames={{
