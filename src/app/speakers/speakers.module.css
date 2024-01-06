@@ -25,7 +25,7 @@
 .heroContainer {
   display: flex;
   flex-direction: column;
-  gap: 150px;
+  gap: 140px;
   align-items: center;
   margin-top: 100px;
   margin-bottom: 170px;
@@ -35,47 +35,34 @@
 
 .container1 {
   display: flex;
-  flex-direction: row;
-  gap: 140px;
+  flex-direction: column;
+  gap: 35px;
 }
 
 .pageHeader {
-  font-size: 38px; /* 48 normal size */
+  font-size: 56px; /* 64 normal size */
   font-family: "Libre Bodoni";
   color: var(--color-mediumblue);
-  width: 250px;
   margin: 0;
-  margin-bottom: 20px;
+  width: 500px;
 }
 
 .smallText {
-  font-size: 16px; /* 20 normal size */
-  letter-spacing: 0.02em;
-  line-height: 38px;
-  font-family: Poppins;
-  color: var(--color-darkblue);
-  text-align: left;
-  width: 270px;
-  margin: 0;
-}
-
-.text1 {
-  font-size: 26px; /* 32 normal size */
+  font-size: 28px; /* 32 normal size */
   letter-spacing: 0.02em;
   line-height: 44px; /* 48 normal size */
   font-weight: 300;
   font-family: Poppins;
   color: var(--color-darkblue);
   text-align: left;
+  width: 700px;
   margin: 0;
-  width: 425px;
 }
 
 .container2 {
   display: flex;
-  flex-direction: column;
-  gap: 25px;
-  align-items: center;
+  flex-direction: row;
+  gap: 35px;
 }
 
 .text2 {
@@ -85,7 +72,6 @@
   font-weight: 300;
   font-family: Poppins;
   color: var(--color-darkblue);
-  text-align: center;
   margin: 0;
   width: 650px;
 }
