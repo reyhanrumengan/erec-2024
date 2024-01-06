@@ -45,9 +45,9 @@
   font-size: 50px; /* 64 normal size */
   font-family: "Libre Bodoni";
   color: var(--color-mediumblue);
-  text-align: center;
+  text-align: left;
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 /* Button (Will be remove) */
