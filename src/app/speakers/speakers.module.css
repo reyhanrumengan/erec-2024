@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   gap: 140px;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 100px;
   margin-bottom: 170px;
   margin-left: 40px;
@@ -65,18 +65,74 @@
   gap: 35px;
 }
 
-.text2 {
-  font-size: 26px; /* 32 normal size */
-  letter-spacing: 0.02em;
-  line-height: 44px; /* 48 normal size */
-  font-weight: 300;
-  font-family: Poppins;
-  color: var(--color-darkblue);
-  margin: 0;
-  width: 650px;
+.arrowIconContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  margin-bottom: 30px;
 }
 
-.linkToSpeakerContainer {
+.arrowCircleLeftIcon {
+  width: 28px;
+  height: 28px;
+  transform: rotate(180deg);
+}
+
+.arrowCircleRightIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.speakerName {
+  font-size: 36px; /* 40 normal size */
+  letter-spacing: 0.02em;
+  line-height: 60px; /* 64 normal size */
+  font-weight: 500;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+  width: 480px;
+  margin-bottom: 16px;
+}
+
+.speakerDescription {
+  font-size: 20px; /* 24 normal size */
+  letter-spacing: 0.02em;
+  line-height: 44px; /* 48 normal size */
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+  display: -webkit-inline-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  width: 480px;
+  margin-bottom: 24px;
+  transition: max-height 0.5s ease;
+}
+
+.speakerDescription.full {
+  -webkit-line-clamp: initial;
+  max-height: none;
+}
+
+.readMoreButton {
+  font-size: 16px;
+  letter-spacing: 0.18em;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-family: Poppins;
+  color: var(--color-mediumblue);
+  text-align: left;
+  font-weight: 700;
+}
+
+.readMoreButton:hover {
+  text-decoration: underline;
+}
+
+/* .linkToSpeakerContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,12 +155,7 @@
   color: var(--color-mediumblue);
   font-weight: 600;
   margin: 0;
-}
-
-.arrowCircleRightIcon {
-  width: 28px;
-  height: 28px;
-}
+} */
 
 /* Mobile & Smaller screen */
 @media screen and (max-width: 1080px) {
