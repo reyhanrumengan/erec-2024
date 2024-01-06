@@ -1,0 +1,336 @@
+.page {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  min-height: 100vh;
+}
+
+.heroPage {
+  display: flex;
+  flex-direction: row;
+  /* max-width: 1440px; */
+  /* align-self: center; */
+}
+
+.mainContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  min-height: 100vh;
+}
+
+/* Content */
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+  /* align-items: center; */
+  margin-top: 100px;
+  margin-bottom: 170px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-bottom: 40px;
+}
+
+.pageHeader {
+  font-size: 56px; /* 64 normal size */
+  font-family: "Libre Bodoni";
+  color: var(--color-mediumblue);
+  margin: 0;
+  width: 500px;
+}
+
+.smallText {
+  font-size: 28px; /* 32 normal size */
+  letter-spacing: 0.02em;
+  line-height: 44px; /* 48 normal size */
+  font-weight: 300;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+  width: 700px;
+  margin: 0;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+
+/* Will be adjusted later */
+.speakerImage {
+  width: 400px;
+  /* height: auto; */
+}
+
+.arrowIconContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.arrowCircleLeftIcon {
+  width: 28px;
+  height: 28px;
+  transform: rotate(180deg);
+}
+
+.arrowCircleRightIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.speakerName {
+  font-size: 36px; /* 40 normal size */
+  letter-spacing: 0.02em;
+  line-height: 60px; /* 64 normal size */
+  font-weight: 500;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+  width: 480px;
+  margin-bottom: 16px;
+}
+
+.speakerDescription {
+  font-size: 20px; /* 24 normal size */
+  letter-spacing: 0.02em;
+  line-height: 44px; /* 48 normal size */
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+  display: -webkit-inline-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  width: 480px;
+  margin-bottom: 24px;
+  transition: max-height 0.5s ease;
+}
+
+.speakerDescription.full {
+  -webkit-line-clamp: initial;
+  max-height: none;
+}
+
+.readMoreButton {
+  font-size: 16px; /* 20 normal size */
+  letter-spacing: 0.18em;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: Poppins;
+  color: var(--color-mediumblue);
+  text-align: left;
+  font-weight: 700;
+}
+
+.readMoreButton:hover {
+  text-decoration: underline;
+}
+
+/* .linkToSpeakerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 28px;
+  text-decoration: none;
+  color: var(--color-mediumblue);
+  width: fit-content;
+}
+
+.linkToSpeakerContainer:hover {
+  text-decoration: underline;
+}
+
+.linkToSpeaker {
+  font-size: 18px;
+  letter-spacing: 0.18em;
+  line-height: 20px;
+  font-family: Poppins;
+  color: var(--color-mediumblue);
+  font-weight: 600;
+  margin: 0;
+} */
+
+/* Mobile & Smaller screen */
+@media screen and (max-width: 1080px) {
+  .page {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* .heroPage {
+  } */
+
+  .mainContainer {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  /* Content */
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: unset;
+    margin-top: 50px;
+    margin-bottom: 55px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .pageHeader {
+    font-size: 32px;
+    font-family: "Libre Bodoni";
+    color: var(--color-mediumblue);
+    width: 250px;
+    margin: 0;
+  }
+
+  .smallText {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    font-weight: 300;
+    text-align: left;
+    /* width: 320px; */
+    width: 100%;
+    margin: 0;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    gap: unset;
+  }
+
+  .speakerImageContainer {
+    margin-bottom: 24px;
+  }
+
+  /* Will be adjusted later */
+  .speakerImage {
+    width: 240px;
+    /* height: auto; */
+  }
+
+  .arrowIconContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .arrowCircleLeftIcon {
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+  }
+
+  .arrowCircleRightIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .speakerName {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .speakerDescription {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    display: -webkit-inline-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: max-height 0.5s ease;
+  }
+
+  .speakerDescription.full {
+    -webkit-line-clamp: initial;
+    max-height: none;
+  }
+
+  .readMoreButton {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: Poppins;
+    color: var(--color-mediumblue);
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .readMoreButton:hover {
+    text-decoration: unset;
+  }
+
+  /* .linkToSpeakerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+    height: 40px;
+    text-decoration: none;
+  }
+
+  .linkToSpeakerContainer:hover {
+    text-decoration: none;
+  }
+
+  .linkToSpeaker {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    line-height: 20px;
+    font-family: Poppins;
+    color: var(--color-mediumblue);
+    font-weight: 600;
+    margin: 0;
+    width: 150px;
+  } */
+}
