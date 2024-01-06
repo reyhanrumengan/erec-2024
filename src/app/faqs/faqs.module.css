@@ -51,7 +51,7 @@
 }
 
 /* Button (Will be remove) */
-.buttonContainer {
+/* .buttonContainer {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
@@ -73,7 +73,7 @@
 .button:hover {
   background-color: var(--color-mediumblue);
   color: var(--color-lightblue);
-}
+} */
 
 /* Questions Content */
 .questionsContainer {
@@ -235,10 +235,11 @@
     color: var(--color-mediumblue);
     text-align: center;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
   }
 
-  .buttonContainer {
+  /* Button (Will be remove) */
+  /* .buttonContainer {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -255,16 +256,16 @@
     padding: 7px 20px;
     font-weight: 600;
     text-decoration: none;
-  }
+  } */
 
   /* needs to be fix */
   /* we want hover only on desktop even if the screen is small */
   /* then need to add another adjustment for mobile */
   /* now: mobile/smaller screen, there is no hover */
-  .button:hover {
+  /* .button:hover {
     background-color: unset;
     color: var(--color-mediumblue);
-  }
+  } */
 
   /* Link to Contact*/
   .linkContainer {
