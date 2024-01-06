@@ -76,10 +76,6 @@
 } */
 
 /* Questions Content */
-.questionsContainer {
-  margin-bottom: 160px;
-}
-
 .tabsRoot {
   display: flex;
   flex-direction: row;
@@ -266,6 +262,79 @@
     background-color: unset;
     color: var(--color-mediumblue);
   } */
+
+  /* Questions Content */
+
+  .tabsRoot {
+    display: unset;
+    flex-direction: unset;
+    margin-bottom: 75px;
+    gap: unset;
+  }
+
+  .tabList {
+    height: unset;
+    margin-bottom: 38px;
+  }
+
+  .tabContainer {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+  }
+
+  .tab {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* check again for hover in mobile*/
+  .tab:hover {
+    background-color: unset;
+  }
+
+  .tabLabel {
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+  }
+
+  .accordionItem {
+    border-color: var(--color-lightblue);
+  }
+
+  .accordionControl:hover {
+    background-color: unset;
+  }
+
+  .accordionLabel {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+  }
+
+  .accordionContent {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    padding-top: 0;
+  }
+
+  .accordionChevron {
+    height: 24px;
+    color: var(--color-mediumblue);
+  }
 
   /* Link to Contact*/
   .linkContainer {

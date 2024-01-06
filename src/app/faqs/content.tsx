@@ -96,7 +96,7 @@ export default function Content() {
             // color="#2a4385"
           >
             <Tabs.List>
-              <div>
+              <div className={styles.tabContainer}>
                 {tab("general")}
                 {tab("registration")}
                 {tab("accomodation")}
