@@ -74,7 +74,7 @@ export default function MenuBurger() {
             opened={burgerOpened}
             onClick={() => handlers.toggle()}
             aria-label="Toggle navigation"
-            // classNames={{ burger: styles.burger }}
+            classNames={{ burger: styles.burger }}
           />
         </Menu.Target>
 

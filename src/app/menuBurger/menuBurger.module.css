@@ -45,9 +45,10 @@
     justify-content: center;
   }
 
-  .burger {
+  .burger,
+  .burger::before,
+  .burger::after {
     background-color: #2a4385;
-    /* --__burger-color: #2a4385; */
   }
 
   .buttonContainer {
