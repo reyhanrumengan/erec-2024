@@ -80,7 +80,15 @@ export default function Content() {
                 sermons can be found in the youtube channel Sola Dei Gloria.
               </div>
 
-              {showFullContent || (
+              {showFullContent ? (
+                <div
+                  onClick={handleReadMoreClick}
+                  className={styles.readMoreButton}
+                  style={{ cursor: "pointer" }}
+                >
+                  View Less
+                </div>
+              ) : (
                 <div
                   onClick={handleReadMoreClick}
                   className={styles.readMoreButton}
