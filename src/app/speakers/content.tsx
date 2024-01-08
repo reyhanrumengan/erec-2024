@@ -100,10 +100,10 @@ export default function Content() {
             </div>
           </div>
 
-          {/* change link later to redirect to Speaker Page */}
-          {/* <Link href="/speakers" className={styles.linkToSpeakerContainer}>
+          {/* change link later to redirect to EREC Page */}
+          {/* <Link href="/erec" className={styles.linkToSpeakerContainer}>
             <p className={styles.linkToSpeaker}>
-              HEAR TO WHAT OUT SPEAKERS SAY
+              WONDER ABOUT THE EREC?
             </p>
             <Image
               width={28}
