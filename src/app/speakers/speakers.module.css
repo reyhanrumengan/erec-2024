@@ -102,7 +102,7 @@
   margin-bottom: 16px;
 }
 
-.speakerDescription {
+.speakerDescriptionShort {
   font-size: 20px; /* 24 normal size */
   letter-spacing: 0.02em;
   line-height: 44px; /* 48 normal size */
@@ -119,9 +119,24 @@
   transition: max-height 0.5s ease;
 }
 
-.speakerDescription.full {
+/* .speakerDescription.full {
   -webkit-line-clamp: initial;
   max-height: none;
+} */
+.speakerDescriptionFull {
+  font-size: 20px; /* 24 normal size */
+  letter-spacing: 0.02em;
+  line-height: 44px; /* 48 normal size */
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+  display: -webkit-inline-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: initial;
+  width: 480px;
+  margin-bottom: 24px;
+  transition: max-height 0.5s ease;
 }
 
 .readMoreButton {

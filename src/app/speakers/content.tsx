@@ -13,6 +13,9 @@ export default function Content() {
 
   console.log(showFullContent);
 
+  const contentBilly =
+    "Billy Kristanto (Dr. phil., Dr. theol., Universität Heidelberg) is lecturer of systematic theology at International Reformed Evangelical Seminary Jakarta and member of theological commission of World Reformed Fellowship. For 24 years, he serves as pastor of International Reformed Evangelical Church. He is the author of Ajarlah Kami Bertumbuh and Sola Dei Gloria. His research interests include topics in soteriology, anthropology, spirituality, the theology of J. Calvin, and J. S. Bach. His sermons can be found in the youtube channel Sola Dei Gloria.";
+
   return (
     <>
       <div className={styles.heroContainer}>
@@ -67,19 +70,13 @@ export default function Content() {
                 Rev. Dr. Billy Kristanto, Ph.D., Th.D.
               </div>
               <div
-                className={`${styles.speakerDescription} ${
-                  showFullContent ? styles.full : ""
-                }`}
+                className={
+                  showFullContent
+                    ? styles.speakerDescriptionFull
+                    : styles.speakerDescriptionShort
+                }
               >
-                Billy Kristanto (Dr. phil., Dr. theol., Universität Heidelberg)
-                is lecturer of systematic theology at International Reformed
-                Evangelical Seminary Jakarta and member of theological
-                commission of World Reformed Fellowship. For 24 years, he serves
-                as pastor of International Reformed Evangelical Church. He is
-                the author of Ajarlah Kami Bertumbuh and Sola Dei Gloria. His
-                research interests include topics in soteriology, anthropology,
-                spirituality, the theology of J. Calvin, and J. S. Bach. His
-                sermons can be found in the youtube channel Sola Dei Gloria.
+                {contentBilly}
               </div>
 
               {showFullContent ? (
