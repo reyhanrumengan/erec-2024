@@ -82,11 +82,13 @@
   width: 28px;
   height: 28px;
   transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .arrowCircleRightIcon {
   width: 28px;
   height: 28px;
+  cursor: pointer;
 }
 
 .speakerName {
@@ -97,7 +99,7 @@
   font-family: Poppins;
   color: var(--color-darkblue);
   text-align: left;
-  width: 480px;
+  /* width: 480px; Temporary until photo is available */
   margin-bottom: 16px;
 }
 
@@ -111,9 +113,9 @@
   display: -webkit-inline-box;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 3; /* Change back to 6 after photo is available */
   -webkit-box-orient: vertical;
-  width: 480px;
+  /* width: 480px; Temporary until photo is available */
   margin-bottom: 24px;
   transition: max-height 0.5s ease;
 }
@@ -129,7 +131,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: initial;
-  width: 480px;
+  /* width: 480px; Temporary until photo is available */
   margin-bottom: 24px;
   transition: max-height 0.5s ease;
 }
@@ -143,6 +145,8 @@
   color: var(--color-mediumblue);
   text-align: left;
   font-weight: 700;
+  width: fit-content;
+  cursor: pointer;
 }
 
 .readMoreButton:hover {

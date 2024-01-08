@@ -6,6 +6,7 @@ import { useState } from "react";
 
 export default function Content() {
   const [showFullContent, setShowFullContent] = useState(false);
+  const [changeContent, setChangeContent] = useState(false);
 
   const handleReadMoreClick = () => {
     setShowFullContent(!showFullContent);
@@ -13,6 +14,7 @@ export default function Content() {
 
   console.log(showFullContent);
 
+  // if FALSE show contentBilly
   const contentBilly = (
     <p style={{ margin: 0 }}>
       Billy Kristanto (Dr. phil., Dr. theol., Universität Heidelberg) is
@@ -26,14 +28,15 @@ export default function Content() {
     </p>
   );
 
+  // if TRUE show contentLeonardo
   const contentLeonardo = (
     <>
       <p style={{ margin: 0 }}>
         Vic. Leonardo Chandra's association with GRII commenced in 2003 during
-        his pursuit of a Design Bachelor’s Degree at UPH Karawaci. Since then,
-        propelled by an ever-growing conviction and divine calling to serve as a
-        steward of God, he devoted himself to the youth ministry at GRII
-        Karawaci until 2012 when he enrolled at STTRII Jakarta.
+        his pursuit of a Design Bachelor&rsquo;s Degree at UPH Karawaci. Since
+        then, propelled by an ever-growing conviction and divine calling to
+        serve as a steward of God, he devoted himself to the youth ministry at
+        GRII Karawaci until 2012 when he enrolled at STTRII Jakarta.
         <br />
         <br />
         His academic journey culminated in the attainment of a Master of
@@ -68,7 +71,7 @@ export default function Content() {
 
         <div className={styles.container2}>
           {/* Container for Image/Tap to open video */}
-          <div className={styles.speakerImageContainer}>
+          {/* <div className={styles.speakerImageContainer}>
             <Image
               width={400}
               height={533}
@@ -76,7 +79,7 @@ export default function Content() {
               src="/dandelion.png"
               className={styles.speakerImage}
             />
-          </div>
+          </div> */}
 
           <div>
             <div className={styles.arrowIconContainer}>
@@ -87,6 +90,7 @@ export default function Content() {
                   className={styles.arrowCircleLeftIcon}
                   alt="Arrow Circle Right"
                   src="/arrowCircleRight.svg"
+                  onClick={() => setChangeContent(!changeContent)}
                 />
               </div>
 
@@ -97,12 +101,15 @@ export default function Content() {
                   className={styles.arrowCircleRightIcon}
                   alt="Arrow Circle Right"
                   src="/arrowCircleRight.svg"
+                  onClick={() => setChangeContent(!changeContent)}
                 />
               </div>
             </div>
             <div>
               <div className={styles.speakerName}>
-                Rev. Dr. Billy Kristanto, Ph.D., Th.D.
+                {changeContent
+                  ? "Vic. Leonardo Chandra"
+                  : "Rev. Dr. Billy Kristanto, Ph.D., Th.D."}
               </div>
               <div
                 className={
@@ -111,14 +118,13 @@ export default function Content() {
                     : styles.speakerDescriptionShort
                 }
               >
-                {contentBilly}
+                {changeContent ? contentLeonardo : contentBilly}
               </div>
 
               {showFullContent ? (
                 <div
                   onClick={handleReadMoreClick}
                   className={styles.readMoreButton}
-                  style={{ cursor: "pointer" }}
                 >
                   View Less
                 </div>
@@ -126,7 +132,6 @@ export default function Content() {
                 <div
                   onClick={handleReadMoreClick}
                   className={styles.readMoreButton}
-                  style={{ cursor: "pointer" }}
                 >
                   READ MORE
                 </div>
