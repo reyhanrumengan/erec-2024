@@ -11,6 +11,8 @@ export default function Content() {
     setShowFullContent(!showFullContent);
   };
 
+  console.log(showFullContent);
+
   return (
     <>
       <div className={styles.heroContainer}>
