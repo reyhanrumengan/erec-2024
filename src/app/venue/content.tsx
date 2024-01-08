@@ -403,15 +403,14 @@ export default function Content() {
           </div>
 
           {/* Link to Schedule Page */}
-          <div className={styles.linkContainer}>
+          {/* <div className={styles.linkContainer}>
             <div>
               <p className={styles.text}>
                 Wonder how your days would be like throughout the convention?
               </p>
             </div>
 
-            {/* Change link to schedule Page later */}
-            <Link href="/faqs" className={styles.linkToScheduleContainer}>
+            <Link href="/schedule" className={styles.linkToScheduleContainer}>
               <p className={styles.linkToSchedule}>VIEW SCHEDULE</p>
               <Image
                 width={28}
@@ -421,7 +420,7 @@ export default function Content() {
                 src="/arrowCircleRight.svg"
               />
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
