@@ -30,11 +30,11 @@ export default function Content() {
   const contentLeonardo = (
     <>
       <p style={{ margin: 0 }}>
-        Vic. Leonardo Chandra's association with GRII commenced in 2003 during
-        his pursuit of a Design Bachelor&rsquo;s Degree at UPH Karawaci. Since
-        then, propelled by an ever-growing conviction and divine calling to
-        serve as a steward of God, he devoted himself to the youth ministry at
-        GRII Karawaci until 2012 when he enrolled at STTRII Jakarta.
+        Vic. Leonardo Chandra&rsquo;s association with GRII commenced in 2003
+        during his pursuit of a Design Bachelor&rsquo;s Degree at UPH Karawaci.
+        Since then, propelled by an ever-growing conviction and divine calling
+        to serve as a steward of God, he devoted himself to the youth ministry
+        at GRII Karawaci until 2012 when he enrolled at STTRII Jakarta.
         <br />
         <br />
         His academic journey culminated in the attainment of a Master of
