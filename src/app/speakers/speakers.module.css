@@ -301,7 +301,7 @@
     transition: max-height 0.5s ease;
   }
 
-  .speakerDescriptionShort {
+  .speakerDescriptionFull {
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 32px;
@@ -312,6 +312,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: initial;
+    max-height: none;
     width: 100%;
     margin-bottom: 20px;
     transition: max-height 0.5s ease;

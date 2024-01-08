@@ -13,8 +13,43 @@ export default function Content() {
 
   console.log(showFullContent);
 
-  const contentBilly =
-    "Billy Kristanto (Dr. phil., Dr. theol., Universität Heidelberg) is lecturer of systematic theology at International Reformed Evangelical Seminary Jakarta and member of theological commission of World Reformed Fellowship. For 24 years, he serves as pastor of International Reformed Evangelical Church. He is the author of Ajarlah Kami Bertumbuh and Sola Dei Gloria. His research interests include topics in soteriology, anthropology, spirituality, the theology of J. Calvin, and J. S. Bach. His sermons can be found in the youtube channel Sola Dei Gloria.";
+  const contentBilly = (
+    <p style={{ margin: 0 }}>
+      Billy Kristanto (Dr. phil., Dr. theol., Universität Heidelberg) is
+      lecturer of systematic theology at International Reformed Evangelical
+      Seminary Jakarta and member of theological commission of World Reformed
+      Fellowship. For 24 years, he serves as pastor of International Reformed
+      Evangelical Church. He is the author of Ajarlah Kami Bertumbuh and Sola
+      Dei Gloria. His research interests include topics in soteriology,
+      anthropology, spirituality, the theology of J. Calvin, and J. S. Bach. His
+      sermons can be found in the youtube channel Sola Dei Gloria.
+    </p>
+  );
+
+  const contentLeonardo = (
+    <>
+      <p style={{ margin: 0 }}>
+        Vic. Leonardo Chandra's association with GRII commenced in 2003 during
+        his pursuit of a Design Bachelor’s Degree at UPH Karawaci. Since then,
+        propelled by an ever-growing conviction and divine calling to serve as a
+        steward of God, he devoted himself to the youth ministry at GRII
+        Karawaci until 2012 when he enrolled at STTRII Jakarta.
+        <br />
+        <br />
+        His academic journey culminated in the attainment of a Master of
+        Theology in 2015, paving the way for his role as an assistant pastor.
+        From 2015 to 2018, he served diligently at GRII Bintaro, and
+        subsequently, from 2018 to 2021, he extended his pastoral
+        responsibilities to encompass both GRII Solo and GRII Yogyakarta.
+        <br />
+        <br />
+        Presently, he is immersed in the pursuit of further scholarly heights,
+        engaged in doctoral studies at Theologische Universiteit Apeldoorn in
+        the Netherlands, steadfastly augmenting his theological knowledge and
+        ministerial acumen.
+      </p>
+    </>
+  );
 
   return (
     <>
