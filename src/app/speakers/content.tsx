@@ -12,8 +12,6 @@ export default function Content() {
     setShowFullContent(!showFullContent);
   };
 
-  console.log(showFullContent);
-
   // if FALSE show contentBilly
   const contentBilly = (
     <p style={{ margin: 0 }}>
