@@ -106,8 +106,8 @@ export default function Content() {
             <div>
               <div className={styles.speakerName}>
                 {changeContent
-                  ? "Vic. Leonardo Chandra"
-                  : "Rev. Dr. Billy Kristanto, Ph.D., Th.D."}
+                  ? "Vic. Leonardo Chandra, M. Th."
+                  : "Rev. Dr. Billy  Kristanto, Ph.D., Th.D."}
               </div>
               <div
                 className={

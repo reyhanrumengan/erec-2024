@@ -92,9 +92,9 @@
 }
 
 .speakerName {
-  font-size: 36px; /* 40 normal size */
+  font-size: 32px; /* 40 normal size */
   letter-spacing: 0.02em;
-  line-height: 60px; /* 64 normal size */
+  line-height: 58px; /* 64 normal size */
   font-weight: 500;
   font-family: Poppins;
   color: var(--color-darkblue);
