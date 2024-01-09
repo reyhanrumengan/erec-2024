@@ -12,6 +12,8 @@ export default function Content() {
     setShowFullContent(!showFullContent);
   };
 
+  // later, if we add more speakers, we need to pack it into an array and map it, and access it using index/key
+
   // if FALSE show contentBilly
   const contentBilly = (
     <p style={{ margin: 0 }}>
