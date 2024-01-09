@@ -99,7 +99,7 @@
   font-family: Poppins;
   color: var(--color-darkblue);
   text-align: left;
-  /* width: 480px; Temporary until photo is available */
+  /* width: 480px; Temporary commented until photo/video is available */
   margin-bottom: 16px;
 }
 
@@ -115,7 +115,7 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 3; /* Change back to 6 after photo is available */
   -webkit-box-orient: vertical;
-  /* width: 480px; Temporary until photo is available */
+  /* width: 480px; Temporary commented until photo/video is available */
   margin-bottom: 24px;
   transition: max-height 0.5s ease;
 }
@@ -131,7 +131,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: initial;
-  /* width: 480px; Temporary until photo is available */
+  /* width: 480px; Temporary commented until photo/video is available */
   margin-bottom: 24px;
   transition: max-height 0.5s ease;
 }
