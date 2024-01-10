@@ -1,0 +1,106 @@
+.menuBurger {
+  display: none;
+}
+
+/* Mobile & Smaller screen */
+@media screen and (max-width: 1080px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.7
+    ); /* Semi-transparent black background */
+    z-index: 999; /* Place it above other content */
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-lightblue);
+    border: none;
+    padding: 0;
+    padding-bottom: 80px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .dropdownContainer {
+    width: 100vw;
+    max-width: 450px;
+    left: 0;
+  }
+
+  .item {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .burger,
+  .burger::before,
+  .burger::after {
+    background-color: #2a4385;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 32px 40px;
+  }
+
+  .button {
+    border: 2px solid var(--color-mediumblue);
+    box-sizing: border-box;
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    line-height: 20px;
+    font-family: Poppins;
+    color: var(--color-mediumblue);
+    padding: 7px 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  /* needs to be fix */
+  /* we want hover only on desktop even if the screen is small */
+  /* then need to add another adjustment for mobile */
+  /* now: mobile/smaller screen, there is no hover */
+  .button:hover {
+    background-color: unset;
+    color: var(--color-mediumblue);
+  }
+
+  .menuText {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    opacity: 0.8;
+    margin: 0;
+    text-decoration: none;
+    width: 100%;
+    padding: 12px 40px;
+    /* margin: 12px 0; */
+  }
+
+  /* .menuText:hover {
+    color: #1b03a3;
+  } */
+
+  .activeMenu {
+    font-weight: bold;
+  }
+}

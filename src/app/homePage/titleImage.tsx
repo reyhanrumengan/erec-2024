@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../page.module.css";
+import styles from "./homePage.module.css";
 
 export default function TitleImage() {
   return (
@@ -11,7 +11,7 @@ export default function TitleImage() {
             width={720}
             height={500}
             alt="Assurance of Grace"
-            src="/title.png"
+            src="/titleImage.png"
             className={styles.titleImage}
           />
           <div className={styles.buttonContainer}>

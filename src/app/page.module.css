@@ -1,77 +1,5 @@
-*.mainContainer {
-  margin: auto;
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-  min-height: 100vh;
-}
-
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.headerIcon {
-  margin-top: 40px;
-  margin-left: 40px;
-  width: 280px;
-  height: 55px;
-}
-
-/* Main Content - Title Image */
-/* .mainContent {
-  display: flex;
-  flex-direction: column;
-} */
-
-.homeContent {
-  display: flex;
-  /* flex-direction: row; */
-  /* flex: 1; */
-  height: 700px;
-}
-
-.titleContainer {
-  margin: 0 auto; /* Center the container horizontally */
-  align-self: center;
-  position: relative; /* Essential for child absolute positioning */
-  width: 100%; /* Use this to control the width of your container */
-  max-width: 720px;
-  max-height: 500px;
-}
-
-.titleImage {
-  max-width: 720px;
-  max-height: 500px;
-  display: block; /* Remove bottom space inherent to inline images */
-}
-
-.buttonContainer {
-  position: absolute; /* Absolute positioning relative to the container */
-  top: 73%; /* 73% from the top will position the button's top edge at the center */
-  left: 53%; /* 53% from the left will position the button's left edge at the center */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Shifts the button back by half its width and height */
-}
-
-.button {
-  border: 3px solid var(--color-mediumblue);
-  box-sizing: border-box;
-  font-size: 16px;
-  letter-spacing: 0.18em;
-  line-height: 20px;
-  font-family: Poppins;
-  color: var(--color-mediumblue);
-  padding: 7px 20px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.button:hover {
-  background-color: var(--color-mediumblue);
-  color: var(--color-lightblue);
+.page {
+  background-color: var(--color-lightblue);
 }
 
 /* Main Content - Location & Info */
@@ -88,7 +16,7 @@
   margin-bottom: 90px;
 }
 
-.textHeader {
+.pageHeader {
   font-size: 28px;
   line-height: 42px;
   font-weight: 500;
@@ -139,135 +67,6 @@
   text-decoration: underline;
 }
 
-/* Main Content - Fee Info */
-.pricing {
-  margin-left: 40px;
-}
-
-.feeInfo {
-  display: flex;
-  flex-direction: column;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-.normalFee {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.ageContainer {
-  border-top: 1px solid var(--color-darkblue);
-  border-left: 1px solid var(--color-darkblue);
-  border-bottom: 1px solid var(--color-darkblue);
-  width: 25%;
-  height: 220px;
-  position: relative;
-}
-
-.ageContainer:last-child {
-  border-right: 1px solid var(--color-darkblue);
-}
-
-.ageFeeDetails {
-  line-height: 28px;
-  color: var(--color-darkblue);
-  text-align: left;
-  font-family: "Libre Bodoni";
-  margin-top: 30px;
-  margin-left: 20px;
-}
-
-.ageText {
-  font-size: 36px;
-  margin: 0;
-}
-
-.ageSmallText {
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0;
-}
-
-.priceContainer {
-  position: absolute;
-  line-height: 68px;
-  font-weight: 500;
-  font-family: Poppins;
-  color: var(--color-darkblue);
-  text-align: right;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  gap: 5px;
-  right: 15px;
-  bottom: -10px;
-}
-
-.eurText {
-  font-size: 28px;
-  margin: 0;
-}
-
-.priceText {
-  font-size: 52px;
-  letter-spacing: -0.04em;
-  margin: 0;
-}
-
-.earlyBirdFeeForMobile {
-  display: none;
-}
-
-.earlyBirdFeeForDesktop {
-  position: relative;
-  width: 100%;
-  height: 160px;
-  background-color: var(--color-darkblue);
-  color: #fff;
-}
-
-.earlyBirdFeeDetails {
-  margin-top: 30px;
-  margin-left: 20px;
-  text-align: left;
-}
-
-.earlyBirdText {
-  font-size: 36px;
-  line-height: 44px;
-  font-weight: 500;
-  font-family: "Libre Bodoni";
-  margin: 0;
-}
-
-.earlyBirdSmallText {
-  font-size: 20px;
-  line-height: 28px;
-  font-family: Poppins;
-  margin: 0;
-}
-
-.feeDescription {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 40px 20px 0 20px;
-  gap: 40px;
-}
-
-.feeDescriptionText {
-  margin: 0;
-  width: 50%;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  line-height: 20px;
-  font-family: Poppins;
-  color: var(--color-darkblue);
-  text-align: left;
-}
-
 .upcoming {
   font-size: 40px;
   letter-spacing: 0.02em;
@@ -297,75 +96,14 @@
   margin-bottom: 20px;
 }
 
-/* Footer */
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 40px;
-}
-
-.socialMedia {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
-
-.instagram,
-.youtube {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-}
-
-.instagramLink,
-.youtubeLink {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--color-darkblue);
-  font-family: Poppins;
-}
-
-.learnAboutIRECLink {
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: underline;
-  color: var(--color-darkblue);
-  font-family: Poppins;
-}
-
-.instagramLink:hover,
-.youtubeLink:hover,
-.learnAboutIRECLink:hover {
-  color: var(--color-mediumblue);
-}
-
 /* Mobile & Smaller screen */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .mainContainer {
     max-width: 450px;
     margin: auto;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
-
-  /* Header */
-  .header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .headerIcon {
-    margin-top: 20px;
-    margin-left: 20px;
-    /* width: 193px;
-    height: 50px; */
-    width: 212px;
-    height: 55px;
   }
 
   /* Main Content - Title Image */
@@ -443,7 +181,7 @@
     margin-bottom: 24px;
   }
 
-  .textHeader {
+  .pageHeader {
     font-size: 24px;
     line-height: 32px;
     font-weight: 500;
@@ -499,7 +237,7 @@
     margin: 0;
   }
 
-  /* Main Content - Fee Info */
+  /* Main Content - Pricing Info */
   .pricing {
     margin-left: 20px;
   }
@@ -668,58 +406,5 @@
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 10px;
-  }
-
-  /* Footer */
-  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
-
-  .socialMedia {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-  }
-
-  .instagram,
-  .youtube {
-    display: flex;
-    align-items: center;
-    gap: unset;
-
-    text-decoration: none;
-  }
-
-  .instagramLink,
-  .youtubeLink {
-    font-size: unset;
-    font-weight: unset;
-    color: unset;
-    font-family: unset;
-    display: none;
-  }
-
-  .learnAboutIRECLink {
-    font-size: 12px;
-    font-weight: 500;
-    text-decoration: underline;
-    color: var(--color-darkblue);
-    font-family: Poppins;
-  }
-
-  /* needs to be fix */
-  /* we want hover only on desktop even if the screen is small */
-  /* then need to add another adjustment for mobile */
-  /* now: mobile/smaller screen, there is no hover */
-  .instagramLink:hover,
-  .youtubeLink:hover,
-  .learnAboutIRECLink:hover {
-    color: none;
   }
 }

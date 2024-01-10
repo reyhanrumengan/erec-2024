@@ -1,0 +1,385 @@
+.page {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  min-height: 100vh;
+}
+
+.heroPage {
+  display: flex;
+  flex-direction: row;
+  /* max-width: 1440px; */
+  /* align-self: center; */
+}
+
+.mainContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  min-height: 100vh;
+}
+
+/* Content */
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 170px;
+  margin-left: 40px;
+  margin-right: 40px;
+  flex: 1 0;
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+}
+
+/* Header */
+.pageHeader {
+  font-size: 50px; /* 64 normal size */
+  font-family: "Libre Bodoni";
+  color: var(--color-mediumblue);
+  text-align: left;
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+/* Button (Will be remove) */
+/* .buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.button {
+  border: 3px solid var(--color-mediumblue);
+  box-sizing: border-box;
+  font-size: 16px;
+  letter-spacing: 0.18em;
+  line-height: 20px;
+  font-family: Poppins;
+  color: var(--color-mediumblue);
+  padding: 7px 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--color-mediumblue);
+  color: var(--color-lightblue);
+} */
+
+/* Questions Content */
+.tabsRoot {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 160px;
+  gap: 50px;
+}
+
+.tabList {
+  height: fit-content;
+}
+
+.tab {
+  padding: 16px 0;
+}
+
+.tab:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tabLabel {
+  font-size: 16px; /* 20 normal size */
+  letter-spacing: 0.18em;
+  line-height: 28px; /* 32 normal size */
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+}
+
+.accordionItem {
+  border-color: var(--color-lightblue);
+}
+
+.accordionControl:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.accordionLabel {
+  font-size: 20px; /* 24 normal size */
+  letter-spacing: 0.02em;
+  line-height: 28px; /* 32 normal size */
+  font-weight: 500;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+}
+
+.accordionContent {
+  font-size: 16px; /* 20 normal size */
+  letter-spacing: 0.02em;
+  line-height: 36px; /* 40 normal size */
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  padding-top: 0;
+}
+
+.accordionChevron {
+  height: 24px;
+  color: var(--color-mediumblue);
+}
+
+/* Link to FAQs*/
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.text {
+  font-size: 26px; /* 32 normal size */
+  letter-spacing: 0.02em;
+  line-height: 44px;
+  font-weight: 300;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+  margin: 0;
+}
+
+.linkToContactUsContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+  text-decoration: none;
+  color: var(--color-mediumblue);
+  width: fit-content;
+}
+
+.linkToContactUsContainer:hover {
+  text-decoration: underline;
+}
+
+.linkToContactUs {
+  font-size: 18px;
+  letter-spacing: 0.18em;
+  line-height: 20px;
+  font-family: Poppins;
+  color: var(--color-mediumblue);
+  font-weight: 600;
+  margin: 0;
+}
+
+.arrowCircleRightIcon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Mobile & Smaller screen */
+@media screen and (max-width: 1080px) {
+  .page {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* .heroPage {
+  } */
+
+  .mainContainer {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  /* Content */
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1 0;
+  }
+
+  /* Questions Content*/
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .pageHeader {
+    font-size: 32px;
+    font-family: "Libre Bodoni";
+    color: var(--color-mediumblue);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  /* Button (Will be remove) */
+  /* .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    border: 2px solid var(--color-mediumblue);
+    box-sizing: border-box;
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    line-height: 20px;
+    font-family: Poppins;
+    color: var(--color-mediumblue);
+    padding: 7px 20px;
+    font-weight: 600;
+    text-decoration: none;
+  } */
+
+  /* needs to be fix */
+  /* we want hover only on desktop even if the screen is small */
+  /* then need to add another adjustment for mobile */
+  /* now: mobile/smaller screen, there is no hover */
+  /* .button:hover {
+    background-color: unset;
+    color: var(--color-mediumblue);
+  } */
+
+  /* Questions Content */
+
+  .tabsRoot {
+    display: unset;
+    flex-direction: unset;
+    margin-bottom: 75px;
+    gap: unset;
+  }
+
+  .tabList {
+    height: unset;
+    margin-bottom: 38px;
+  }
+
+  .tabContainer {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+  }
+
+  .tab {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* check again for hover in mobile*/
+  .tab:hover {
+    background-color: unset;
+  }
+
+  .tabLabel {
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+  }
+
+  .accordionItem {
+    border-color: var(--color-lightblue);
+  }
+
+  .accordionControl:hover {
+    background-color: unset;
+  }
+
+  .accordionLabel {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+  }
+
+  .accordionContent {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    padding-top: 0;
+  }
+
+  .accordionChevron {
+    height: 24px;
+    color: var(--color-mediumblue);
+  }
+
+  /* Link to Contact*/
+  .linkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-weight: 300;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: center;
+    margin: 0;
+    width: 170px;
+  }
+
+  .linkToContactUsContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 28px;
+    text-decoration: none;
+  }
+
+  .linkToContactUsContainer:hover {
+    text-decoration: none;
+  }
+
+  .linkToContactUs {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    line-height: 20px;
+    font-family: Poppins;
+    color: var(--color-mediumblue);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .arrowCircleRightIcon {
+    width: 24px;
+    height: 24px;
+  }
+}

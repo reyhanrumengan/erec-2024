@@ -1,0 +1,51 @@
+.menuSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 40px;
+  height: 100%;
+}
+
+.menuText {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  letter-spacing: 0.18em;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: right;
+  opacity: 0.8;
+  margin: 0;
+  text-decoration: none;
+  justify-content: right;
+}
+
+.menuText:hover {
+  color: var(--color-mediumblue);
+}
+
+/* .activeMenu {
+  font-weight: bold;
+} */
+
+.activeMenu::after {
+  /* position: absolute; */
+  /* right: 0; 
+  top: 50%; 
+  transform: translateY(-50%);  */
+  content: "\2022"; /* Unicode character for a bullet point */
+  color: #fff;
+  font-size: 2em;
+}
+
+/* Mobile & Smaller screen */
+@media screen and (max-width: 1080px) {
+  .menuSidebar {
+    display: none;
+  }
+}

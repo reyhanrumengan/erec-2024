@@ -1,0 +1,104 @@
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.instagram,
+.youtube {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.instagramLink,
+.youtubeLink {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-darkblue);
+  font-family: Poppins;
+}
+
+.learnAboutIRECLink {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--color-darkblue);
+  font-family: Poppins;
+}
+
+.instagramLink:hover,
+.youtubeLink:hover,
+.learnAboutIRECLink:hover {
+  color: var(--color-mediumblue);
+}
+
+@media screen and (max-width: 1080px) {
+  /* Footer */
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .socialMedia {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .instagram,
+  .youtube {
+    display: flex;
+    align-items: center;
+    gap: unset;
+    text-decoration: none;
+  }
+
+  .instagramIcon,
+  .youtubeIcon {
+    width: 24px;
+    height: auto;
+  }
+
+  .instagramLink,
+  .youtubeLink {
+    font-size: unset;
+    font-weight: unset;
+    color: unset;
+    font-family: unset;
+    display: none;
+  }
+
+  .learnAboutIRECLink {
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--color-darkblue);
+    font-family: Poppins;
+  }
+
+  /* needs to be fix */
+  /* we want hover only on desktop even if the screen is small */
+  /* then need to add another adjustment for mobile */
+  /* now: mobile/smaller screen, there is no hover */
+  .instagramLink:hover,
+  .youtubeLink:hover,
+  .learnAboutIRECLink:hover {
+    color: none;
+  }
+}
