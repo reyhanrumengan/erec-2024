@@ -13,6 +13,7 @@ export default function TitleImage() {
             alt="Assurance of Grace"
             src="/titleImage.png"
             className={styles.titleImage}
+            priority
           />
           <div className={styles.buttonContainer}>
             <a
