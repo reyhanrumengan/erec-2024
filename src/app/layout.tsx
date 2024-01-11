@@ -6,6 +6,7 @@ import Header from "./header/page";
 import Footer from "./footer/page";
 import "@mantine/core/styles.css";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import styles from "./page.module.css";
 
@@ -51,6 +52,7 @@ export default function RootLayout({
       <body className={styles.page}>
         <MantineProvider>{children}</MantineProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
