@@ -27,7 +27,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
-  margin-bottom: 170px;
+  margin-bottom: 140px;
   margin-left: 40px;
   margin-right: 40px;
 }
@@ -51,7 +51,7 @@
   font-family: "Libre Bodoni";
   color: var(--color-mediumblue);
   margin: 0;
-  width: 500px;
+  width: fit-content;
 }
 
 .smallText {
@@ -71,7 +71,45 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 150px;
+  margin-bottom: 160px;
+}
+
+.carouselContainer {
+}
+
+.carouselRoot {
+  background-color: rgba(0, 71, 255, 0.4);
+}
+
+.carouselViewport {
+  /* border: 1px solid red; */
+
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}
+
+.carouselSlide {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.carouselSlide:first-child {
+  /* padding-left: 40px; */
+}
+
+.carouselSlide:last-child {
+  /* padding-right: 50px; */
+}
+
+.activeScheduleImage {
+  height: 630px;
+  width: auto;
+}
+
+.inactiveScheduleImage {
+  height: 630px;
+  width: auto;
+  opacity: 0.2;
 }
 
 .arrowIconContainer {

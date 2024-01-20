@@ -1,15 +1,124 @@
 "use client";
-import Link from "next/link";
 import styles from "./schedule.module.css";
 import Image from "next/image";
 import { useState } from "react";
+import { Carousel, Embla } from "@mantine/carousel";
 
 export default function Content() {
-  const [showFullContent, setShowFullContent] = useState(false);
   const [changeContent, setChangeContent] = useState(false);
 
-  const handleReadMoreClick = () => {
-    setShowFullContent(!showFullContent);
+  // const toggleContentChange = () => {
+  //   setChangeContent(!changeContent);
+  // };
+
+  const ScheduleImage = ({
+    src,
+    alt,
+    isActive,
+  }: {
+    src: string;
+    alt: string;
+    isActive: boolean;
+  }) => {
+    const imageClassName = isActive
+      ? styles.activeScheduleImage
+      : styles.inactiveScheduleImage;
+
+    return (
+      <Carousel.Slide>
+        <Image
+          width={450}
+          height={800}
+          className={imageClassName}
+          alt={alt}
+          src={src}
+          priority
+        />
+      </Carousel.Slide>
+    );
+  };
+
+  const ScheduleBox = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [embla, setEmbla] = useState<Embla | null>(null);
+
+    const scheduleImages = [
+      { src: "/schedule-images/schedule-day1.png", alt: "Schedule - Day 1" },
+      { src: "/schedule-images/schedule-day2.png", alt: "Schedule - Day 2" },
+      { src: "/schedule-images/schedule-day3.png", alt: "Schedule - Day 3" },
+      { src: "/schedule-images/schedule-day4.png", alt: "Schedule - Day 4" },
+    ];
+
+    console.log("activeIndex", activeIndex);
+
+    const handleArrowClick = (direction: string) => {
+      const newIndex =
+        direction === "left"
+          ? (activeIndex - 1 + scheduleImages.length) % scheduleImages.length
+          : (activeIndex + 1) % scheduleImages.length;
+
+      setActiveIndex(newIndex);
+      console.log("newIndex", newIndex);
+
+      if (direction === "left") {
+        embla?.scrollPrev();
+      } else if (direction === "right") {
+        embla?.scrollNext();
+      }
+    };
+
+    return (
+      <div className={styles.container2}>
+        <Carousel
+          slideSize="content"
+          // align="start"
+          slideGap="lg"
+          draggable={false}
+          withControls={false}
+          classNames={{
+            root: styles.carouselRoot,
+            viewport: styles.carouselViewport,
+            slide: styles.carouselSlide,
+            container: styles.carouselContainer,
+          }}
+          getEmblaApi={setEmbla}
+          loop
+        >
+          {scheduleImages.map((image, index) => (
+            <ScheduleImage
+              key={index}
+              {...image}
+              isActive={index === activeIndex}
+            />
+          ))}
+        </Carousel>
+
+        {/* Arrow icons */}
+        <div className={styles.arrowIconContainer}>
+          <div>
+            <Image
+              width={28}
+              height={28}
+              className={styles.arrowCircleLeftIcon}
+              alt="Arrow Circle Left"
+              src="/arrowCircleRight.svg"
+              onClick={() => handleArrowClick("left")}
+            />
+          </div>
+
+          <div>
+            <Image
+              width={28}
+              height={28}
+              className={styles.arrowCircleRightIcon}
+              alt="Arrow Circle Right"
+              src="/arrowCircleRight.svg"
+              onClick={() => handleArrowClick("right")}
+            />
+          </div>
+        </div>
+      </div>
+    );
   };
 
   return (
@@ -29,8 +138,60 @@ export default function Content() {
           </div>
 
           {/* Schedule Box */}
-          <div className={styles.container2}>
-            <div>asdasdsa</div>
+          <ScheduleBox />
+          {/* <div className={styles.container2}>
+            <div className={styles.carouselContainer}>
+              <Carousel
+                slideSize="content"
+                align="start"
+                slideGap="lg"
+                draggable={true}
+                withControls={true}
+                dragFree
+                classNames={{
+                  root: styles.carouselRoot,
+                  viewport: styles.carouselViewport,
+                  slide: styles.carouselSlide,
+                }}
+              >
+                <Carousel.Slide>
+                  <Image
+                    width={450}
+                    height={800}
+                    className={styles.scheduleImage}
+                    alt="Schedule - Day 1"
+                    src="/schedule-images/schedule-day1.png"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <Image
+                    width={450}
+                    height={800}
+                    className={styles.scheduleImage}
+                    alt="Schedule - Day 2"
+                    src="/schedule-images/schedule-day2.png"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <Image
+                    width={450}
+                    height={800}
+                    className={styles.scheduleImage}
+                    alt="Schedule - Day 3"
+                    src="/schedule-images/schedule-day3.png"
+                  />
+                </Carousel.Slide>
+                <Carousel.Slide>
+                  <Image
+                    width={450}
+                    height={800}
+                    className={styles.scheduleImage}
+                    alt="Schedule - Day 4"
+                    src="/schedule-images/schedule-day4.png"
+                  />
+                </Carousel.Slide>
+              </Carousel>
+            </div>
 
             <div className={styles.arrowIconContainer}>
               <div>
@@ -55,7 +216,7 @@ export default function Content() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Registration Button */}
           <div className={styles.linkContainer}>
