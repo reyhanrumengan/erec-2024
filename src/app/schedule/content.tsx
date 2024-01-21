@@ -73,8 +73,9 @@ export default function Content() {
           slideSize="content"
           // align="start"
           slideGap="lg"
-          draggable={false}
+          draggable={true}
           withControls={false}
+          controlSize={30}
           classNames={{
             root: styles.carouselRoot,
             viewport: styles.carouselViewport,
@@ -83,6 +84,7 @@ export default function Content() {
           }}
           getEmblaApi={setEmbla}
           loop
+          onSlideChange={(index) => setActiveIndex(index)}
         >
           {scheduleImages.map((image, index) => (
             <ScheduleImage
