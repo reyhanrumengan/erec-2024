@@ -49,7 +49,7 @@ export default function Content() {
       { src: "/schedule-images/schedule-day4.png", alt: "Schedule - Day 4" },
     ];
 
-    console.log("activeIndex", activeIndex);
+    // console.log("activeIndex", activeIndex);
 
     const handleArrowClick = (direction: string) => {
       const newIndex =
@@ -58,7 +58,7 @@ export default function Content() {
           : (activeIndex + 1) % scheduleImages.length;
 
       setActiveIndex(newIndex);
-      console.log("newIndex", newIndex);
+      // console.log("newIndex", newIndex);
 
       if (direction === "left") {
         embla?.scrollPrev();
@@ -75,7 +75,6 @@ export default function Content() {
           slideGap="lg"
           draggable={true}
           withControls={false}
-          controlSize={30}
           classNames={{
             root: styles.carouselRoot,
             viewport: styles.carouselViewport,
@@ -141,84 +140,6 @@ export default function Content() {
 
           {/* Schedule Box */}
           <ScheduleBox />
-          {/* <div className={styles.container2}>
-            <div className={styles.carouselContainer}>
-              <Carousel
-                slideSize="content"
-                align="start"
-                slideGap="lg"
-                draggable={true}
-                withControls={true}
-                dragFree
-                classNames={{
-                  root: styles.carouselRoot,
-                  viewport: styles.carouselViewport,
-                  slide: styles.carouselSlide,
-                }}
-              >
-                <Carousel.Slide>
-                  <Image
-                    width={450}
-                    height={800}
-                    className={styles.scheduleImage}
-                    alt="Schedule - Day 1"
-                    src="/schedule-images/schedule-day1.png"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <Image
-                    width={450}
-                    height={800}
-                    className={styles.scheduleImage}
-                    alt="Schedule - Day 2"
-                    src="/schedule-images/schedule-day2.png"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <Image
-                    width={450}
-                    height={800}
-                    className={styles.scheduleImage}
-                    alt="Schedule - Day 3"
-                    src="/schedule-images/schedule-day3.png"
-                  />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                  <Image
-                    width={450}
-                    height={800}
-                    className={styles.scheduleImage}
-                    alt="Schedule - Day 4"
-                    src="/schedule-images/schedule-day4.png"
-                  />
-                </Carousel.Slide>
-              </Carousel>
-            </div>
-
-            <div className={styles.arrowIconContainer}>
-              <div>
-                <Image
-                  width={28}
-                  height={28}
-                  className={styles.arrowCircleLeftIcon}
-                  alt="Arrow Circle Right"
-                  src="/arrowCircleRight.svg"
-                  onClick={() => setChangeContent(!changeContent)}
-                />
-              </div>
-
-              <div>
-                <Image
-                  width={28}
-                  height={28}
-                  className={styles.arrowCircleRightIcon}
-                  alt="Arrow Circle Right"
-                  src="/arrowCircleRight.svg"
-                  onClick={() => setChangeContent(!changeContent)}
-                />
-              </div>
-            </div>
-          </div> */}
 
           {/* Registration Button */}
           <div className={styles.linkContainer}>
