@@ -21,6 +21,7 @@ export default function MenuBurger() {
     { path: "/speakers", label: "SPEAKERS" },
     // { path: "/erec", label: "EREC" },
     { path: "/venue", label: "VENUE" },
+    { path: "/schedule", label: "SCHEDULE" },
     { path: "/pricing", label: "PRICING" },
     { path: "/faqs", label: "FAQS" },
     { path: "/contact", label: "CONTACT" },
