@@ -63,8 +63,8 @@ export default function Content() {
           </div>
           <div>
             <p className={styles.smallText}>
-              While learning a bit of our speakers, let&rsquo;s get to know
-              their thoughts on the topic.
+              In this convention, you will learn the theme from various aspects
+              and perspectives brought by various speakers.
             </p>
           </div>
         </div>
