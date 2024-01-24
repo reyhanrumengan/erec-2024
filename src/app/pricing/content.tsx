@@ -154,8 +154,9 @@ export default function Content() {
                   Wait for confirmation
                 </p>
                 <p className={styles.paymentStepsText}>
-                  Once we receive the payment, we will send you a confirmation.
-                  And that&rsquo;s it! You&rsquo;ve secured your place.
+                  You will receive a confirmation after 4 to 7 days. If you have
+                  not received any confirmation after 7 days, please message
+                  Heru +49 176 8254 3691.
                 </p>
               </div>
             </div>
