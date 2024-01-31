@@ -1,0 +1,410 @@
+.page {
+  background-color: var(--color-lightblue);
+}
+
+/* Main Content - Location & Info */
+.info {
+  margin: 0 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.date,
+.venue,
+.contactForDesktop {
+  margin-bottom: 90px;
+}
+
+.pageHeader {
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: var(--color-mediumblue);
+  text-align: left;
+  margin: 0;
+}
+
+.dateText,
+.venueText {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+  margin: 0;
+}
+
+.germanyTextWithIconContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+}
+
+.arrowCircleRightIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.contactForMobile {
+  display: none;
+}
+
+.contactText {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+  margin: 0;
+}
+
+.span {
+  text-decoration: underline;
+}
+
+.upcoming {
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  line-height: 54px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upcomingText {
+  margin: 0;
+  width: 600px;
+}
+
+.upcomingSmallText {
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Mobile & Smaller screen */
+@media screen and (max-width: 1080px) {
+  .mainContainer {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* Main Content - Title Image */
+  .homeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: unset;
+    margin-top: 100px;
+    margin-bottom: 175px;
+  }
+
+  .titleContainer {
+    margin: 0 auto; /* Center the container horizontally */
+    align-self: unset;
+    /* justify-content: center; */
+    position: relative; /* Essential for child absolute positioning */
+    width: 100%;
+    max-width: 720px;
+    max-height: 500px;
+  }
+
+  .titleImage {
+    width: 100%;
+    height: 100%;
+    max-width: unset;
+    max-height: unset;
+    display: block;
+  }
+
+  .buttonContainer {
+    position: absolute; /* Absolute positioning relative to the container */
+    top: 73%; /* 73% from the top will position the button's top edge at the center */
+    left: unset;
+    transform: unset;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    border: 2px solid var(--color-mediumblue);
+    box-sizing: border-box;
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    line-height: 20px;
+    font-family: Poppins;
+    color: var(--color-mediumblue);
+    padding: 7px 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  /* needs to be fix */
+  /* we want hover only on desktop even if the screen is small */
+  /* then need to add another adjustment for mobile */
+  /* now: mobile/smaller screen, there is no hover */
+  .button:hover {
+    background-color: unset;
+    color: var(--color-mediumblue);
+  }
+
+  /* Main Content - Location, Date &Contact */
+  .info {
+    margin: 0 20px 65px 20px;
+    display: unset;
+    flex-direction: unset;
+    justify-content: unset;
+  }
+
+  .date,
+  .venue {
+    margin-bottom: 24px;
+  }
+
+  .pageHeader {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-mediumblue);
+    text-align: left;
+    margin: 0 0 10px 0;
+  }
+
+  .dateText,
+  .venueText {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    margin: 0;
+  }
+
+  .dateText {
+    display: inline;
+  }
+
+  .dateText::after {
+    content: " ";
+  }
+
+  .arrowCircleRightIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contactForDesktop {
+    display: none;
+    margin-bottom: unset;
+  }
+
+  .contactForMobile {
+    display: unset;
+    margin-bottom: 40px;
+    border-top: 1px solid var(--color-darkblue);
+    margin: 0 20px;
+  }
+
+  .contactText {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+    margin: 0;
+  }
+
+  /* Main Content - Pricing Info */
+  .pricing {
+    margin-left: 20px;
+  }
+
+  .feeInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+  .normalFee {
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+    gap: 10px;
+    overflow: auto;
+    /* margin: 0 20px; */
+  }
+
+  .ageContainer {
+    border-top: 1px solid var(--color-darkblue);
+    border-right: 1px solid var(--color-darkblue);
+    border-bottom: 1px solid var(--color-darkblue);
+    border-left: 1px solid var(--color-darkblue);
+    min-width: 200px;
+    width: unset;
+    height: 200px;
+    position: relative;
+  }
+
+  .ageContainer:last-child {
+    margin-right: 20px;
+  }
+
+  .ageFeeDetails {
+    line-height: 24px;
+    color: var(--color-darkblue);
+    text-align: left;
+    font-family: "Libre Bodoni";
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .ageText {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .ageSmallText {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .priceContainer {
+    position: absolute;
+    line-height: 64px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5px;
+    right: 15px;
+    bottom: 0px;
+  }
+
+  .eurText {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .priceText {
+    font-size: 48px;
+    letter-spacing: -0.04em;
+    margin: 0;
+  }
+
+  .earlyBirdFeeForDesktop {
+    position: unset;
+    width: unset;
+    height: unset;
+    background-color: unset;
+    color: unset;
+    display: none;
+  }
+
+  .earlyBirdFeeForMobile {
+    display: unset;
+    margin-left: 20px;
+    min-width: 200px;
+    width: unset;
+    height: 200px;
+    background-color: var(--color-darkblue);
+    color: #fff;
+    position: relative;
+  }
+
+  .earlyBirdFeeDetails {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .earlyBirdText {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "Libre Bodoni";
+    margin: 0;
+  }
+
+  .earlyBirdSmallText {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Poppins;
+    margin: 0;
+  }
+
+  .feeDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    margin: 20px 20px 0 20px;
+    gap: 20px;
+  }
+
+  .feeDescriptionText {
+    margin: 0;
+    width: unset;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: left;
+  }
+
+  .upcoming {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .upcomingText {
+    margin: 0;
+    width: 240px;
+  }
+
+  .upcomingSmallText {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
