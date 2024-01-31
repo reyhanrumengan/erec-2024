@@ -3,18 +3,29 @@ import Link from "next/link";
 import styles from "./speakers.module.css";
 import Image from "next/image";
 import { useState } from "react";
+import { Modal } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
 
 export default function Content() {
   const [showFullContent, setShowFullContent] = useState(false);
-  const [changeContent, setChangeContent] = useState(false);
+  const [mainContent, setMainContent] = useState(true);
+  const [opened, { open, close }] = useDisclosure(false);
 
   const handleReadMoreClick = () => {
     setShowFullContent(!showFullContent);
   };
 
+  const handleChangeContent = () => {
+    setMainContent(!mainContent);
+  };
+
+  const getImageSrc = () => {
+    return mainContent ? "/pak-billy.png" : "/pak-leo.png";
+  };
+
   // later, if we add more speakers, we need to pack it into an array and map it, and access it using index/key
 
-  // if FALSE show contentBilly
+  // if TRUE show contentBilly
   const contentBilly = (
     <p style={{ margin: 0 }}>
       Billy Kristanto (Dr. phil., Dr. theol., Universität Heidelberg) is
@@ -28,7 +39,7 @@ export default function Content() {
     </p>
   );
 
-  // if TRUE show contentLeonardo
+  // if FALSE show contentLeonardo
   const contentLeonardo = (
     <>
       <p style={{ margin: 0 }}>
@@ -54,6 +65,33 @@ export default function Content() {
     </>
   );
 
+  const videoUrl =
+    "https://d1lp121c60gp91.cloudfront.net/pak-billy-recording.mp4";
+
+  const VideoPlayer = () => {
+    console.log("videoRun");
+    return (
+      <div className={styles.videoContainer}>
+        <video
+          // controls
+          autoPlay
+          className={styles.video}
+        >
+          <source src={videoUrl} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <Image
+          width={28}
+          height={28}
+          className={styles.closeButton}
+          alt="Close Button"
+          src="/close.svg"
+          onClick={close}
+        />
+      </div>
+    );
+  };
+
   return (
     <>
       <div className={styles.heroContainer}>
@@ -71,15 +109,50 @@ export default function Content() {
 
         <div className={styles.container2}>
           {/* Container for Image/Tap to open video */}
-          {/* <div className={styles.speakerImageContainer}>
-            <Image
-              width={400}
-              height={533}
-              alt=""
-              src="/dandelion.png"
-              className={styles.speakerImage}
-            />
-          </div> */}
+          <div className={styles.speakerImageContainer}>
+            <Modal
+              transitionProps={{ duration: 450 }}
+              size="auto"
+              opened={opened}
+              onClose={close}
+              withCloseButton={false}
+              classNames={{
+                content: styles.modalContent,
+                body: styles.modalBody,
+              }}
+              overlayProps={{
+                backgroundOpacity: 0.55,
+                blur: 3,
+              }}
+            >
+              {opened && <VideoPlayer />}
+            </Modal>
+
+            <div
+              onClick={mainContent ? open : undefined}
+              className={styles.videoImageContainer}
+            >
+              <Image
+                width={400}
+                height={533}
+                alt="Speaker Image"
+                src={getImageSrc()}
+                /*later change back style to only "speakerImage", if all speakers already have video */
+                className={
+                  mainContent ? styles.pakBillyImage : styles.pakLeoImage
+                }
+              />
+              {mainContent && (
+                <Image
+                  width={64}
+                  height={64}
+                  alt=""
+                  src={"/play-button.svg"}
+                  className={styles.buttonPlay}
+                />
+              )}
+            </div>
+          </div>
 
           <div>
             <div className={styles.arrowIconContainer}>
@@ -90,7 +163,7 @@ export default function Content() {
                   className={styles.arrowCircleLeftIcon}
                   alt="Arrow Circle Right"
                   src="/arrowCircleRight.svg"
-                  onClick={() => setChangeContent(!changeContent)}
+                  onClick={handleChangeContent}
                 />
               </div>
 
@@ -101,15 +174,15 @@ export default function Content() {
                   className={styles.arrowCircleRightIcon}
                   alt="Arrow Circle Right"
                   src="/arrowCircleRight.svg"
-                  onClick={() => setChangeContent(!changeContent)}
+                  onClick={handleChangeContent}
                 />
               </div>
             </div>
             <div>
               <div className={styles.speakerName}>
-                {changeContent
-                  ? "Vic. Leonardo Chandra, M. Th."
-                  : "Rev. Dr. Billy  Kristanto, Ph.D., Th.D."}
+                {mainContent
+                  ? "Rev. Dr. Billy  Kristanto, Ph.D., Th.D."
+                  : "Vic. Leonardo Chandra, M. Th."}
               </div>
               <div
                 className={
@@ -118,7 +191,7 @@ export default function Content() {
                     : styles.speakerDescriptionShort
                 }
               >
-                {changeContent ? contentLeonardo : contentBilly}
+                {mainContent ? contentBilly : contentLeonardo}
               </div>
 
               {showFullContent ? (
