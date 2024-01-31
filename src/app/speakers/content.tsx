@@ -76,7 +76,7 @@ export default function Content() {
           height={28}
           className={styles.closeButton}
           alt="Close Button"
-          src="/close.svg"
+          src="/icons/close.svg"
           onClick={close}
         />
       </div>
@@ -138,7 +138,7 @@ export default function Content() {
                   width={64}
                   height={64}
                   alt=""
-                  src={"/play-button.svg"}
+                  src={"/icons/play-button.svg"}
                   className={styles.buttonPlay}
                 />
               )}
@@ -153,7 +153,7 @@ export default function Content() {
                   height={28}
                   className={styles.arrowCircleLeftIcon}
                   alt="Arrow Circle Right"
-                  src="/arrowCircleRight.svg"
+                  src="/icons/arrowCircleRight.svg"
                   onClick={handleChangeContent}
                 />
               </div>
@@ -164,7 +164,7 @@ export default function Content() {
                   height={28}
                   className={styles.arrowCircleRightIcon}
                   alt="Arrow Circle Right"
-                  src="/arrowCircleRight.svg"
+                  src="/icons/arrowCircleRight.svg"
                   onClick={handleChangeContent}
                 />
               </div>
@@ -213,7 +213,7 @@ export default function Content() {
               height={28}
               className={styles.arrowCircleRightIcon}
               alt="Arrow Circle Right"
-              src="/arrowCircleRight.svg"
+              src="/icons/arrowCircleRight.svg"
             />
           </Link> */}
         </div>

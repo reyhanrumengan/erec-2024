@@ -116,7 +116,7 @@ export default function Content() {
                   width={64}
                   height={64}
                   alt=""
-                  src="/fill-in-registration-icon.svg"
+                  src="/icons/fill-in-registration-icon.svg"
                 />
                 <p className={styles.paymentStepsHeader}>
                   Fill in registration form
@@ -133,7 +133,7 @@ export default function Content() {
                   width={64}
                   height={64}
                   alt=""
-                  src="/make-your-payment-icon.svg"
+                  src="/icons/make-your-payment-icon.svg"
                 />
                 <p className={styles.paymentStepsHeader}>Make your payment</p>
                 <p className={styles.paymentStepsText}>
@@ -148,7 +148,7 @@ export default function Content() {
                   width={64}
                   height={64}
                   alt=""
-                  src="/wait-for-confirmation-icon.svg"
+                  src="/icons/wait-for-confirmation-icon.svg"
                 />
                 <p className={styles.paymentStepsHeader}>
                   Wait for confirmation
@@ -175,7 +175,7 @@ export default function Content() {
                 height={28}
                 className={styles.arrowCircleRightIcon}
                 alt="Arrow Circle Right"
-                src="/arrowCircleRight.svg"
+                src="/icons/arrowCircleRight.svg"
               />
             </Link>
           </div>

@@ -19,7 +19,7 @@ export default function Footer() {
                 height={32}
                 className={styles.instagramIcon}
                 alt="Instagram"
-                src="/instagram.svg"
+                src="/icons/instagram.svg"
               />
               <span className={styles.instagramLink}>IREC.EUROPE</span>
             </Link>
@@ -37,7 +37,7 @@ export default function Footer() {
                 height={22.5}
                 className={styles.youtubeIcon}
                 alt="Youtube"
-                src="/youtube.svg"
+                src="/icons/youtube.svg"
               />
               <span className={styles.youtubeLink}>IREC in Europe</span>
             </Link>

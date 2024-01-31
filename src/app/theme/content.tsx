@@ -40,7 +40,7 @@ export default function Content() {
               height={28}
               className={styles.arrowCircleRightIcon}
               alt="Arrow Circle Right"
-              src="/arrowCircleRight.svg"
+              src="/icons/arrowCircleRight.svg"
             />
           </Link>
         </div>
