@@ -12,7 +12,7 @@ import styles from "./page.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "EREC 2024",
+  title: "EREC 2024 - Assurance of Grace",
   description:
     "European Reformed Evangelical Convention 2024, March 29 - April 1 2024, Halle (Saale), Germany",
   keywords: [

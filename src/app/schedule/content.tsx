@@ -102,7 +102,7 @@ export default function Content() {
               height={28}
               className={styles.arrowCircleLeftIcon}
               alt="Arrow Circle Left"
-              src="/arrowCircleRight.svg"
+              src="/icons/arrowCircleRight.svg"
               onClick={() => handleArrowClick("left")}
             />
           </div>
@@ -113,7 +113,7 @@ export default function Content() {
               height={28}
               className={styles.arrowCircleRightIcon}
               alt="Arrow Circle Right"
-              src="/arrowCircleRight.svg"
+              src="/icons/arrowCircleRight.svg"
               onClick={() => handleArrowClick("right")}
             />
           </div>

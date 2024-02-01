@@ -91,7 +91,7 @@ export default function Content() {
                     height={28}
                     className={styles.arrowCircleRightIcon}
                     alt="Arrow Circle Right"
-                    src="/arrowCircleRight.svg"
+                    src="/icons/arrowCircleRight.svg"
                   />
                 </a>
               </div>
@@ -122,7 +122,7 @@ export default function Content() {
                   height={40}
                   className={styles.optionsIcon}
                   alt="Walk"
-                  src="/walk.svg"
+                  src="/icons/walk.svg"
                 />
                 <div className={styles.transportationDetailsOptions}>
                   <p className={styles.transportationDetailsOptionsHeader}>
@@ -140,7 +140,7 @@ export default function Content() {
                   height={40}
                   className={styles.optionsIcon}
                   alt="Tram"
-                  src="/tram.svg"
+                  src="/icons/tram.svg"
                 />
                 <div className={styles.transportationDetailsOptions}>
                   <p className={styles.transportationDetailsOptionsHeader}>
@@ -159,7 +159,7 @@ export default function Content() {
                   height={40}
                   className={styles.optionsIcon}
                   alt="Bus"
-                  src="/bus.svg"
+                  src="/icons/bus.svg"
                 />
                 <div className={styles.transportationDetailsOptions}>
                   <p className={styles.transportationDetailsOptionsHeader}>
@@ -417,7 +417,7 @@ export default function Content() {
                 height={28}
                 className={styles.arrowCircleRightIcon}
                 alt="Arrow Circle Right"
-                src="/arrowCircleRight.svg"
+                src="/icons/arrowCircleRight.svg"
               />
             </Link>
           </div> */}

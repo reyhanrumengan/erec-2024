@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   gap: 90px;
-  /* align-items: center; */
+  align-items: center;
   margin-top: 100px;
   margin-bottom: 170px;
   margin-left: 40px;
@@ -37,6 +37,7 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
+  width: 935px;
 }
 
 .pageHeader {
@@ -65,10 +66,65 @@
   gap: 35px;
 }
 
-/* Will be adjusted later */
-.speakerImage {
+.modalContent {
+  width: 377.5px;
+  height: 640.8px;
+  border-radius: 25px;
+  background-color: var(--color-lightblue);
+}
+
+.modalBody {
+  padding: 0;
+  padding-top: 0;
+}
+
+.videoImageContainer {
+  position: relative;
+  width: fit-content;
+}
+
+/*later change back style to "speakerImage", if all speakers already have video */
+.pakBillyImage {
   width: 400px;
-  /* height: auto; */
+  height: auto;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.pakLeoImage {
+  width: 400px;
+  height: auto;
+  border-radius: 15px;
+}
+/*  */
+
+.buttonPlay {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.videoContainer {
+  padding: 20px 20px 14px 20px;
+  position: relative;
+}
+
+.video {
+  height: 600px;
+  width: auto;
+  border-radius: 15px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
 }
 
 .arrowIconContainer {
@@ -99,7 +155,7 @@
   font-family: Poppins;
   color: var(--color-darkblue);
   text-align: left;
-  /* width: 480px; Temporary commented until photo/video is available */
+  width: 500px;
   margin-bottom: 16px;
 }
 
@@ -113,9 +169,9 @@
   display: -webkit-inline-box;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 3; /* Change back to 6 after photo is available */
+  -webkit-line-clamp: 5; /* Change back to 6 after photo is available */
   -webkit-box-orient: vertical;
-  /* width: 480px; Temporary commented until photo/video is available */
+  width: 500px;
   margin-bottom: 24px;
   transition: max-height 0.5s ease;
 }
@@ -131,7 +187,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: initial;
-  /* width: 480px; Temporary commented until photo/video is available */
+  width: 480px;
   margin-bottom: 24px;
   transition: max-height 0.5s ease;
 }
@@ -217,6 +273,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: unset;
     max-width: 100%;
   }
 
@@ -251,10 +308,67 @@
     margin-bottom: 24px;
   }
 
-  /* Will be adjusted later */
-  .speakerImage {
+  .modalContent {
+    /* width: 377.5px; */
+    width: unset;
+    /* height: 640.8px; */
+    height: unset;
+    border-radius: 25px;
+    background-color: var(--color-lightblue);
+  }
+
+  .modalBody {
+    padding: 0;
+    padding-top: 0;
+  }
+
+  .videoImageContainer {
+    position: relative;
+    width: fit-content;
+  }
+
+  /*later change back style to "speakerImage", if all speakers already have video */
+  .pakBillyImage {
     width: 240px;
-    /* height: auto; */
+    height: auto;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  .pakLeoImage {
+    width: 240px;
+    height: auto;
+    border-radius: 15px;
+  }
+  /*  */
+
+  .buttonPlay {
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .videoContainer {
+    padding: 12px 12px 6px 12px;
+    position: relative;
+  }
+
+  .video {
+    height: 500px;
+    width: auto;
+    border-radius: 15px;
+  }
+
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
   }
 
   .arrowIconContainer {
