@@ -11,6 +11,8 @@ export default function Content() {
   const [mainContent, setMainContent] = useState(true);
   const [opened, { open, close }] = useDisclosure(false);
 
+  const cloudFrontDomain = "https://d1lp121c60gp91.cloudfront.net";
+
   const handleReadMoreClick = () => {
     setShowFullContent(!showFullContent);
   };
@@ -20,7 +22,9 @@ export default function Content() {
   };
 
   const getImageSrc = () => {
-    return mainContent ? "/pak-billy.png" : "/pak-leo.png";
+    return mainContent
+      ? `${cloudFrontDomain}/pak-billy.png`
+      : `${cloudFrontDomain}/pak-leo.png`;
   };
 
   // later, if we add more speakers, we need to pack it into an array and map it, and access it using index/key
@@ -56,11 +60,9 @@ export default function Content() {
     </>
   );
 
-  const videoUrl =
-    "https://d1lp121c60gp91.cloudfront.net/pak-billy-recording.mp4";
+  const videoUrl = `${cloudFrontDomain}/pak-billy-recording.mp4`;
 
   const VideoPlayer = () => {
-    console.log("videoRun");
     return (
       <div className={styles.videoContainer}>
         <video
