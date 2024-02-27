@@ -71,6 +71,18 @@ export const registrationQuestions = [
     answer:
       "We offer installment payment options for those who need help on this topic. Just get in touch with our registration point of contact, and they will provide you with all the details on how to take advantage of this option. The first installment should be paid before the start of the event, or by Jan 31st for the early bird price.",
   },
+  {
+    value: "question-6",
+    question:
+      "What is the last date for me to request a refund for this event?",
+    answer: "February 25, 2024.",
+  },
+  {
+    value: "question-7",
+    question: "What is the deadline for registering for this EREC event?",
+    answer:
+      "We accept registrations as long as there are still available slots.",
+  },
 ];
 
 export const accommodationQuestions = [
@@ -108,5 +120,19 @@ export const accommodationQuestions = [
     question:
       "What should I do if I have a special condition that needs to be considered for room allocation?",
     answer: "Please get in touch with our registration point of contact.",
+  },
+  {
+    value: "question-7",
+    question:
+      "Can I stay at the accommodation provided by EREC before or after the event starts?",
+    answer:
+      "Yes, you can. Please proceed to make a booking directly from the accommodation website. (https://www.jugendherberge.de/jugendherbergen/halle/)",
+  },
+  {
+    value: "question-8",
+    question:
+      "Can I make special requests for the type and configuration of the room?",
+    answer:
+      "Please contact the registration department in each city. We will do our best to accommodate your requests.",
   },
 ];
