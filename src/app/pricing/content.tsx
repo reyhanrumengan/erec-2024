@@ -14,7 +14,8 @@ export default function Content() {
             </div>
             <div className={styles.feeInfo}>
               <div className={styles.normalFee}>
-                <div className={styles.earlyBirdFeeForMobile}>
+                {/* Early Bird Mobile */}
+                {/* <div className={styles.earlyBirdFeeForMobile}>
                   <div className={styles.earlyBirdFeeDetails}>
                     <p className={styles.earlyBirdText}>ADULT</p>
                     <p className={styles.earlyBirdSmallText}>Early Bird</p>
@@ -26,7 +27,7 @@ export default function Content() {
                     <p className={styles.eurText}>EUR</p>
                     <p className={styles.priceText}>185</p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className={styles.ageContainer}>
                   <div className={styles.ageFeeDetails}>
@@ -72,7 +73,8 @@ export default function Content() {
                 </div>
               </div>
 
-              <div className={styles.earlyBirdFeeForDesktop}>
+              {/* Early Bird Desktop */}
+              {/* <div className={styles.earlyBirdFeeForDesktop}>
                 <div className={styles.earlyBirdFeeDetails}>
                   <p className={styles.earlyBirdText}>ADULT</p>
                   <p className={styles.earlyBirdSmallText}>Early Bird</p>
@@ -84,7 +86,7 @@ export default function Content() {
                   <p className={styles.eurText}>EUR</p>
                   <p className={styles.priceText}>185</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className={styles.feeDescription}>
                 <p className={styles.feeDescriptionText}>
