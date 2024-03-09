@@ -9,6 +9,7 @@ import {
   generalQuestions,
   registrationQuestions,
   accommodationQuestions,
+  transportationQuestions,
 } from "./questionsContent.js";
 
 export default function Content() {
@@ -68,6 +69,19 @@ export default function Content() {
     </Accordion.Item>
   ));
 
+  const transportation = transportationQuestions.map((question) => (
+    <Accordion.Item key={question.value} value={question.value}>
+      <Accordion.Control
+        chevron={
+          question.value === openedAccordion ? <IconMinus /> : <IconPlus />
+        }
+      >
+        {question.question}
+      </Accordion.Control>
+      <Accordion.Panel>{question.answer}</Accordion.Panel>
+    </Accordion.Item>
+  ));
+
   const handler = (value: string | null) => {
     setOpenedAccordion(null);
     setActiveTab(value);
@@ -100,7 +114,7 @@ export default function Content() {
                 {tab("general")}
                 {tab("registration")}
                 {tab("accomodation")}
-                {/* {tab("transportation")} */}
+                {tab("transportation")}
               </div>
             </Tabs.List>
 
@@ -152,20 +166,22 @@ export default function Content() {
                 {accomodation}
               </Accordion>
             </Tabs.Panel>
-            {/* <Tabs.Panel value="transportation">
+            <Tabs.Panel value="transportation">
               <Accordion
                 value={openedAccordion}
                 onChange={setOpenedAccordion}
                 chevronPosition="left"
                 classNames={{
+                  item: styles.accordionItem,
                   control: styles.accordionControl,
                   label: styles.accordionLabel,
-                  panel: styles.accordionPanel,
+                  content: styles.accordionContent,
+                  chevron: styles.accordionChevron,
                 }}
               >
                 {transportation}
               </Accordion>
-            </Tabs.Panel> */}
+            </Tabs.Panel>
           </Tabs>
 
           {/* Link to Contact Page */}

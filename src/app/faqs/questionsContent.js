@@ -112,7 +112,7 @@ export const accommodationQuestions = [
   {
     value: "question-5",
     question:
-      "I’m going to bring my own car. Can I park at or near the accommodation?",
+      "I'm going to bring my own car. Can I park at or near the accommodation?",
     answer: "Yes. Parking slots are available at the venue.",
   },
   {
@@ -134,5 +134,15 @@ export const accommodationQuestions = [
       "Can I make special requests for the type and configuration of the room?",
     answer:
       "Please contact the registration department in each city. We will do our best to accommodate your requests.",
+  },
+];
+
+export const transportationQuestions = [
+  {
+    value: "question-1",
+    question:
+      "I'm afraid if there is a transportation-related strike on the day of my journey to Halle. What should I do? Is it certain that there will be no transportation-related strike on the day of travel?",
+    answer:
+      "We will continue to update you if there is a strike in the days leading up to March 29, 2024. However, we can also recommend taking the bus (Flixbus), Flixtrain, or renting car for your journey or arriving in Halle earlier.",
   },
 ];
