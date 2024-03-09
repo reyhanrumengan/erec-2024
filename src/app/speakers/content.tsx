@@ -60,7 +60,13 @@ export default function Content() {
     </>
   );
 
-  const videoUrl = `${cloudFrontDomain}/pak-billy-recording.mp4`;
+  // const videoUrl = `${cloudFrontDomain}/pak-billy-recording.mp4`;
+
+  const getvideoUrl = () => {
+    return mainContent
+      ? `${cloudFrontDomain}/pak-billy-recording.mp4`
+      : `${cloudFrontDomain}/pak-leo-recording.mp4`;
+  };
 
   const VideoPlayer = () => {
     return (
@@ -70,7 +76,7 @@ export default function Content() {
           autoPlay
           className={styles.video}
         >
-          <source src={videoUrl} type="video/mp4" />
+          <source src={getvideoUrl()} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <Image
@@ -121,10 +127,7 @@ export default function Content() {
               {opened && <VideoPlayer />}
             </Modal>
 
-            <div
-              onClick={mainContent ? open : undefined}
-              className={styles.videoImageContainer}
-            >
+            <div onClick={open} className={styles.videoImageContainer}>
               <Image
                 width={400}
                 height={533}
@@ -135,15 +138,14 @@ export default function Content() {
                   mainContent ? styles.pakBillyImage : styles.pakLeoImage
                 }
               />
-              {mainContent && (
-                <Image
-                  width={64}
-                  height={64}
-                  alt=""
-                  src={"/icons/play-button.svg"}
-                  className={styles.buttonPlay}
-                />
-              )}
+
+              <Image
+                width={64}
+                height={64}
+                alt=""
+                src={"/icons/play-button.svg"}
+                className={styles.buttonPlay}
+              />
             </div>
           </div>
 
