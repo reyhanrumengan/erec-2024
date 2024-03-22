@@ -221,6 +221,27 @@ export default function Content() {
             />
           </Link> */}
         </div>
+
+        <div className={styles.container3}>
+          <div>
+            <p className={styles.otherSpeakersHeader}>AND MORE SPEAKERS</p>
+          </div>
+
+          <div className={styles.otherSpeakersContainer}>
+            <div className={styles.otherSpeakersText}>
+              Rev. Dr. Jimmy Pardede, M.A., M.Th.
+            </div>
+            <div className={styles.otherSpeakersText}>
+              Rev. Agus Marjanto, M.Div., M.Th.
+            </div>
+            <div className={styles.otherSpeakersText}>
+              Rev. Dr. Ivan Kristiono, M.Div., M.Hum.
+            </div>
+            <div className={styles.otherSpeakersText}>
+              Elder Daniel Indra Cahyadi
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

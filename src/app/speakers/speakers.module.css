@@ -234,6 +234,39 @@
   margin: 0;
 } */
 
+.container3 {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 935px;
+}
+
+.otherSpeakersHeader {
+  font-size: 56px; /* 64 normal size */
+  font-family: "Libre Bodoni";
+  color: var(--color-mediumblue);
+  margin: 0;
+  width: fit-content;
+}
+
+.otherSpeakersContainer {
+  display: grid;
+  grid: auto auto auto / auto auto;
+  grid-gap: 35px 35px;
+}
+
+.otherSpeakersText {
+  font-size: 28px; /* 32 normal size */
+  letter-spacing: 0.02em;
+  line-height: 44px; /* 48 normal size */
+  font-weight: 300;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+  width: 420px;
+  margin: 0;
+}
+
 /* Mobile & Smaller screen */
 @media screen and (max-width: 1080px) {
   .page {
@@ -473,4 +506,42 @@
     margin: 0;
     width: 150px;
   } */
+
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: unset;
+    max-width: 100%;
+  }
+
+  .otherSpeakersHeader {
+    font-size: 32px;
+    font-family: "Libre Bodoni";
+    color: var(--color-mediumblue);
+    width: 250px;
+    margin: 0;
+    /* width: fit-content; */
+  }
+
+  .otherSpeakersContainer {
+    display: flex;
+    grid: unset;
+    grid-gap: unset;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+  }
+
+  .otherSpeakersText {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+    font-weight: 300;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
 }
