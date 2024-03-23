@@ -97,6 +97,12 @@
   text-align: left;
   margin: 0;
   margin-bottom: 8px;
+  text-decoration: underline;
+  width: fit-content;
+}
+
+.venueLocationText1:hover {
+  color: var(--color-mediumblue);
 }
 
 .venueLocationText2 {
@@ -459,6 +465,11 @@
     text-align: left;
     margin: 0;
     margin-bottom: 8px;
+    text-decoration: none;
+  }
+
+  .venueLocationText1:hover {
+    color: none;
   }
 
   .venueLocationText2 {
