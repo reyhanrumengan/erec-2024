@@ -131,10 +131,7 @@ export default function Content() {
               <p className={styles.pageHeader}>SCHEDULE</p>
             </div>
             <div>
-              <p className={styles.smallText}>
-                Schedule is still being finalized. A detailed and downloadable
-                schedule will be available a few weeks before the event date.
-              </p>
+              <p className={styles.smallText}>Schedule is Final.</p>
             </div>
           </div>
 
