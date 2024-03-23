@@ -72,16 +72,22 @@ export default function Content() {
                 <ImageContainer />
               </div>
 
-              <p className={styles.venueLocationText1}>
+              <a
+                href="https://www.jugendherberge.de/en/youth-hostels/halle/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.venueLocationText1}
+              >
                 DJH Jugendherberge Halle
-              </p>
+              </a>
+
               <p className={styles.venueLocationText2}>Große Steinstraße 60,</p>
               <div className={styles.germanyTextWithIconContainer}>
                 <p className={styles.venueLocationText2}>
                   06108 Halle (Saale), Germany
                 </p>
                 <a
-                  href="https://www.jugendherberge.de/en/youth-hostels/halle/"
+                  href="https://maps.app.goo.gl/wYPuEUDwLiPHKh4S7"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ height: "28px" }}
@@ -148,7 +154,17 @@ export default function Content() {
                   </p>
                   <p className={styles.transportationDetailsOptionsText}>
                     Tram 12 (Trotha), 5 (Berliner Bruckë), 2 (Kröllwitz). Get
-                    off at Am Steintor stop. Walk around 6 mins.
+                    off at{" "}
+                    <a
+                      href="https://maps.app.goo.gl/aNMjUpnTZW51uCVG7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.inlineLink}
+                    >
+                      Am Steintor
+                    </a>{" "}
+                    stop. Walk around 6 mins. <br />
+                    NB: Ticket can be purchased with cash or credit card.
                   </p>
                 </div>
               </div>
@@ -167,7 +183,17 @@ export default function Content() {
                   </p>
                   <p className={styles.transportationDetailsOptionsText}>
                     Bus 350 (Markt), 301 (Wettin), 345 (Halle-Center). Get off
-                    at Am Steintor stop. Walk around 6 mins.
+                    at{" "}
+                    <a
+                      href="https://maps.app.goo.gl/aNMjUpnTZW51uCVG7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.inlineLink}
+                    >
+                      Am Steintor
+                    </a>{" "}
+                    stop. Walk around 6 mins. <br /> NB: Ticket can be purchased
+                    with cash or credit card.
                   </p>
                 </div>
               </div>
@@ -187,8 +213,17 @@ export default function Content() {
                 <div className={styles.transportationDetailsOptions}>
                   <p className={styles.transportationDetailsOptionsText}>
                     By tram: Tram 12 (Trotha), 5 (Berliner Bruckë), 2
-                    (Kröllwitz). Get off at Am Steintor stop. Walk around 6
-                    mins.
+                    (Kröllwitz). Get off at{" "}
+                    <a
+                      href="https://maps.app.goo.gl/aNMjUpnTZW51uCVG7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.inlineLink}
+                    >
+                      Am Steintor
+                    </a>{" "}
+                    stop. Walk around 6 mins. <br />
+                    NB: Ticket can be purchased with cash or credit card.
                   </p>
                 </div>
               </div>
@@ -197,7 +232,17 @@ export default function Content() {
                 <div className={styles.transportationDetailsOptions}>
                   <p className={styles.transportationDetailsOptionsText}>
                     By bus: Bus 350 (Markt), 301 (Wettin), 345 (Halle-Center).
-                    Get off at Am Steintor stop. Walk around 6 mins.
+                    Get off at{" "}
+                    <a
+                      href="https://maps.app.goo.gl/aNMjUpnTZW51uCVG7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.inlineLink}
+                    >
+                      Am Steintor
+                    </a>{" "}
+                    stop. Walk around 6 mins. <br />
+                    NB: Ticket can be purchased with cash or credit card.
                   </p>
                 </div>
               </div>
@@ -370,6 +415,7 @@ export default function Content() {
                     href="https://www.omio.com/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className={styles.inlineLink}
                   >
                     Omio
                   </a>
@@ -378,6 +424,7 @@ export default function Content() {
                     href="https://www.rome2rio.com/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className={styles.inlineLink}
                   >
                     Rome2Rio
                   </a>
@@ -386,6 +433,7 @@ export default function Content() {
                     href="https://int.bahn.de/en"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className={styles.inlineLink}
                   >
                     Deutsche Bahn AG
                   </a>
@@ -394,6 +442,7 @@ export default function Content() {
                     href="https://www.google.com/travel/flights"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className={styles.inlineLink}
                   >
                     Google Flights
                   </a>

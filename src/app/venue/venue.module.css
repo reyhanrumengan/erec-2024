@@ -97,6 +97,12 @@
   text-align: left;
   margin: 0;
   margin-bottom: 8px;
+  text-decoration: underline;
+  width: fit-content;
+}
+
+.venueLocationText1:hover {
+  color: var(--color-mediumblue);
 }
 
 .venueLocationText2 {
@@ -224,6 +230,15 @@
   text-align: left;
   width: 500px;
   margin: 0;
+}
+
+.inlineLink {
+  color: var(--color-darkblue);
+  text-decoration: underline;
+}
+
+.inlineLink:hover {
+  color: var(--color-mediumblue);
 }
 
 /* Detail 2 */
@@ -459,6 +474,11 @@
     text-align: left;
     margin: 0;
     margin-bottom: 8px;
+    text-decoration: none;
+  }
+
+  .venueLocationText1:hover {
+    color: none;
   }
 
   .venueLocationText2 {
@@ -583,6 +603,15 @@
   .transportationDetailsOptionsText::before {
     content: "•";
     margin-right: 5px;
+  }
+
+  .inlineLink {
+    color: none;
+    text-decoration: underline;
+  }
+
+  .inlineLink:hover {
+    color: none;
   }
 
   /* Detail 2 */
