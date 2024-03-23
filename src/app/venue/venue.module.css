@@ -232,6 +232,15 @@
   margin: 0;
 }
 
+.inlineLink {
+  color: var(--color-darkblue);
+  text-decoration: underline;
+}
+
+.inlineLink:hover {
+  color: var(--color-mediumblue);
+}
+
 /* Detail 2 */
 .tabsRoot {
   margin-bottom: 80px;
@@ -594,6 +603,15 @@
   .transportationDetailsOptionsText::before {
     content: "•";
     margin-right: 5px;
+  }
+
+  .inlineLink {
+    color: none;
+    text-decoration: underline;
+  }
+
+  .inlineLink:hover {
+    color: none;
   }
 
   /* Detail 2 */

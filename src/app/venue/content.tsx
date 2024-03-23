@@ -154,7 +154,16 @@ export default function Content() {
                   </p>
                   <p className={styles.transportationDetailsOptionsText}>
                     Tram 12 (Trotha), 5 (Berliner Bruckë), 2 (Kröllwitz). Get
-                    off at Am Steintor stop. Walk around 6 mins. <br />
+                    off at{" "}
+                    <a
+                      href="https://maps.app.goo.gl/aNMjUpnTZW51uCVG7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.inlineLink}
+                    >
+                      Am Steintor
+                    </a>{" "}
+                    stop. Walk around 6 mins. <br />
                     NB: Ticket can be purchased with cash or credit card.
                   </p>
                 </div>
@@ -174,8 +183,17 @@ export default function Content() {
                   </p>
                   <p className={styles.transportationDetailsOptionsText}>
                     Bus 350 (Markt), 301 (Wettin), 345 (Halle-Center). Get off
-                    at Am Steintor stop. Walk around 6 mins. <br /> NB: Ticket
-                    can be purchased with cash or credit card.
+                    at{" "}
+                    <a
+                      href="https://maps.app.goo.gl/aNMjUpnTZW51uCVG7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.inlineLink}
+                    >
+                      Am Steintor
+                    </a>{" "}
+                    stop. Walk around 6 mins. <br /> NB: Ticket can be purchased
+                    with cash or credit card.
                   </p>
                 </div>
               </div>
@@ -195,8 +213,16 @@ export default function Content() {
                 <div className={styles.transportationDetailsOptions}>
                   <p className={styles.transportationDetailsOptionsText}>
                     By tram: Tram 12 (Trotha), 5 (Berliner Bruckë), 2
-                    (Kröllwitz). Get off at Am Steintor stop. Walk around 6
-                    mins. <br />
+                    (Kröllwitz). Get off at{" "}
+                    <a
+                      href="https://maps.app.goo.gl/aNMjUpnTZW51uCVG7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.inlineLink}
+                    >
+                      Am Steintor
+                    </a>{" "}
+                    stop. Walk around 6 mins. <br />
                     NB: Ticket can be purchased with cash or credit card.
                   </p>
                 </div>
@@ -206,7 +232,16 @@ export default function Content() {
                 <div className={styles.transportationDetailsOptions}>
                   <p className={styles.transportationDetailsOptionsText}>
                     By bus: Bus 350 (Markt), 301 (Wettin), 345 (Halle-Center).
-                    Get off at Am Steintor stop. Walk around 6 mins. <br />
+                    Get off at{" "}
+                    <a
+                      href="https://maps.app.goo.gl/aNMjUpnTZW51uCVG7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.inlineLink}
+                    >
+                      Am Steintor
+                    </a>{" "}
+                    stop. Walk around 6 mins. <br />
                     NB: Ticket can be purchased with cash or credit card.
                   </p>
                 </div>
@@ -380,6 +415,7 @@ export default function Content() {
                     href="https://www.omio.com/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className={styles.inlineLink}
                   >
                     Omio
                   </a>
@@ -388,6 +424,7 @@ export default function Content() {
                     href="https://www.rome2rio.com/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className={styles.inlineLink}
                   >
                     Rome2Rio
                   </a>
@@ -396,6 +433,7 @@ export default function Content() {
                     href="https://int.bahn.de/en"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className={styles.inlineLink}
                   >
                     Deutsche Bahn AG
                   </a>
@@ -404,6 +442,7 @@ export default function Content() {
                     href="https://www.google.com/travel/flights"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className={styles.inlineLink}
                   >
                     Google Flights
                   </a>
