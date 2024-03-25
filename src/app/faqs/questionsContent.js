@@ -135,6 +135,22 @@ export const accommodationQuestions = [
     answer:
       "Please contact the registration department in each city. We will do our best to accommodate your requests.",
   },
+  {
+    value: "question-9",
+    question: "Does the accommodation provide free Bedding?",
+    answer: "Yes.",
+  },
+  {
+    value: "question-10",
+    question: "Does the accommodation provide free Towel?",
+    answer:
+      "No. You need to bring your own or rent it from the accommodation for €1.5/Towel",
+  },
+  {
+    value: "question-11",
+    question: "Does the accommodation provide Soap & Shampoo?",
+    answer: "No. Please bring your own soap & shampoo.",
+  },
 ];
 
 export const transportationQuestions = [
