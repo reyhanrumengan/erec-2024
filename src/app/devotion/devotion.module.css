@@ -58,6 +58,7 @@
     text-decoration: underline;
     color: var(--color-darkblue);
     font-family: Poppins;
+    cursor: pointer;
   }
 
   /* Days Tab */

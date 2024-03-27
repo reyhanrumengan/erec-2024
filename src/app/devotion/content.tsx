@@ -2,10 +2,11 @@
 import styles from "./devotion.module.css";
 import { Tabs } from "@mantine/core";
 import { useEffect, useState } from "react";
-import { day1 } from "./devotionContent";
+import { day1, day1EN, day2 } from "./devotionContent";
 
 export default function Content() {
   const [activeTab, setActiveTab] = useState<string | null>("1 (Mar 30)");
+  const [english, setEnglish] = useState(false);
 
   const tab = (day: string) => {
     const tabStyle = {
@@ -19,6 +20,10 @@ export default function Content() {
     );
   };
 
+  const handleChangeLanguage = () => {
+    setEnglish(!english);
+  };
+
   return (
     <>
       <div className={styles.heroContainer}>
@@ -26,7 +31,9 @@ export default function Content() {
           {/* Title */}
           <div className={styles.devotionTitle}>DEVOTION</div>
 
-          <div className={styles.changeLanguage}>Read in English</div>
+          <div className={styles.changeLanguage} onClick={handleChangeLanguage}>
+            Read in English
+          </div>
 
           {/* Days Tab */}
           <div className={styles.daysTab}>
@@ -48,9 +55,13 @@ export default function Content() {
                 </div>
               </Tabs.List>
 
-              <Tabs.Panel value="1 (Mar 30)">{day1()}</Tabs.Panel>
+              <Tabs.Panel value="1 (Mar 30)">
+                {!english ? day1() : day1EN()}
+              </Tabs.Panel>
 
-              <Tabs.Panel value="2 (Apr 1)">xasdsa</Tabs.Panel>
+              <Tabs.Panel value="2 (Apr 1)">
+                {!english ? day2() : day2EN()}
+              </Tabs.Panel>
             </Tabs>
           </div>
         </div>
