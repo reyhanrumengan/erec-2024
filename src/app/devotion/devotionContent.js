@@ -120,7 +120,7 @@ export function day1() {
               that believers are in perpetual conflict with their own unbelief.
               ... Yet, once again, we deny that, in whatever way they are
               afflicted, they fall away and depart from the certain assurance
-              received from God's mercy.<sup>3</sup>
+              received from God&apos;s mercy.<sup>3</sup>
             </em>
           </div>
           <div className={styles.quotes}>
@@ -151,7 +151,7 @@ export function day1() {
           <div>
             <sup>1</sup> Matthew Henry,{" "}
             <em>
-              Matthew Henry's Commentary on the Whole Bible: Complete and
+              Matthew Henry&apos;s Commentary on the Whole Bible: Complete and
               Unabridged in One Volume
             </em>{" "}
             (Peabody: Hendrickson, 1994), 2312.
