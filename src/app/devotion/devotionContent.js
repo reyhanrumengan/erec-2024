@@ -10,12 +10,12 @@ export function day1() {
         </div>
 
         <div className={styles.text1}>
-          "Sebab aku yakin, bahwa baik maut, maupun hidup, baik
+          &rdquo;Sebab aku yakin, bahwa baik maut, maupun hidup, baik
           malaikat-malaikat, maupun pemerintah- pemerintah, baik yang ada
           sekarang, maupun yang akan datang, atau kuasa-kuasa, baik yang di
           atas, maupun yang di bawah, ataupun sesuatu makhluk lain, tidak akan
           dapat memisahkan kita dari kasih Allah, yang ada dalam Kristus Yesus,
-          Tuhan kita"(Roma 8:38–39)
+          Tuhan kita&rdquo;(Roma 8:38–39)
         </div>
 
         <a href="#title" className={styles.linkTo}>
@@ -58,11 +58,12 @@ export function day1() {
         <div className={styles.text2}>
           Apakah kita memiliki kepedulian yang dalam akan dalamnya pemahaman
           kita akan kasih Allah? Paulus berdoa bagi jemaat Efesus agar mereka
-          "bersama-sama dengan segala orang kudus dapat memahami, betapa
-          lebarnya dan panjangnya dan tingginya dan dalamnya kasih Kristus"
-          (Efesus 3:18). Ia tidak berdoa agar jemaat Efesus menjadi orang-orang
-          yang berhasil dan berpengaruh, yang disegani dan diperhitungkan oleh
-          dunia ini, yang tidak malu-maluin kekristenan. Bukan itu!
+          &rdquo;bersama-sama dengan segala orang kudus dapat memahami, betapa
+          lebarnya dan panjangnya dan tingginya dan dalamnya kasih
+          Kristus&rdquo; (Efesus 3:18). Ia tidak berdoa agar jemaat Efesus
+          menjadi orang-orang yang berhasil dan berpengaruh, yang disegani dan
+          diperhitungkan oleh dunia ini, yang tidak malu-maluin kekristenan.
+          Bukan itu!
         </div>
 
         <div className={styles.text2}>
@@ -158,13 +159,13 @@ export function day1() {
           <div>
             <sup>2</sup>{" "}
             <em>
-              "No man is a believer, I say, except him who, leaning upon the
-              assurance of his salvation, confidently triumphs over the devil
-              and death; as we are taught from that masterly summation of Paul:
-              I have confessed that "neither death nor life, nor angels, nor
-              principalities, nor powers, nor things present, nor things to come
-              ... can separate us from the love of God which embraces us in
-              Christ Jesus" [Rom. 8:38–39 p.]"
+              &rdquo;No man is a believer, I say, except him who, leaning upon
+              the assurance of his salvation, confidently triumphs over the
+              devil and death; as we are taught from that masterly summation of
+              Paul: I have confessed that &rdquo;neither death nor life, nor
+              angels, nor principalities, nor powers, nor things present, nor
+              things to come ... can separate us from the love of God which
+              embraces us in Christ Jesus&rdquo; [Rom. 8:38–39 p.]&rdquo;
             </em>
             ; John Calvin, John Calvin,{" "}
             <em>Institutes of the Christian Religion</em>, III.2.16, 2 Vols.,
