@@ -2,7 +2,7 @@
 import styles from "./devotion.module.css";
 import { Tabs } from "@mantine/core";
 import { useEffect, useState } from "react";
-import { day1, day1EN, day2 } from "./devotionContent";
+import { day1, day1EN, day2, day2EN } from "./devotionContent";
 
 export default function Content() {
   const [activeTab, setActiveTab] = useState<string | null>("1 (Mar 30)");
