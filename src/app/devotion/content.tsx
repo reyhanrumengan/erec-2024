@@ -1,7 +1,5 @@
 "use client";
-import Link from "next/link";
 import styles from "./devotion.module.css";
-import Image from "next/image";
 import { Tabs } from "@mantine/core";
 import { useEffect, useState } from "react";
 import { day1 } from "./devotionContent";
