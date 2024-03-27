@@ -1,0 +1,62 @@
+"use client";
+import Link from "next/link";
+import styles from "./devotion.module.css";
+import Image from "next/image";
+import { Tabs } from "@mantine/core";
+import { useEffect, useState } from "react";
+import { day1 } from "./devotionContent";
+
+export default function Content() {
+  const [activeTab, setActiveTab] = useState<string | null>("1 (Mar 30)");
+
+  const tab = (day: string) => {
+    const tabStyle = {
+      borderColor: activeTab === day ? "#2a4385" : "#d0ddff",
+    };
+
+    return (
+      <Tabs.Tab value={day} style={tabStyle}>
+        {day}
+      </Tabs.Tab>
+    );
+  };
+
+  return (
+    <>
+      <div className={styles.heroContainer}>
+        <div className={styles.content}>
+          {/* Title */}
+          <div className={styles.devotionTitle}>DEVOTION</div>
+
+          <div className={styles.changeLanguage}>Read in English</div>
+
+          {/* Days Tab */}
+          <div className={styles.daysTab}>
+            <Tabs
+              value={activeTab}
+              onChange={setActiveTab}
+              classNames={{
+                root: styles.tabsRoot,
+                list: styles.tabList,
+                tab: styles.tab,
+                tabLabel: styles.tabLabel,
+              }}
+              // color="#2a4385"
+            >
+              <Tabs.List>
+                <div className={styles.tabContainer}>
+                  {tab("1 (Mar 30)")}
+                  {tab("2 (Apr 1)")}
+                </div>
+              </Tabs.List>
+
+              <Tabs.Panel value="1 (Mar 30)">{day1()}</Tabs.Panel>
+
+              <Tabs.Panel value="2 (Apr 1)">xasdsa</Tabs.Panel>
+            </Tabs>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
