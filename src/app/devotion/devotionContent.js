@@ -10,7 +10,7 @@ export function day1() {
         </div>
 
         <div className={styles.text1}>
-          “Sebab aku yakin, bahwa baik maut, maupun hidup, baik
+          "Sebab aku yakin, bahwa baik maut, maupun hidup, baik
           malaikat-malaikat, maupun pemerintah- pemerintah, baik yang ada
           sekarang, maupun yang akan datang, atau kuasa-kuasa, baik yang di
           atas, maupun yang di bawah, ataupun sesuatu makhluk lain, tidak akan
@@ -41,10 +41,10 @@ export function day1() {
         <div className={styles.text2}>
           Kepastian akan kasih karunia (<em>assurance of grace</em>) sangat
           berkaitan dengan kepastian akan kecukupan kasih Allah di dalam Kristus
-          ini. Persekutuan dan kesatuan dengan Kristus (unio cum Christo) adalah
-          segalanya bagi orang percaya. Kita tidak membutuhkan kepastian yang
-          lain lagi dalam hidup ini, karena memang tidak ada yang lebih tinggi
-          lagi daripada hal ini.
+          ini. Persekutuan dan kesatuan dengan Kristus (
+          <em>unio cum Christo</em>) adalah segalanya bagi orang percaya. Kita
+          tidak membutuhkan kepastian yang lain lagi dalam hidup ini, karena
+          memang tidak ada yang lebih tinggi lagi daripada hal ini.
         </div>
 
         <div className={styles.text2}>
@@ -58,8 +58,8 @@ export function day1() {
         <div className={styles.text2}>
           Apakah kita memiliki kepedulian yang dalam akan dalamnya pemahaman
           kita akan kasih Allah? Paulus berdoa bagi jemaat Efesus agar mereka
-          “bersama-sama dengan segala orang kudus dapat memahami, betapa
-          lebarnya dan panjangnya dan tingginya dan dalamnya kasih Kristus”
+          "bersama-sama dengan segala orang kudus dapat memahami, betapa
+          lebarnya dan panjangnya dan tingginya dan dalamnya kasih Kristus"
           (Efesus 3:18). Ia tidak berdoa agar jemaat Efesus menjadi orang-orang
           yang berhasil dan berpengaruh, yang disegani dan diperhitungkan oleh
           dunia ini, yang tidak malu-maluin kekristenan. Bukan itu!
@@ -72,12 +72,15 @@ export function day1() {
             className={styles.quotes}
             style={{ marginTop: "22px", marginBottom: "22px" }}
           >
-            By the breadth of it we may understand the extent of it to all ages,
-            nations, and ranks of men; by the length of it, its continuance from
-            everlasting to everlasting; by the depth of it, its stooping to the
-            lowest condition, with a design to relieve and save those who have
-            sunk into the depths of sin and misery; by its height, its entitling
-            and raising us up to the heavenly happiness and glory.<sup>1</sup>
+            <em>
+              By the breadth of it we may understand the extent of it to all
+              ages, nations, and ranks of men; by the length of it, its
+              continuance from everlasting to everlasting; by the depth of it,
+              its stooping to the lowest condition, with a design to relieve and
+              save those who have sunk into the depths of sin and misery; by its
+              height, its entitling and raising us up to the heavenly happiness
+              and glory.<sup>1</sup>
+            </em>
           </div>
           <div className={styles.quotes}>
             Dari luasnya kita dapat memahami jangkauannya terhadap segala usia,
@@ -98,22 +101,26 @@ export function day1() {
         </div>
 
         <div className={styles.text2}>
-          Calvin bahkan percaya bahwa kepastian keselamatan (assurance of
-          salvation) seharusnya dimiliki oleh setiap orang percaya.<sup>2</sup>{" "}
-          Namun, ini bukan berarti bahwa kepastian ini tidak perlu ada ruang
-          untuk bertumbuh. Pada bagian lain, Calvin mengajarkan dialektika
-          antara kepastian dan ketidak- sempurnaan iman kita:
+          Calvin bahkan percaya bahwa kepastian keselamatan (
+          <em>assurance of salvation</em>) seharusnya dimiliki oleh setiap orang
+          percaya.<sup>2</sup> Namun, ini bukan berarti bahwa kepastian ini
+          tidak perlu ada ruang untuk bertumbuh. Pada bagian lain, Calvin
+          mengajarkan dialektika antara kepastian dan ketidak- sempurnaan iman
+          kita:
           <div
             className={styles.quotes}
             style={{ marginTop: "22px", marginBottom: "22px" }}
           >
-            Surely, while we teach that faith ought to be certain and assured,
-            we cannot imagine any certainty that is not tinged with doubt, or
-            any assurance that is not assailed by some anxiety. ... we say that
-            believers are in perpetual conflict with their own unbelief. ...
-            Yet, once again, we deny that, in whatever way they are afflicted,
-            they fall away and depart from the certain assurance received from
-            God's mercy.<sup>3</sup>
+            <em>
+              {" "}
+              Surely, while we teach that faith ought to be certain and assured,
+              we cannot imagine any certainty that is not tinged with doubt, or
+              any assurance that is not assailed by some anxiety. ... we say
+              that believers are in perpetual conflict with their own unbelief.
+              ... Yet, once again, we deny that, in whatever way they are
+              afflicted, they fall away and depart from the certain assurance
+              received from God's mercy.<sup>3</sup>
+            </em>
           </div>
           <div className={styles.quotes}>
             Tentu saja, walaupun kita mengajarkan bahwa iman haruslah pasti dan
@@ -141,25 +148,36 @@ export function day1() {
 
         <div className={styles.quoteReference}>
           <div>
-            <sup>1</sup> Matthew Henry, Matthew Henry's Commentary on the Whole
-            Bible: Complete and Unabridged in One Volume (Peabody: Hendrickson,
-            1994), 2312.
+            <sup>1</sup> Matthew Henry,{" "}
+            <em>
+              Matthew Henry's Commentary on the Whole Bible: Complete and
+              Unabridged in One Volume
+            </em>{" "}
+            (Peabody: Hendrickson, 1994), 2312.
           </div>
           <div>
-            <sup>2</sup> “No man is a believer, I say, except him who, leaning
-            upon the assurance of his salvation, confidently triumphs over the
-            devil and death; as we are taught from that masterly summation of
-            Paul: I have confessed that “neither death nor life, nor angels, nor
-            principalities, nor powers, nor things present, nor things to come
-            ... can separate us from the love of God which embraces us in Christ
-            Jesus” [Rom. 8:38–39 p.]”; John Calvin, John Calvin, Institutes of
-            the Christian Religion, III.2.16, 2 Vols., ed. John T. McNeill,
-            trans. Ford Lewis Battles, vol. 1, The Library of Christian Classics
-            (Louisville, KY: Westminster John Knox Press, 2011), 562.
+            <sup>2</sup>{" "}
+            <em>
+              "No man is a believer, I say, except him who, leaning upon the
+              assurance of his salvation, confidently triumphs over the devil
+              and death; as we are taught from that masterly summation of Paul:
+              I have confessed that "neither death nor life, nor angels, nor
+              principalities, nor powers, nor things present, nor things to come
+              ... can separate us from the love of God which embraces us in
+              Christ Jesus" [Rom. 8:38–39 p.]"
+            </em>
+            ; John Calvin, John Calvin,{" "}
+            <em>Institutes of the Christian Religion</em>, III.2.16, 2 Vols.,
+            ed. John T. McNeill,{" "}
+            <em>
+              trans. Ford Lewis Battles, vol. 1, The Library of Christian
+              Classics (Louisville, KY: Westminster John Knox Press, 2011)
+            </em>
+            , 562.
           </div>
 
           <div>
-            <sup>3</sup> Calvin, Inst. III.2.17.
+            <sup>3</sup> Calvin, <em>Inst</em>. III.2.17.
           </div>
         </div>
 
