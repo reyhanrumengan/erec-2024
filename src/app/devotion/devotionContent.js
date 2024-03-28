@@ -18,7 +18,7 @@ export function day1() {
           Tuhan kita&rdquo;(Roma 8:38–39)
         </div>
 
-        <a href="#title" className={styles.linkTo}>
+        <a href="#titleID1" className={styles.linkTo}>
           <Image
             width={28}
             height={28}
@@ -187,7 +187,7 @@ export function day1() {
           <div
             className={styles.title}
             style={{ marginTop: "20px", marginBottom: "8px" }}
-            id="title"
+            id="titleID1"
           >
             Pertanyaan refleksi
           </div>
@@ -227,7 +227,7 @@ export function day1EN() {
           8:38–39)
         </div>
 
-        <a href="#title" className={styles.linkTo}>
+        <a href="#titleEN1" className={styles.linkTo}>
           <Image
             width={28}
             height={28}
@@ -365,7 +365,7 @@ export function day1EN() {
           <div
             className={styles.title}
             style={{ marginTop: "20px", marginBottom: "8px" }}
-            id="title"
+            id="titleEN1"
           >
             Reflection Questions
           </div>
@@ -397,7 +397,7 @@ export function day2() {
           supaya panggilan dan pilihanmu makin teguh&rdquo;(2 Petrus 1:10)
         </div>
 
-        <a href="#title" className={styles.linkTo}>
+        <a href="#titleID2" className={styles.linkTo}>
           <Image
             width={28}
             height={28}
@@ -581,7 +581,7 @@ export function day2() {
           <div
             className={styles.title}
             style={{ marginTop: "20px", marginBottom: "8px" }}
-            id="title"
+            id="titleID2"
           >
             Pertanyaan refleksi
           </div>
@@ -611,19 +611,16 @@ export function day2EN() {
     <>
       <div className={styles.container}>
         <div className={styles.devotionTitle} style={{ marginTop: "40px" }}>
-          Not yet finished
+          Confirm Your election
         </div>
 
         <div className={styles.text1}>
-          &rdquo;Sebab aku yakin, bahwa baik maut, maupun hidup, baik
-          malaikat-malaikat, maupun pemerintah- pemerintah, baik yang ada
-          sekarang, maupun yang akan datang, atau kuasa-kuasa, baik yang di
-          atas, maupun yang di bawah, ataupun sesuatu makhluk lain, tidak akan
-          dapat memisahkan kita dari kasih Allah, yang ada dalam Kristus Yesus,
-          Tuhan kita&rdquo;(Roma 8:38–39)
+          &rdquo;Therefore, brothers, be all the more diligent to confirm your
+          calling and election, for if you practice these qualities you will
+          never fall.&rdquo;(2 Peter 1:10)
         </div>
 
-        <a href="#title" className={styles.linkTo}>
+        <a href="#titleEN2" className={styles.linkTo}>
           <Image
             width={28}
             height={28}
@@ -635,120 +632,110 @@ export function day2EN() {
         </a>
 
         <div className={styles.text2}>
-          Ayat ini menegaskan akan kecukupan kasih Allah di dalam Kristus.
-          Seolah Paulus ingin mengatakan bahwa dalam hidup ini, yang kita
-          butuhkan hanyalah kasih Allah yang selalu cukup ini. Perhatikan bahwa
-          yang hal-hal yang didaftar Paulus di atas bukanlah hal-hal yang kecil
-          atau remeh. Namun, hal-hal sebesar apa pun tidak akan sanggup untuk
-          menghancurkan persekutuan orang percaya di dalam kasih Allah.
+          This verse teaches that our calling and election are not something
+          static, but can continue to grow. Yes, it can become more and more
+          sure. At first glance we might feel that this contradicts the view
+          that God has elected us in eternity and that this cannot possibly
+          change. At least, that is what we are taught in the reformed
+          theological tradition.
         </div>
 
         <div className={styles.text2}>
-          Kepastian akan kasih karunia (<em>assurance of grace</em>) sangat
-          berkaitan dengan kepastian akan kecukupan kasih Allah di dalam Kristus
-          ini. Persekutuan dan kesatuan dengan Kristus (
-          <em>unio cum Christo</em>) adalah segalanya bagi orang percaya. Kita
-          tidak membutuhkan kepastian yang lain lagi dalam hidup ini, karena
-          memang tidak ada yang lebih tinggi lagi daripada hal ini.
+          That is true, but the immutability (unable to be changed) of God's
+          election does not mean that belief in this election is static in
+          nature. The EREC theme this year is assurance of (God's) grace. What
+          is the connection between this theme and the verse above?
         </div>
 
         <div className={styles.text2}>
-          Sayangnya, manusia berdosa seringkali lebih tertarik untuk mengejar
-          kepastian-kepastian lain yang sifatnya hanya sementara. Kita kuatir
-          akan kehidupan ini, akan pemerintah atau penguasa yang tidak kondusif
-          bagi kekristenan, akan kesehatan kita, studi, pekerjaan, masa depan,
-          dan sebagainya.
-        </div>
-
-        <div className={styles.text2}>
-          Apakah kita memiliki kepedulian yang dalam akan dalamnya pemahaman
-          kita akan kasih Allah? Paulus berdoa bagi jemaat Efesus agar mereka
-          &rdquo;bersama-sama dengan segala orang kudus dapat memahami, betapa
-          lebarnya dan panjangnya dan tingginya dan dalamnya kasih
-          Kristus&rdquo; (Efesus 3:18). Ia tidak berdoa agar jemaat Efesus
-          menjadi orang-orang yang berhasil dan berpengaruh, yang disegani dan
-          diperhitungkan oleh dunia ini, yang tidak malu-maluin kekristenan.
-          Bukan itu!
-        </div>
-
-        <div className={styles.text2}>
-          Mengapa memahami berbagai dimensi kasih Allah ini begitu penting?
-          Matthew Henry menjelaskan dalam komentarnya:
-          <div
-            className={styles.quotes}
-            style={{ marginTop: "22px", marginBottom: "22px" }}
-          >
+          The connection is that this assurance of divine grace is not something
+          that is static. Regarding this verse (2 Peter 1:10), Matthew Henry
+          explains:
+          <div className={styles.quotes} style={{ marginTop: "22px" }}>
             <em>
-              By the breadth of it we may understand the extent of it to all
-              ages, nations, and ranks of men; by the length of it, its
-              continuance from everlasting to everlasting; by the depth of it,
-              its stooping to the lowest condition, with a design to relieve and
-              save those who have sunk into the depths of sin and misery; by its
-              height, its entitling and raising us up to the heavenly happiness
-              and glory.<sup>1</sup>
+              It requires a great deal of diligence and labour to make sure our
+              calling and election; there must be a very close examination of
+              ourselves, a very narrow search and strict enquiry, whether we are
+              thoroughly converted, our minds enlightened, our wills renewed,
+              and our whole souls changed as to the bent and inclination
+              thereof; and to come to a fixed certainty in this requires the
+              utmost diligence, and cannot be attained and kept without divine
+              assistance, as we may learn from Ps. 139:23; Rom. 8:16.
+              <sup>1</sup>
             </em>
           </div>
-          <div className={styles.quotes}>
-            Dari luasnya kita dapat memahami jangkauannya terhadap segala usia,
-            bangsa, dan tingkatan manusia; dari lamanya, kesinambungannya dari
-            kekal hingga kekal; dari kedalamannya, ia turun ke kondisi yang
-            paling rendah, dengan tujuan untuk meringankan dan menyelamatkan
-            mereka yang telah tenggelam ke dalam kedalaman dosa dan
-            kesengsaraan; dari tingginya, memberi hak dan mengangkat kita menuju
-            kebahagiaan dan kemuliaan surgawi.<sup>1</sup>
-          </div>
         </div>
 
         <div className={styles.text2}>
-          Kasih Allah mencakup semuanya. Tidak ada yang tidak dapat dijangkau
-          oleh kasih Allah. Karena itu Paulus rindu agar jemaat yang dilayaninya
-          mengenal kelimpahan dimensi kasih ini, sehingga hidup mereka bukan
-          hanya berada dalam kepastian/jaminan, melainkan juga dalam kelimpahan.
+          A truly elected person has the responsibility to confirm his calling
+          and election.
         </div>
 
         <div className={styles.text2}>
-          Calvin bahkan percaya bahwa kepastian keselamatan (
-          <em>assurance of salvation</em>) seharusnya dimiliki oleh setiap orang
-          percaya.<sup>2</sup> Namun, ini bukan berarti bahwa kepastian ini
-          tidak perlu ada ruang untuk bertumbuh. Pada bagian lain, Calvin
-          mengajarkan dialektika antara kepastian dan ketidak- sempurnaan iman
-          kita:
-          <div
-            className={styles.quotes}
-            style={{ marginTop: "22px", marginBottom: "22px" }}
-          >
+          However, we cannot assume that we would be able to undertake this
+          responsibility purely through our own effort. On the other hand, true
+          believers will continue to depend on God's grace to confirm their
+          election. Regarding this, Calvin gives a warning:
+          <div className={styles.quotes} style={{ marginTop: "22px" }}>
             <em>
-              {" "}
-              Surely, while we teach that faith ought to be certain and assured,
-              we cannot imagine any certainty that is not tinged with doubt, or
-              any assurance that is not assailed by some anxiety. ... we say
-              that believers are in perpetual conflict with their own unbelief.
-              ... Yet, once again, we deny that, in whatever way they are
-              afflicted, they fall away and depart from the certain assurance
-              received from God&apos;s mercy.<sup>3</sup>
+              For if anyone thinks that calling is rendered sure by men, there
+              is nothing absurd in that; we may however, go still farther, that
+              everyone confirms his calling by leading a holy and pious life.
+              But it is very foolish to infer from this what the Sophists
+              contend for [that the power to confirm election is on their hand];
+              for this is a proof not taken from the cause, but on the contrary
+              from the sign or the effect. Moreover, this does not prevent
+              election from being gratuitous, nor does it shew that it is in our
+              own hand or power to confirm election.<sup>2</sup>
             </em>
           </div>
-          <div className={styles.quotes}>
-            Tentu saja, walaupun kita mengajarkan bahwa iman haruslah pasti dan
-            terjamin, kita tidak dapat membayangkan kepastian apa pun yang tidak
-            diwarnai dengan keraguan, atau kepastian apa pun yang tidak diserang
-            oleh kekhawatiran. ... kita mengatakan bahwa orang-orang percaya
-            terus-menerus berkonflik dengan ketidakpercayaan mereka sendiri. ...
-            Namun, sekali lagi, kita menyangkal bahwa, apa pun penderitaan yang
-            mereka alami, mereka murtad dan menyimpang dari kepastian yang
-            diterima dari belas kasihan Allah.<sup>3</sup>
+        </div>
+
+        <div className={styles.text2}>
+          It's not that we don't need to try or be responsible, but that this
+          (confirming the election) is also God's grace,{" "}
+          <em>grace upon grace</em>.
+        </div>
+
+        <div className={styles.text2}>
+          The question is, how do we confirm our election? Peter explained it in
+          the previous verses, namely by "earnestly supplementing your faith
+          with virtue, and virtue with knowledge, and knowledge with
+          self-control, and self-control with steadfastness, and steadfastness
+          with godliness, and godliness with brotherly affection, and brotherly
+          affection with love” (2 Peter 1:5–7). In other words, we confirm our
+          election by adding Christian virtues. The Westminster Confession of
+          Faith teaches:
+          <div className={styles.quotes} style={{ marginTop: "22px" }}>
+            <em>
+              Faith, thus receiving and resting on Christ and His righteousness,
+              is the alone instrument of justification; yet is it not alone in
+              the person justified, but is ever accompanied with all other
+              saving graces, and is no dead faith, but worketh by love (WCF
+              XI.2).
+            </em>
           </div>
         </div>
 
         <div className={styles.text2}>
-          Secara realistis, kepastian yang benar sekalipun tidak akan kebal
-          terhadap ketidak-pastian. Maka, selalu ada ruang bagi orang percaya
-          untuk terus bertumbuh ke arah kepastian kasih karunia ini. Pertumbuhan
-          ini dimungkinkan karena kecukupan belas kasihan Allah. Bagian kita
-          adalah terus berharap dan bergantung pada belas kasihan ilahi ini.
+          In relation to justification, indeed the elect are justified only
+          through faith. However, in the elected people, faith never stands
+          alone. It is always accompanied by Christian virtues. True faith takes
+          full pride in the perfection of Christ's work, while true faith also
+          "works through love" (Gal. 5:6).
         </div>
 
-        <div className={styles.author}>PDT. BILLY KRISTANTO</div>
+        <div className={styles.text2}>
+          When faith is accompanied by love and other Christian virtues, our
+          calling and election, this assurance of God's grace will become even
+          more sure. Grace does not make believers stagnate in their growth. On
+          the contrary, it will encourage us to "work harder" in responding to
+          this grace given (1 Cor 15:10). The more we know the depth of God's
+          grace, the more active we will be in pursuing and adding to the
+          Christian virtues above.
+        </div>
+
+        <div className={styles.author}>REV. BILLY KRISTANTO</div>
 
         <div className={styles.line}></div>
 
@@ -759,31 +746,11 @@ export function day2EN() {
               Matthew Henry&apos;s Commentary on the Whole Bible: Complete and
               Unabridged in One Volume
             </em>{" "}
-            (Peabody: Hendrickson, 1994), 2312.
+            (Peabody: Hendrickson, 1994), 2435.
           </div>
           <div>
-            <sup>2</sup>{" "}
-            <em>
-              &rdquo;No man is a believer, I say, except him who, leaning upon
-              the assurance of his salvation, confidently triumphs over the
-              devil and death; as we are taught from that masterly summation of
-              Paul: I have confessed that &rdquo;neither death nor life, nor
-              angels, nor principalities, nor powers, nor things present, nor
-              things to come ... can separate us from the love of God which
-              embraces us in Christ Jesus&rdquo; [Rom. 8:38–39 p.]&rdquo;
-            </em>
-            ; John Calvin, John Calvin,{" "}
-            <em>Institutes of the Christian Religion</em>, III.2.16, 2 Vols.,
-            ed. John T. McNeill,{" "}
-            <em>
-              trans. Ford Lewis Battles, vol. 1, The Library of Christian
-              Classics (Louisville, KY: Westminster John Knox Press, 2011)
-            </em>
-            , 562.
-          </div>
-
-          <div>
-            <sup>3</sup> Calvin, <em>Inst</em>. III.2.17.
+            <sup>2</sup> John Calvin,{" "}
+            <em>Commentary on the Catholic Epistles, </em>2 Pet 1:10.
           </div>
         </div>
 
@@ -791,23 +758,23 @@ export function day2EN() {
           <div
             className={styles.title}
             style={{ marginTop: "20px", marginBottom: "8px" }}
-            id="title"
+            id="titleEN2"
           >
-            Pertanyaan refleksi
+            Reflection Questions
           </div>
           <div className={styles.text3}>
-            1. Apakah Saudara memiliki keyakinan akan kecukupan kasih Allah di
-            dalam Kristus?
-          </div>
-
-          <div className={styles.text3}>
-            2. Menurut Saudara, apa kaitan antara keyakinan akan kasih Allah ini
-            dengan berhala-berhala dalam kehidupan manusia?
+            1. Do you experience that your calling and choice are becoming more
+            confirmed?
           </div>
 
           <div className={styles.text3}>
-            3. Apa yang seringkali menghalangi kita memiliki keyakinan ini dan
-            latihan-latihan rohani apa yang Saudara butuhkan untuk mengatasinya?
+            2. Can you share from your life experience, how you try to
+            strengthen your faith with Christian virtues?
+          </div>
+
+          <div className={styles.text3}>
+            3. What often prevents the assurance of grace from growing in your
+            life? How do you handle it?
           </div>
         </div>
       </div>
