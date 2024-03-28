@@ -15,7 +15,7 @@ export function day1() {
           sekarang, maupun yang akan datang, atau kuasa-kuasa, baik yang di
           atas, maupun yang di bawah, ataupun sesuatu makhluk lain, tidak akan
           dapat memisahkan kita dari kasih Allah, yang ada dalam Kristus Yesus,
-          Tuhan kita&rdquo;(Roma 8:38–39)
+          Tuhan kita&rdquo; (Roma 8:38–39)
         </div>
 
         <a href="#titleID1" className={styles.linkTo}>
@@ -60,10 +60,10 @@ export function day1() {
           kita akan kasih Allah? Paulus berdoa bagi jemaat Efesus agar mereka
           &rdquo;bersama-sama dengan segala orang kudus dapat memahami, betapa
           lebarnya dan panjangnya dan tingginya dan dalamnya kasih
-          Kristus&rdquo; (Efesus 3:18). Ia tidak berdoa agar jemaat (Efesus
-          3:18). Ia tidak berdoa agar jemaat Efesus menjadi orang-orang yang
-          berhasil dan berpengaruh, yang disegani dan diperhitungkan oleh dunia
-          ini, yang tidak malu-maluin kekristenan. Bukan itu!
+          Kristus&rdquo; (Efesus 3:18). Ia tidak berdoa agar jemaat Efesus
+          menjadi orang-orang yang berhasil dan berpengaruh, yang disegani dan
+          diperhitungkan oleh dunia ini, yang tidak malu-maluin kekristenan.
+          Bukan itu!
         </div>
 
         <div className={styles.text2}>
@@ -223,7 +223,7 @@ export function day1EN() {
           &rdquo;For I am sure that neither death nor life, nor angels nor
           rulers, nor things present nor things to come, nor powers, nor height
           nor depth, nor anything else in all creation, will be able to separate
-          us from the love of God in Christ Jesus our Lord.&rdquo;(Romans
+          us from the love of God in Christ Jesus our Lord.&rdquo; (Romans
           8:38–39)
         </div>
 
@@ -394,7 +394,7 @@ export function day2() {
 
         <div className={styles.text1}>
           &rdquo;Karena itu, saudara-saudaraku, berusahalah sungguh-sungguh,
-          supaya panggilan dan pilihanmu makin teguh&rdquo;(2 Petrus 1:10)
+          supaya panggilan dan pilihanmu makin teguh&rdquo; (2 Petrus 1:10)
         </div>
 
         <a href="#titleID2" className={styles.linkTo}>
@@ -617,7 +617,7 @@ export function day2EN() {
         <div className={styles.text1}>
           &rdquo;Therefore, brothers, be all the more diligent to confirm your
           calling and election, for if you practice these qualities you will
-          never fall.&rdquo;(2 Peter 1:10)
+          never fall.&rdquo; (2 Peter 1:10)
         </div>
 
         <a href="#titleEN2" className={styles.linkTo}>
