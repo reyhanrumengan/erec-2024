@@ -31,9 +31,21 @@ export default function Content() {
           {/* Title */}
           <div className={styles.devotionTitle}>DEVOTION</div>
 
-          <div className={styles.changeLanguage} onClick={handleChangeLanguage}>
-            Read in English
-          </div>
+          {!english ? (
+            <div
+              className={styles.changeLanguage}
+              onClick={handleChangeLanguage}
+            >
+              Read in English
+            </div>
+          ) : (
+            <div
+              className={styles.changeLanguage}
+              onClick={handleChangeLanguage}
+            >
+              Read in Indonesian
+            </div>
+          )}
 
           {/* Days Tab */}
           <div className={styles.daysTab}>
