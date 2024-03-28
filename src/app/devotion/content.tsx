@@ -29,7 +29,11 @@ export default function Content() {
       <div className={styles.heroContainer}>
         <div className={styles.content}>
           {/* Title */}
-          <div className={styles.devotionTitle}>DEVOTION</div>
+          {!english ? (
+            <div className={styles.devotionTitle}>RENUNGAN</div>
+          ) : (
+            <div className={styles.devotionTitle}>DEVOTION</div>
+          )}
 
           {!english ? (
             <div
