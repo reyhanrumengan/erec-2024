@@ -1,0 +1,161 @@
+/* Mobile & Smaller screen */
+/* .page {
+  display: none;
+} */
+
+.page {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  min-height: 100vh;
+}
+
+.heroPage {
+  display: flex;
+  flex-direction: row;
+  /* max-width: 1440px; */
+  /* align-self: center; */
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  min-height: 100vh;
+}
+
+/* Content */
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 170px;
+  margin-left: 40px;
+  margin-right: 40px;
+  flex: 1 0;
+}
+
+/* Top Content */
+.content {
+  display: none;
+}
+
+.noContent {
+  font-size: 26px; /* 32 normal size */
+  letter-spacing: 0.02em;
+  line-height: 44px; /* 48 normal size */
+  font-weight: 300;
+  font-family: Poppins;
+  color: var(--color-darkblue);
+  text-align: left;
+}
+
+@media screen and (max-width: 1080px) {
+  .noContent {
+    display: none;
+  }
+
+  .page {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* .heroPage {
+  } */
+
+  .mainContainer {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  /* Content */
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+  }
+
+  /* Content*/
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  /* Title */
+  .devotionTitle {
+    font-size: 32px;
+    font-family: "Libre Bodoni";
+    color: var(--color-mediumblue);
+    text-align: left;
+  }
+
+  .changeLanguage {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-decoration: underline;
+    color: var(--color-darkblue);
+    font-family: Poppins;
+    cursor: pointer;
+    margin: 7px 0;
+  }
+
+  /* Days Tab */
+  .daysTab {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+  }
+
+  /* .tabsRoot { */
+  /* margin-bottom: 48px; */
+  /* } */
+
+  .tabList {
+    max-width: 250px;
+  }
+
+  .tabContainer {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+  }
+
+  .tab {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* check again for hover in mobile*/
+  .tab:hover {
+    background-color: unset;
+  }
+
+  .tabLabel {
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Poppins;
+    color: var(--color-darkblue);
+  }
+}

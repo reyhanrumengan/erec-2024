@@ -25,6 +25,7 @@ export default function MenuBurger() {
     { path: "/pricing", label: "PRICING" },
     { path: "/faqs", label: "FAQS" },
     { path: "/contact", label: "CONTACT" },
+    { path: "/devotion", label: "MORNING DEVOTION" },
   ];
 
   const menuRef = useClickOutside(() => {
@@ -102,7 +103,7 @@ export default function MenuBurger() {
                   className={`${styles.menuText} ${isActive(route.path)}`}
                   style={{
                     paddingTop: route.path === "/theme" ? "0" : undefined,
-                    paddingBottom: route.path === "/contact" ? "0" : undefined,
+                    paddingBottom: route.path === "/devotion" ? "0" : undefined,
                   }}
                 >
                   {route.label}
