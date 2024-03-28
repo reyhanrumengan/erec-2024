@@ -81,6 +81,10 @@ export default function Content() {
             </Tabs>
           </div>
         </div>
+
+        <div className={styles.noContent}>
+          Devotion only available on Mobile
+        </div>
       </div>
     </>
   );
