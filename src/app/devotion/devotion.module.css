@@ -30,7 +30,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin-top: 100px;
   margin-bottom: 170px;
   margin-left: 40px;
@@ -51,7 +50,6 @@
   font-family: Poppins;
   color: var(--color-darkblue);
   text-align: left;
-  justify-content: center;
 }
 
 @media screen and (max-width: 1080px) {
@@ -79,7 +77,7 @@
   .heroContainer {
     display: flex;
     flex-direction: column;
-
+    align-items: unset;
     margin-top: 50px;
     margin-bottom: 60px;
     margin-left: 20px;
