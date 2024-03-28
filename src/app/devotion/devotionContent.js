@@ -375,7 +375,12 @@ export function day1EN() {
           </div>
 
           <div className={styles.text3}>
-            2. What often prevents us from having this belief and what spiritual
+            3. In your opinion, what is the connection between belief in
+            God&apos;s love and false idols in human life?
+          </div>
+
+          <div className={styles.text3}>
+            3. What often prevents us from having this belief and what spiritual
             practices do you need to overcome it?
           </div>
         </div>
