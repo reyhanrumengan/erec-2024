@@ -322,7 +322,7 @@ export function day1EN() {
           rely on this divine mercy.
         </div>
 
-        <div className={styles.author}>Rev. BILLY KRISTANTO</div>
+        <div className={styles.author}>REV. BILLY KRISTANTO</div>
 
         <div className={styles.line}></div>
 
