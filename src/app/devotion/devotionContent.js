@@ -722,8 +722,8 @@ export function day2EN() {
           In relation to justification, indeed the elect are justified only
           through faith. However, in the elected people, faith never stands
           alone. It is always accompanied by Christian virtues. True faith takes
-          full pride in the perfection of Christ's work, while true faith also
-          &rdquo;works through love&rdquo; (Gal. 5:6).
+          full pride in the perfection of Christ&apos;s work, while true faith
+          also &rdquo;works through love&rdquo; (Gal. 5:6).
         </div>
 
         <div className={styles.text2}>
