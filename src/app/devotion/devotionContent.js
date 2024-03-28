@@ -11,7 +11,7 @@ export function day1() {
 
         <div className={styles.text1}>
           &rdquo;Sebab aku yakin, bahwa baik maut, maupun hidup, baik
-          malaikat-malaikat, maupun pemerintah- pemerintah, baik yang ada
+          malaikat-malaikat, maupun pemerintah-pemerintah, baik yang ada
           sekarang, maupun yang akan datang, atau kuasa-kuasa, baik yang di
           atas, maupun yang di bawah, ataupun sesuatu makhluk lain, tidak akan
           dapat memisahkan kita dari kasih Allah, yang ada dalam Kristus Yesus,
@@ -60,10 +60,10 @@ export function day1() {
           kita akan kasih Allah? Paulus berdoa bagi jemaat Efesus agar mereka
           &rdquo;bersama-sama dengan segala orang kudus dapat memahami, betapa
           lebarnya dan panjangnya dan tingginya dan dalamnya kasih
-          Kristus&rdquo; (Efesus 3:18). Ia tidak berdoa agar jemaat Efesus
-          menjadi orang-orang yang berhasil dan berpengaruh, yang disegani dan
-          diperhitungkan oleh dunia ini, yang tidak malu-maluin kekristenan.
-          Bukan itu!
+          Kristus&rdquo; (Efesus 3:18). Ia tidak berdoa agar jemaat (Efesus
+          3:18). Ia tidak berdoa agar jemaat Efesus menjadi orang-orang yang
+          berhasil dan berpengaruh, yang disegani dan diperhitungkan oleh dunia
+          ini, yang tidak malu-maluin kekristenan. Bukan itu!
         </div>
 
         <div className={styles.text2}>
@@ -84,13 +84,14 @@ export function day1() {
             </em>
           </div>
           <div className={styles.quotes}>
-            Dari luasnya kita dapat memahami jangkauannya terhadap segala usia,
-            bangsa, dan tingkatan manusia; dari lamanya, kesinambungannya dari
-            kekal hingga kekal; dari kedalamannya, ia turun ke kondisi yang
-            paling rendah, dengan tujuan untuk meringankan dan menyelamatkan
-            mereka yang telah tenggelam ke dalam kedalaman dosa dan
-            kesengsaraan; dari tingginya, memberi hak dan mengangkat kita menuju
-            kebahagiaan dan kemuliaan surgawi.<sup>1</sup>
+            Dari luasnya kita dapat memahami jangkauan kasih Allah terhadap
+            segala usia, bangsa, dan tingkatan manusia; dari lamanya,
+            kesinambungannya dari kekal hingga kekal; dari kedalamannya, ia
+            turun ke kondisi yang paling rendah, dengan tujuan untuk meringankan
+            dan menyelamatkan mereka yang telah tenggelam ke dalam kedalaman
+            dosa dan kesengsaraan; dari tingginya, membuat kita pantas dan
+            mengangkat kita untuk menuju kebahagiaan dan kemuliaan surgawi.
+            <sup>1</sup>
           </div>
         </div>
 
@@ -106,7 +107,7 @@ export function day1() {
           <em>assurance of salvation</em>) seharusnya dimiliki oleh setiap orang
           percaya.<sup>2</sup> Namun, ini bukan berarti bahwa kepastian ini
           tidak perlu ada ruang untuk bertumbuh. Pada bagian lain, Calvin
-          mengajarkan dialektika antara kepastian dan ketidak- sempurnaan iman
+          mengajarkan dialektika antara kepastian dan ketidak-sempurnaan iman
           kita:
           <div
             className={styles.quotes}
@@ -125,13 +126,13 @@ export function day1() {
           </div>
           <div className={styles.quotes}>
             Tentu saja, walaupun kita mengajarkan bahwa iman haruslah pasti dan
-            terjamin, kita tidak dapat membayangkan kepastian apa pun yang tidak
-            diwarnai dengan keraguan, atau kepastian apa pun yang tidak diserang
-            oleh kekhawatiran. ... kita mengatakan bahwa orang-orang percaya
-            terus-menerus berkonflik dengan ketidakpercayaan mereka sendiri. ...
-            Namun, sekali lagi, kita menyangkal bahwa, apa pun penderitaan yang
-            mereka alami, mereka murtad dan menyimpang dari kepastian yang
-            diterima dari belas kasihan Allah.<sup>3</sup>
+            terjamin, kita tidak bisa membayangkan ada kepastian apa pun yang
+            tidak diwarnai dengan keraguan, atau kepastian apa pun yang tidak
+            diserang oleh kekhawatiran. ... kita mengatakan bahwa orang-orang
+            percaya terus-menerus berkonflik dengan ketidakpercayaan mereka
+            sendiri. ... Namun, sekali lagi, kita menyangkal bahwa, apa pun
+            penderitaan yang mereka alami, mereka murtad dan menyimpang dari
+            kepastian yang diterima dari belas kasihan Allah.<sup>3</sup>
           </div>
         </div>
 
