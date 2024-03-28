@@ -53,6 +53,10 @@
 }
 
 @media screen and (max-width: 1080px) {
+  .noContent {
+    display: none;
+  }
+
   .page {
     max-width: 450px;
     margin: auto;
