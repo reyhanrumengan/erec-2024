@@ -250,9 +250,9 @@ export function day1EN() {
         <div className={styles.text2}>
           The assurance of grace is closely related to the assurance of the
           sufficiency of God&apos;s love in Christ. Fellowship and union with
-          Christ (unio cum Christo) is everything for believers. We don't need
-          any other assurances in this life, because there is nothing higher
-          than this.
+          Christ (unio cum Christo) is everything for believers. We don&apos;t
+          need any other assurances in this life, because there is nothing
+          higher than this.
         </div>
 
         <div className={styles.text2}>
