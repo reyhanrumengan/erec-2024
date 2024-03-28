@@ -628,7 +628,7 @@ export function day2EN() {
             alt="Arrow Circle Right"
             src="/icons/arrowCircleRight.svg"
           />
-          <div className={styles.linkToText}>PERTANYAAN REFLEKSI</div>
+          <div className={styles.linkToText}>REFLECTION QUESTIONS</div>
         </a>
 
         <div className={styles.text2}>
@@ -641,10 +641,11 @@ export function day2EN() {
         </div>
 
         <div className={styles.text2}>
-          That is true, but the immutability (unable to be changed) of God's
-          election does not mean that belief in this election is static in
-          nature. The EREC theme this year is assurance of (God's) grace. What
-          is the connection between this theme and the verse above?
+          That is true, but the immutability (unable to be changed) of
+          God&apos;s election does not mean that belief in this election is
+          static in nature. The EREC theme this year is assurance of
+          (God&apos;s) grace. What is the connection between this theme and the
+          verse above?
         </div>
 
         <div className={styles.text2}>
@@ -674,7 +675,7 @@ export function day2EN() {
         <div className={styles.text2}>
           However, we cannot assume that we would be able to undertake this
           responsibility purely through our own effort. On the other hand, true
-          believers will continue to depend on God's grace to confirm their
+          believers will continue to depend on God&apos;s grace to confirm their
           election. Regarding this, Calvin gives a warning:
           <div className={styles.quotes} style={{ marginTop: "22px" }}>
             <em>
@@ -692,20 +693,20 @@ export function day2EN() {
         </div>
 
         <div className={styles.text2}>
-          It's not that we don't need to try or be responsible, but that this
-          (confirming the election) is also God's grace,{" "}
+          It&apos;s not that we don&apos;t need to try or be responsible, but
+          that this (confirming the election) is also God&apos;s grace,{" "}
           <em>grace upon grace</em>.
         </div>
 
         <div className={styles.text2}>
           The question is, how do we confirm our election? Peter explained it in
-          the previous verses, namely by "earnestly supplementing your faith
-          with virtue, and virtue with knowledge, and knowledge with
+          the previous verses, namely by &rdquo;earnestly supplementing your
+          faith with virtue, and virtue with knowledge, and knowledge with
           self-control, and self-control with steadfastness, and steadfastness
           with godliness, and godliness with brotherly affection, and brotherly
-          affection with love” (2 Peter 1:5–7). In other words, we confirm our
-          election by adding Christian virtues. The Westminster Confession of
-          Faith teaches:
+          affection with love&rdquo; (2 Peter 1:5–7). In other words, we confirm
+          our election by adding Christian virtues. The Westminster Confession
+          of Faith teaches:
           <div className={styles.quotes} style={{ marginTop: "22px" }}>
             <em>
               Faith, thus receiving and resting on Christ and His righteousness,
@@ -722,17 +723,17 @@ export function day2EN() {
           through faith. However, in the elected people, faith never stands
           alone. It is always accompanied by Christian virtues. True faith takes
           full pride in the perfection of Christ's work, while true faith also
-          "works through love" (Gal. 5:6).
+          &rdquo;works through love&rdquo; (Gal. 5:6).
         </div>
 
         <div className={styles.text2}>
           When faith is accompanied by love and other Christian virtues, our
-          calling and election, this assurance of God's grace will become even
-          more sure. Grace does not make believers stagnate in their growth. On
-          the contrary, it will encourage us to "work harder" in responding to
-          this grace given (1 Cor 15:10). The more we know the depth of God's
-          grace, the more active we will be in pursuing and adding to the
-          Christian virtues above.
+          calling and election, this assurance of God&apos;s grace will become
+          even more sure. Grace does not make believers stagnate in their
+          growth. On the contrary, it will encourage us to &rdquo;work
+          harder&rdquo; in responding to this grace given (1 Cor 15:10). The
+          more we know the depth of God&apos;s grace, the more active we will be
+          in pursuing and adding to the Christian virtues above.
         </div>
 
         <div className={styles.author}>REV. BILLY KRISTANTO</div>
