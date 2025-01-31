@@ -11,7 +11,8 @@ export default function TitleImage() {
             width={720}
             height={500}
             alt="Assurance of Grace"
-            src="https://d1lp121c60gp91.cloudfront.net/titleImage.png"
+            // src="https://d1lp121c60gp91.cloudfront.net/titleImage.png"
+            src="/unused/used-in-cloudfront/titleImage.png"
             className={styles.titleImage}
             priority
           />
