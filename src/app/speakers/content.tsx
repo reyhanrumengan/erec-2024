@@ -11,7 +11,7 @@ export default function Content() {
   const [mainContent, setMainContent] = useState(true);
   const [opened, { open, close }] = useDisclosure(false);
 
-  const cloudFrontDomain = "https://d1lp121c60gp91.cloudfront.net";
+  // const cloudFrontDomain = "https://d1lp121c60gp91.cloudfront.net";
 
   const handleReadMoreClick = () => {
     setShowFullContent(!showFullContent);
@@ -23,8 +23,8 @@ export default function Content() {
 
   const getImageSrc = () => {
     return mainContent
-      ? `${cloudFrontDomain}/pak-billy.png`
-      : `${cloudFrontDomain}/pak-leo.png`;
+      ? `/unused/used-in-cloudfront/pak-billy.png`
+      : `/unused/used-in-cloudfront/pak-leo.png`;
   };
 
   // later, if we add more speakers, we need to pack it into an array and map it, and access it using index/key
@@ -62,11 +62,11 @@ export default function Content() {
 
   // const videoUrl = `${cloudFrontDomain}/pak-billy-recording.mp4`;
 
-  const getvideoUrl = () => {
-    return mainContent
-      ? `${cloudFrontDomain}/pak-billy-recording.mp4`
-      : `${cloudFrontDomain}/pak-leo-recording.mp4`;
-  };
+  // const getvideoUrl = () => {
+  //   return mainContent
+  //     ? `${cloudFrontDomain}/pak-billy-recording.mp4`
+  //     : `${cloudFrontDomain}/pak-leo-recording.mp4`;
+  // };
 
   const VideoPlayer = () => {
     return (
@@ -76,7 +76,7 @@ export default function Content() {
           autoPlay
           className={styles.video}
         >
-          <source src={getvideoUrl()} type="video/mp4" />
+          {/* <source src={getvideoUrl()} type="video/mp4" /> */}
           Your browser does not support the video tag.
         </video>
         <Image
